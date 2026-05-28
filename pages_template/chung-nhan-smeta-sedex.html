@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứng nhận SMETA Sedex - TechLAB Global</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YE334L4TV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4YE334L4TV');
+    </script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" /><!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRHPPTJ7');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: rotate(0); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(-4deg); }
+            20%, 40%, 60%, 80% { transform: rotate(4deg); }
+        }
+        
+        .shake-animation:hover .zalo-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        .shake-animation:hover .chat-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        /* Chat Widget Styles */
+        .chat-widget-container {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .chat-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .chat-button-zalo {
+            background-color: #0068ff;
+            color: white;
+        }
+        
+        .chat-button-zalo:hover {
+            background-color: #0055d4;
+        }
+        
+        .chat-button-messenger {
+            background-color: #0084ff;
+            color: white;
+        }
+        
+        .chat-button-messenger:hover {
+            background-color: #0066cc;
+        }
+        
+        .chat-button-phone {
+            background-color: #16a34a;
+            color: white;
+        }
+        
+        .chat-button-phone:hover {
+            background-color: #15803d;
+        }
+        
+        .chat-icon {
+            width: 1.8rem;
+            height: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .zalo-icon {
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pulse-effect {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .pulse-zalo {
+            background-color: rgba(0, 104, 255, 0.2);
+        }
+        
+        .pulse-messenger {
+            background-color: rgba(0, 132, 255, 0.2);
+        }
+        
+        .pulse-phone {
+            background-color: rgba(22, 163, 74, 0.2);
+        }
+        
+        .pulse-delay {
+            animation-delay: 1s;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                   <img src="../images/logo.png" alt="TechLAB Global logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../index.html#dich-vu">Dịch vụ</a></li>
+                    <li><a href="../index.html#chung-nhan">Chứng nhận</a></li>
+                    <li><a href="../index.html#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="../index.html#lien-he">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <h1>Chứng nhận SMETA Sedex</h1>
+            <p>Đánh giá đạo đức kinh doanh và trách nhiệm xã hội trong chuỗi cung ứng</p>
+        </div>
+    </section>
+
+    <section class="service-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Giới thiệu về Chứng nhận SMETA Sedex</h2>
+                    <p>SMETA (Sedex Members Ethical Trade Audit) là phương pháp đánh giá đạo đức thương mại được phát triển bởi Sedex, một tổ chức phi lợi nhuận hàng đầu trong việc cải thiện các tiêu chuẩn đạo đức kinh doanh trong chuỗi cung ứng toàn cầu. SMETA tập trung vào bốn lĩnh vực chính: Tiêu chuẩn lao động, Sức khỏe và An toàn, Môi trường và Đạo đức kinh doanh.</p>
+                    <p>Tại TechLAB Global, chúng tôi cung cấp dịch vụ đánh giá và chứng nhận SMETA Sedex chuyên nghiệp, giúp doanh nghiệp thể hiện cam kết về trách nhiệm xã hội, nâng cao uy tín và tạo lợi thế cạnh tranh trong chuỗi cung ứng toàn cầu. Chúng tôi hỗ trợ doanh nghiệp trong toàn bộ quá trình từ tư vấn chuẩn bị, đánh giá đến cấp chứng nhận SMETA.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="../images/smeta-sedex-certificate.jpg" alt="Chứng nhận SMETA Sedex">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-features">
+        <div class="container">
+            <h2>Lợi ích của Chứng nhận SMETA Sedex</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Tăng cường Quan hệ với Khách hàng</h3>
+                    <p>Đáp ứng yêu cầu của các khách hàng quốc tế về trách nhiệm xã hội trong chuỗi cung ứng.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Mở rộng Thị trường</h3>
+                    <p>Chứng nhận SMETA là yêu cầu của nhiều thương hiệu lớn, giúp mở rộng cơ hội kinh doanh quốc tế.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Cải thiện Hiệu quả</h3>
+                    <p>Phát hiện và khắc phục các vấn đề trong quản lý lao động, an toàn và môi trường, cải thiện hiệu quả hoạt động.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Nâng cao Uy tín</h3>
+                    <p>Thể hiện cam kết của doanh nghiệp về đạo đức kinh doanh và trách nhiệm xã hội với các bên liên quan.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Giảm thiểu Rủi ro</h3>
+                    <p>Phòng ngừa các rủi ro liên quan đến lao động, an toàn và môi trường trong hoạt động sản xuất kinh doanh.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Tối ưu hóa Đánh giá</h3>
+                    <p>Giảm số lượng các cuộc đánh giá trùng lặp từ nhiều khách hàng khác nhau, tiết kiệm thời gian và chi phí.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-process">
+        <div class="container">
+            <h2>Quy trình Đánh giá và Chứng nhận SMETA Sedex</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Đăng ký Sedex</h3>
+                        <p>Hỗ trợ doanh nghiệp đăng ký trở thành thành viên của Sedex và kết nối với khách hàng.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Đánh giá Sơ bộ</h3>
+                        <p>Tiến hành đánh giá sơ bộ để xác định mức độ sẵn sàng và các điểm cần cải thiện.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Đào tạo và Chuẩn bị</h3>
+                        <p>Đào tạo nhân sự và chuẩn bị hệ thống, tài liệu đáp ứng các yêu cầu của SMETA.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Đánh giá SMETA</h3>
+                        <p>Tiến hành đánh giá chính thức theo phương pháp SMETA bởi đoàn đánh giá độc lập.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Khắc phục và Cải tiến</h3>
+                        <p>Xây dựng và triển khai kế hoạch khắc phục các điểm không phù hợp (nếu có).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Báo cáo Đánh giá</h3>
+                        <p>Hoàn thiện báo cáo đánh giá SMETA và tải lên nền tảng Sedex.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Công nhận và Chia sẻ</h3>
+                        <p>Kết quả đánh giá được công nhận và có thể chia sẻ với các khách hàng thông qua nền tảng Sedex.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-benefits">
+        <div class="container">
+            <h2>Tại sao chọn dịch vụ Chứng nhận SMETA Sedex của TechLAB Global?</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Đơn vị Uy tín</h3>
+                        <p>TechLAB Global là đơn vị có uy tín và kinh nghiệm trong lĩnh vực đánh giá và chứng nhận SMETA tại Việt Nam.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Đội ngũ Chuyên nghiệp</h3>
+                        <p>Đội ngũ chuyên gia đánh giá được công nhận bởi Sedex, có hiểu biết sâu sắc về yêu cầu SMETA.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Dịch vụ Toàn diện</h3>
+                        <p>Cung cấp dịch vụ toàn diện từ tư vấn, đào tạo, đánh giá đến hỗ trợ khắc phục và cải tiến.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Đánh giá Khách quan</h3>
+                        <p>Thực hiện đánh giá một cách khách quan, minh bạch theo đúng phương pháp SMETA.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Hỗ trợ Liên tục</h3>
+                        <p>Hỗ trợ doanh nghiệp trong việc duy trì và cải tiến liên tục sau khi được đánh giá.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-clients">
+        <div class="container">
+            <h2>Đối tượng áp dụng Chứng nhận SMETA Sedex</h2>
+            <div class="clients-grid">
+                <div class="client-logo">Ngành Dệt may</div>
+                <div class="client-logo">Ngành Da giày</div>
+                <div class="client-logo">Chế biến Thực phẩm</div>
+                <div class="client-logo">Ngành Điện tử</div>
+                <div class="client-logo">Ngành Nông nghiệp</div>
+                <div class="client-logo">Ngành Sản xuất</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-cta">
+        <div class="container">
+            <h2>Đăng ký Chứng nhận SMETA Sedex</h2>
+            <p>Liên hệ với chúng tôi ngay hôm nay để được tư vấn và hỗ trợ đăng ký Chứng nhận SMETA Sedex</p>
+            <a href="../index.html#lien-he" class="btn">Liên hệ ngay</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TechLAB Global logo" class="footer-logo-img">
+                    <p>Chuyên gia kiểm nghiệm và chứng nhận</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="../index.html">Trang chủ</a></li>
+                        <li><a href="../index.html#dich-vu">Dịch vụ</a></li>
+                        <li><a href="../index.html#chung-nhan">Chứng nhận</a></li>
+                        <li><a href="../index.html#gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="../index.html#lien-he">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Dịch vụ</h4>
+                    <ul>
+                        <li><a href="kiem-nghiem-thuc-pham.html">Kiểm nghiệm Thực phẩm</a></li>
+                        <li><a href="kiem-nghiem-duoc-pham.html">Kiểm nghiệm Dược phẩm</a></li>
+                        <li><a href="chung-nhan-vietgap.html">Chứng nhận VietGAP</a></li>
+                        <li><a href="quan-trac-moi-truong.html">Quan trắc Môi trường</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Thông tin liên hệ</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Hà Nội: Tòa nhà 9 tầng, Km11, Quốc Lộ 21</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cần Thơ: Số CC-15, đường số 12, KDC công ty 8, KV2, P. Hưng Thạnh</p>
+                    <p><i class="fas fa-phone"></i> 0899.551.228</p>
+                    <p><i class="fas fa-envelope"></i> info@techlabglobal.com.vn</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61555675322896&locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2020 Công ty Cổ phần Khoa học và Công nghệ TechLAB Global</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html> 

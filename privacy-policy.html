@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách Quyền riêng tư</title>
+    
+<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRHPPTJ7');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: rotate(0); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(-4deg); }
+            20%, 40%, 60%, 80% { transform: rotate(4deg); }
+        }
+        
+        .shake-animation:hover .zalo-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        .shake-animation:hover .chat-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        /* Chat Widget Styles */
+        .chat-widget-container {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .chat-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .chat-button-zalo {
+            background-color: #0068ff;
+            color: white;
+        }
+        
+        .chat-button-zalo:hover {
+            background-color: #0055d4;
+        }
+        
+        .chat-button-messenger {
+            background-color: #0084ff;
+            color: white;
+        }
+        
+        .chat-button-messenger:hover {
+            background-color: #0066cc;
+        }
+        
+        .chat-button-phone {
+            background-color: #16a34a;
+            color: white;
+        }
+        
+        .chat-button-phone:hover {
+            background-color: #15803d;
+        }
+        
+        .chat-icon {
+            width: 1.8rem;
+            height: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .zalo-icon {
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pulse-effect {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .pulse-zalo {
+            background-color: rgba(0, 104, 255, 0.2);
+        }
+        
+        .pulse-messenger {
+            background-color: rgba(0, 132, 255, 0.2);
+        }
+        
+        .pulse-phone {
+            background-color: rgba(22, 163, 74, 0.2);
+        }
+        
+        .pulse-delay {
+            animation-delay: 1s;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chính sách Quyền riêng tư</h1>
+    <p class="updated">Cập nhật lần cuối: [11/03/2025]</p>
+    
+    <p>Chào mừng đến với Natek. Chúng tôi cam kết bảo vệ quyền riêng tư và thông tin cá nhân của bạn. Chính sách này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi sử dụng dịch vụ của chúng tôi.</p>
+    
+    <h2>1. Thông tin chúng tôi thu thập</h2>
+    <p>Chúng tôi có thể thu thập các loại thông tin sau:</p>
+    <ul>
+        <li><strong>Thông tin cá nhân:</strong> Họ tên, địa chỉ email, số điện thoại, địa chỉ liên hệ khi bạn đăng ký hoặc liên hệ với chúng tôi.</li>
+        <li><strong>Thông tin giao dịch:</strong> Chi tiết về các giao dịch mà bạn thực hiện thông qua dịch vụ của chúng tôi.</li>
+        <li><strong>Thông tin kỹ thuật:</strong> Địa chỉ IP, loại trình duyệt, thời gian truy cập và các trang bạn truy cập trên trang web của chúng tôi.</li>
+    </ul>
+    
+    <h2>2. Cách chúng tôi sử dụng thông tin</h2>
+    <p>Chúng tôi sử dụng thông tin thu thập được để:</p>
+    <ul>
+        <li>Cung cấp, duy trì và cải thiện dịch vụ của chúng tôi</li>
+        <li>Xử lý các giao dịch và gửi thông báo liên quan đến tài khoản của bạn</li>
+        <li>Phản hồi các yêu cầu, câu hỏi và mối quan tâm của bạn</li>
+        <li>Gửi thông tin cập nhật, tin tức và thông tin tiếp thị (nếu bạn đồng ý)</li>
+        <li>Phát hiện, ngăn chặn và giải quyết các vấn đề kỹ thuật hoặc bảo mật</li>
+    </ul>
+    
+    <h2>3. Chia sẻ thông tin</h2>
+    <p>Chúng tôi không bán, trao đổi hoặc chuyển giao thông tin cá nhân của bạn cho các bên thứ ba, trừ những trường hợp sau:</p>
+    <ul>
+        <li>Với các đối tác kinh doanh đáng tin cậy hỗ trợ chúng tôi cung cấp dịch vụ</li>
+        <li>Khi chúng tôi tin rằng việc tiết lộ là cần thiết để bảo vệ quyền lợi, tài sản hoặc an toàn của chúng tôi hoặc người khác</li>
+        <li>Để tuân thủ luật pháp, quy định hoặc yêu cầu pháp lý</li>
+    </ul>
+    
+    <h2>4. Cookies và công nghệ theo dõi</h2>
+    <p>Chúng tôi sử dụng cookies và các công nghệ tương tự để theo dõi hoạt động trên trang web của chúng tôi và lưu trữ thông tin nhất định. Cookies là các tệp nhỏ được lưu trên thiết bị của bạn. Bạn có thể hướng dẫn trình duyệt từ chối tất cả cookies hoặc thông báo khi cookie được gửi đi.</p>
+    
+    <h2>5. Bảo mật dữ liệu</h2>
+    <p>Chúng tôi thực hiện các biện pháp bảo mật hợp lý để bảo vệ thông tin cá nhân của bạn khỏi mất mát, truy cập trái phép, tiết lộ, thay đổi hoặc phá hủy. Tuy nhiên, không có phương thức truyền tải qua internet hoặc phương thức lưu trữ điện tử nào là an toàn 100%.</p>
+    
+    <h2>6. Quyền của bạn</h2>
+    <p>Bạn có các quyền sau liên quan đến dữ liệu cá nhân của mình:</p>
+    <ul>
+        <li>Quyền truy cập và nhận bản sao dữ liệu của bạn</li>
+        <li>Quyền yêu cầu sửa đổi hoặc cập nhật dữ liệu không chính xác</li>
+        <li>Quyền yêu cầu xóa dữ liệu trong một số trường hợp</li>
+        <li>Quyền hạn chế hoặc phản đối việc xử lý dữ liệu</li>
+        <li>Quyền rút lại sự đồng ý bất cứ lúc nào</li>
+    </ul>
+    
+    <h2>7. Thay đổi chính sách</h2>
+    <p>Chúng tôi có thể cập nhật chính sách quyền riêng tư này theo thời gian. Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào bằng cách đăng chính sách mới trên trang này và cập nhật ngày "Cập nhật lần cuối".</p>
+    
+   <div class="contact">
+    <h2>8. Liên hệ với chúng tôi</h2>
+    <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này, vui lòng liên hệ với chúng tôi:</p>
+    <p>
+        Công ty TNHH Natek<br>
+        <strong>Địa chỉ:</strong><br>
+        TP. Hà Nội: Tòa nhà 9 tầng, Km11, Quốc Lộ 21, TP. Hà Nội<br><br>
+        TP. Cần Thơ: Số CC-15, đường số 12, KDC công ty 8, KV2, phường Hưng Thạnh, Cái Răng, Cần Thơ<br><br>
+        <strong>Số điện thoại:</strong> 0899.551.228<br>
+        <strong>Email:</strong> info@techlabglobal.com.vn
+    </p>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

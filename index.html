@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechLAB Global cung cấp dịch vụ kiểm nghiệm và chứng nhận chất lượng hàng đầu, đảm bảo an toàn và chất lượng cho sản phẩm của bạn. Liên hệ ngay để biết thêm chi tiết.">
+    <title>Kiểm Nghiệm TechLAB Global - Dịch vụ Kiểm nghiệm & Chứng nhận</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YE334L4TV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4YE334L4TV');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16998232890"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-16998232890');
+    </script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRHPPTJ7');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: rotate(0); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(-4deg); }
+            20%, 40%, 60%, 80% { transform: rotate(4deg); }
+        }
+        
+        .shake-animation:hover .zalo-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        .shake-animation:hover .chat-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        /* Chat Widget Styles */
+        .chat-widget-container {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .chat-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .chat-button-zalo {
+            background-color: #0068ff;
+            color: white;
+        }
+        
+        .chat-button-zalo:hover {
+            background-color: #0055d4;
+        }
+        
+        .chat-button-messenger {
+            background-color: #0084ff;
+            color: white;
+        }
+        
+        .chat-button-messenger:hover {
+            background-color: #0066cc;
+        }
+        
+        .chat-button-phone {
+            background-color: #16a34a;
+            color: white;
+        }
+        
+        .chat-button-phone:hover {
+            background-color: #15803d;
+        }
+        
+        .chat-icon {
+            width: 1.8rem;
+            height: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .zalo-icon {
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pulse-effect {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .pulse-zalo {
+            background-color: rgba(0, 104, 255, 0.2);
+        }
+        
+        .pulse-messenger {
+            background-color: rgba(0, 132, 255, 0.2);
+        }
+        
+        .pulse-phone {
+            background-color: rgba(22, 163, 74, 0.2);
+        }
+        
+        .pulse-delay {
+            animation-delay: 1s;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="TechLAB Global logo" />
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#nang-luc">Năng lực</a></li>
+                    <li><a href="#dich-vu">Dịch vụ</a></li>
+                    <li><a href="#chung-nhan">Chứng nhận</a></li>
+                    <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="#lien-he">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Dịch vụ Kiểm nghiệm & Chứng nhận Chuyên nghiệp</h1>
+            <p>Đảm bảo chất lượng và an toàn cho sản phẩm của bạn - Hotline: <strong>0899.551.228</strong></p>
+            <a href="#lien-he" class="btn">Liên hệ ngay</a>
+        </div>
+    </section>
+
+    <section id="nang-luc" class="accreditation-highlight">
+        <div class="container">
+            <div class="accreditation-content">
+                <div class="accreditation-image-wrap">
+                    <img src="images/giay-17025.jpg" alt="Chứng nhận năng lực ISO IEC 17025 TechLAB Global" class="accreditation-image" />
+                </div>
+                <div class="accreditation-text">
+                    <h2>Năng lực phòng kiểm nghiệm được công nhận</h2>
+                    <p>Phòng kiểm nghiệm TechLAB Global được VACI công nhận theo tiêu chuẩn <strong>ISO/IEC 17025:2017</strong> (Mã số: <strong>VALAS 217</strong>) cho lĩnh vực thử nghiệm sinh học, hóa học.</p>
+                    <p>Đây là cơ sở pháp lý và năng lực kỹ thuật giúp chúng tôi triển khai dịch vụ kiểm nghiệm, đánh giá chất lượng và hỗ trợ hồ sơ chứng nhận cho các công ty sản xuất, kinh doanh thực phẩm và đồ uống.</p>
+                    <a href="images/giay-17025.jpg" class="btn" target="_blank">Xem chứng nhận năng lực</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dich-vu" class="services">
+        <div class="container">
+            <h2>Dịch vụ Kiểm nghiệm</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Kiểm nghiệm Thực phẩm</h3>
+                    <p>Kiểm tra an toàn và chất lượng thực phẩm theo tiêu chuẩn quốc tế</p>
+                    <a href="pages/kiem-nghiem-thuc-pham.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-pills"></i>
+                    <h3>Kiểm nghiệm Dược phẩm</h3>
+                    <p>Phân tích chất lượng dược phẩm theo quy chuẩn nghiêm ngặt</p>
+                    <a href="pages/kiem-nghiem-duoc-pham.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>Kiểm nghiệm Mỹ phẩm</h3>
+                    <p>Đánh giá an toàn và hiệu quả của sản phẩm mỹ phẩm</p>
+                    <a href="pages/kiem-nghiem-my-pham.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <h3>Kiểm nghiệm Thức ăn Chăn nuôi</h3>
+                    <p>Kiểm tra chất lượng thức ăn chăn nuôi đảm bảo dinh dưỡng và an toàn</p>
+                    <a href="pages/kiem-nghiem-thuc-an-chan-nuoi.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Kiểm nghiệm Dinh dưỡng</h3>
+                    <p>Phân tích thành phần dinh dưỡng trong thực phẩm và đồ uống</p>
+                    <a href="pages/kiem-nghiem-dinh-duong.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wine-bottle"></i>
+                    <h3>Kiểm nghiệm Nước sạch, Nước uống</h3>
+                    <p>Đánh giá chỉ tiêu hóa lý, vi sinh cho nước sạch, nước uống đóng chai, nước dùng trong sản xuất</p>
+                    <a href="pages/kiem-nghiem-nuoc-giai-khat.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cookie"></i>
+                    <h3>Kiểm nghiệm Bánh Trung thu, Bánh các loại</h3>
+                    <p>Kiểm tra chỉ tiêu an toàn thực phẩm, vi sinh và chất lượng cho bánh trung thu, bánh kẹo và các sản phẩm bánh khác</p>
+                    <a href="pages/kiem-nghiem-banh-keo.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <h3>Các dịch vụ Kiểm nghiệm khác</h3>
+                    <p>Cung cấp nhiều dịch vụ kiểm nghiệm chuyên biệt khác</p>
+                    <a href="pages/dich-vu-khac.html" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chung-nhan" class="certifications">
+        <div class="container">
+            <h2>Dịch vụ Chứng nhận</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Chứng nhận VietGAP</h3>
+                    <p>Chứng nhận thực hành sản xuất nông nghiệp tốt tại Việt Nam</p>
+                    <a href="pages/chung-nhan-vietgap.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Chứng nhận Organic</h3>
+                    <p>Chứng nhận sản phẩm hữu cơ theo tiêu chuẩn quốc tế</p>
+                    <a href="pages/chung-nhan-organic.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-moon"></i>
+                    <h3>Chứng nhận Halal</h3>
+                    <p>Chứng nhận sản phẩm phù hợp với quy định của đạo Hồi</p>
+                    <a href="pages/chung-nhan-halal.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Chứng nhận Global GAP</h3>
+                    <p>Chứng nhận thực hành nông nghiệp tốt theo tiêu chuẩn toàn cầu</p>
+                    <a href="pages/chung-nhan-global-gap.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Chứng nhận SMETA SEDEX</h3>
+                    <p>Kiểm toán thương mại có đạo đức về điều kiện lao động và môi trường</p>
+                    <a href="pages/chung-nhan-smeta-sedex.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Quan trắc Môi trường</h3>
+                    <p>Giám sát và đánh giá tác động môi trường của hoạt động sản xuất</p>
+                    <a href="pages/quan-trac-moi-truong.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-smog"></i>
+                    <h3>Kiểm nghiệm Khí thải</h3>
+                    <p>Đo lường và phân tích khí thải công nghiệp</p>
+                    <a href="pages/kiem-nghiem-khi-thai.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Chứng nhận HACCP</h3>
+                    <p>Hệ thống phân tích mối nguy và điểm kiểm soát tới hạn</p>
+                    <a href="pages/chung-nhan-haccp.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-award"></i>
+                    <h3>Chứng nhận ISO 22000</h3>
+                    <p>Hệ thống quản lý an toàn thực phẩm theo tiêu chuẩn quốc tế</p>
+                    <a href="pages/chung-nhan-iso-22000.html" class="btn">Xem chi tiết</a>
+                </div>
+                <div class="certification-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Tư vấn Môi trường</h3>
+                    <p>Cung cấp giải pháp quản lý môi trường toàn diện</p>
+                    <a href="pages/tu-van-moi-truong.html" class="btn">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gioi-thieu" class="about">
+        <div class="container">
+            <h2>Giới thiệu về TechLAB Global</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>TechLAB Global là đơn vị kiểm nghiệm và chứng nhận, đồng hành cùng doanh nghiệp trong việc kiểm soát chất lượng, hoàn thiện hồ sơ pháp lý và nâng cao năng lực cạnh tranh.</p>
+                    <p>Phòng kiểm nghiệm của chúng tôi đã được công nhận theo <strong>ISO/IEC 17025:2017</strong> (VACI - VALAS 217) cho lĩnh vực thử nghiệm sinh học, hóa học. Chứng nhận này thể hiện năng lực chuyên môn để TechLAB Global cung cấp dịch vụ cho các công ty, nhà sản xuất và đơn vị xuất khẩu.</p>
+                    <p>Với phương châm <strong>Tận tâm với khách hàng</strong>, chúng tôi cam kết kết quả chính xác, quy trình minh bạch và giải pháp phù hợp theo từng ngành hàng.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/natek-office.jpg" alt="Văn phòng TechLAB Global" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lien-he" class="contact">
+        <div class="container">
+            <h2>Liên hệ với chúng tôi</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-volume"></i>
+                        <div>
+                            <h4>Hotline tư vấn nhanh</h4>
+                            <p>0899.551.228</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Trụ sở Hà Nội</h4>
+                            <p>Tòa nhà 9 tầng, Km11, Quốc Lộ 21, TP. Hà Nội</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Văn phòng Cần Thơ</h4>
+                            <p>Số CC-15, đường số 12, KDC công ty 8, KV2, phường Hưng Thạnh, Cái Răng, Cần Thơ</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Điện thoại: 0899.551.228</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: info@techlabglobal.com.vn</p>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formsubmit.co/cc4dea94548699c59cc882053a7052fe" method="POST">
+                    <!-- Honeypot field to prevent spam -->
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <!-- Disable captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!-- Redirect after submission -->
+                    <input type="hidden" name="_next" value="https://kiemnghiem.natekvn.com/thank-you.html">
+                    
+                    <!-- Email template subject -->
+                    <input type="hidden" name="_subject" value="Yêu cầu tư vấn từ Website TechLAB Global">
+                    
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" placeholder="Họ và tên" required />
+                            </div>
+                            <div class="col">
+                                <input type="email" name="email" placeholder="Email" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Số điện thoại" />
+                    </div>
+                    <div class="form-group">
+                        <select name="service">
+                            <option value="" disabled selected>Chọn dịch vụ</option>
+                            <option value="kiem-nghiem">Kiểm nghiệm</option>
+                            <option value="chung-nhan">Chứng nhận</option>
+                            <option value="tu-van">Tư vấn</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Nội dung" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Gửi yêu cầu</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="TechLAB Global logo" class="footer-logo-img" />
+                    <p>Chuyên gia kiểm nghiệm và chứng nhận</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#dich-vu">Dịch vụ</a></li>
+                        <li><a href="#chung-nhan">Chứng nhận</a></li>
+                        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="#lien-he">Liên hệ</a></li>
+                        <li><a href="https://kiemnghiem.natekvn.com/privacy-policy.html">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Dịch vụ</h4>
+                    <ul>
+                        <li><a href="pages/kiem-nghiem-thuc-pham.html">Kiểm nghiệm Thực phẩm</a></li>
+                        <li><a href="pages/kiem-nghiem-duoc-pham.html">Kiểm nghiệm Dược phẩm</a></li>
+                        <li><a href="pages/chung-nhan-vietgap.html">Chứng nhận VietGAP</a></li>
+                        <li><a href="pages/chung-nhan-haccp.html">Chứng nhận HACCP</a></li>
+                        <li><a href="pages/chung-nhan-iso-22000.html">Chứng nhận ISO 22000</a></li>
+                        <li><a href="pages/quan-trac-moi-truong.html">Quan trắc Môi trường</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Thông tin liên hệ</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Hà Nội: Tòa nhà 9 tầng, Km11, Quốc Lộ 21</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cần Thơ: Số CC-15, đường số 12, KDC công ty 8, KV2, P. Hưng Thạnh</p>
+                    <p><i class="fas fa-phone"></i> 0899.551.228</p>
+                    <p><i class="fas fa-envelope"></i> info@techlabglobal.com.vn</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61555675322896&locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 TechLAB Global. All rights reserved. Design by Hoàng Trọng Định.</p>
+            </div>
+            
+        </div>
+    </footer>
+
+    <!-- Chat Widget Container -->
+    <div class="chat-widget-container">
+        <!-- Nút Chat Zalo -->
+        <div class="shake-animation">
+            <a href="https://zalo.me/1316484259137070690" target="_blank" 
+               class="chat-button chat-button-zalo">
+                <span class="sr-only">Chat với chúng tôi qua Zalo</span>
+                <div class="pulse-effect pulse-zalo pulse-ring"></div>
+                <img src="https://kiemnghiem.natekvn.com/images/Logo-zalo.svg" alt="Zalo" class="zalo-icon">
+            </a>
+        </div>
+        <!-- Nút Chat Messenger -->
+        <div class="shake-animation">
+            <a href="https://m.me/61555675322896" target="_blank" 
+               class="chat-button chat-button-messenger">
+                <span class="sr-only">Chat với chúng tôi qua Messenger</span>
+                <div class="pulse-effect pulse-messenger pulse-ring"></div>
+                <!-- Biểu tượng Messenger -->
+                <svg class="chat-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2.042C7.483 2.042 2.042 7.058 2.042 13.417C2.042 16.633 3.375 19.513 5.558 21.558V25.375L9.292 23.208C10.767 23.758 12.35 24.083 14 24.083C20.517 24.083 25.958 19.067 25.958 12.708C25.958 6.35 20.517 2.042 14 2.042ZM15.3 16.308L12.6 13.417L7.483 16.308L13.067 10.458L15.767 13.35L20.883 10.458L15.3 16.308Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="shake-animation">
+            <a href="tel:0899551228" 
+               class="chat-button chat-button-phone">
+                <span class="sr-only">Gọi cho chúng tôi</span>
+                <div class="pulse-effect pulse-phone pulse-ring"></div>
+                <!-- Biểu tượng điện thoại -->
+                <svg class="chat-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8333 20.7294C21.7225 20.9845 21.5601 21.2136 21.3582 21.4019C21.1563 21.5901 20.9194 21.7335 20.6615 21.8227C20.4036 21.9119 20.13 21.9451 19.86 21.92C16.7473 21.5856 13.7751 20.5341 11.19 18.85C8.77383 17.3147 6.72534 15.2662 5.19 12.85C3.49998 10.2412 2.44824 7.25059 2.12 4.11997C2.09501 3.85044 2.12788 3.57701 2.21649 3.31917C2.30511 3.06134 2.44756 2.82436 2.63476 2.62218C2.82196 2.42 3.05057 2.25718 3.30519 2.14563C3.55981 2.03408 3.83514 1.97618 4.11 1.97997H7.11C7.59531 1.97538 8.06579 2.15271 8.43376 2.47672C8.80173 2.80073 9.04208 3.24526 9.11 3.71997C9.23651 4.68003 9.47149 5.61861 9.81 6.51997C9.9445 6.8879 9.97372 7.29408 9.89259 7.68563C9.81146 8.07718 9.62273 8.43973 9.35 8.71997L8.09 9.97997C9.51356 12.4711 11.5289 14.4864 14.02 15.91L15.28 14.65C15.5603 14.3773 15.9228 14.1885 16.3144 14.1074C16.7059 14.0263 17.1121 14.0555 17.48 14.19C18.3814 14.5285 19.32 14.7635 20.28 14.89C20.7612 14.9585 21.2118 15.2032 21.5358 15.5775C21.8598 15.9518 22.0334 16.4296 22 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- End Chat Widget Container -->
+
+    <script src="js/main.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TechLAB Global",
+      "url": "https://natekvn.com",
+      "logo": "https://natekvn.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+84-243-368-5555",
+        "contactType": "Customer Service",
+        "areaServed": "VN",
+        "availableLanguage": "Vietnamese"
+      }
+    }
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html> 

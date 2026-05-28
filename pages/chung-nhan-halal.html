@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứng nhận Halal - TechLAB Global</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YE334L4TV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4YE334L4TV');
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16998232890"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16998232890');
+</script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" /><!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRHPPTJ7');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: rotate(0); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(-4deg); }
+            20%, 40%, 60%, 80% { transform: rotate(4deg); }
+        }
+        
+        .shake-animation:hover .zalo-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        .shake-animation:hover .chat-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        /* Chat Widget Styles */
+        .chat-widget-container {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .chat-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .chat-button-zalo {
+            background-color: #0068ff;
+            color: white;
+        }
+        
+        .chat-button-zalo:hover {
+            background-color: #0055d4;
+        }
+        
+        .chat-button-messenger {
+            background-color: #0084ff;
+            color: white;
+        }
+        
+        .chat-button-messenger:hover {
+            background-color: #0066cc;
+        }
+        
+        .chat-button-phone {
+            background-color: #16a34a;
+            color: white;
+        }
+        
+        .chat-button-phone:hover {
+            background-color: #15803d;
+        }
+        
+        .chat-icon {
+            width: 1.8rem;
+            height: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .zalo-icon {
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pulse-effect {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .pulse-zalo {
+            background-color: rgba(0, 104, 255, 0.2);
+        }
+        
+        .pulse-messenger {
+            background-color: rgba(0, 132, 255, 0.2);
+        }
+        
+        .pulse-phone {
+            background-color: rgba(22, 163, 74, 0.2);
+        }
+        
+        .pulse-delay {
+            animation-delay: 1s;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                   <img src="../images/logo.png" alt="TechLAB Global logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../index.html#dich-vu">Dịch vụ</a></li>
+                    <li><a href="../index.html#chung-nhan">Chứng nhận</a></li>
+                    <li><a href="../index.html#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="../index.html#lien-he">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <h1>Chứng nhận Halal</h1>
+            <p>Chứng nhận sản phẩm phù hợp với quy định của đạo Hồi</p>
+        </div>
+    </section>
+
+    <section class="service-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Giới thiệu về Chứng nhận Halal</h2>
+                    <p>Chứng nhận Halal là quá trình đánh giá và xác nhận sản phẩm được sản xuất theo quy định của đạo Hồi, đảm bảo sản phẩm không chứa các thành phần bị cấm (Haram) và tuân thủ các nguyên tắc của luật Shariah. Halal không chỉ liên quan đến thành phần sản phẩm mà còn bao gồm cả quá trình sản xuất, vận chuyển, lưu trữ và phân phối.</p>
+                    <p>Tại TechLAB Global, chúng tôi hợp tác với các tổ chức chứng nhận Halal uy tín để cung cấp dịch vụ tư vấn và hỗ trợ doanh nghiệp trong quá trình đăng ký, chuẩn bị hồ sơ và đánh giá chứng nhận Halal. Chúng tôi giúp doanh nghiệp tuân thủ các yêu cầu của thị trường Hồi giáo và mở rộng cơ hội kinh doanh tại các quốc gia có đông người theo đạo Hồi.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="../images/halal-certificate.jpg" alt="Chứng nhận Halal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-features">
+        <div class="container">
+            <h2>Lợi ích của Chứng nhận Halal</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>Mở rộng Thị trường</h3>
+                    <p>Tiếp cận thị trường 1,8 tỷ người tiêu dùng theo đạo Hồi trên toàn thế giới.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Tăng Giá trị Sản phẩm</h3>
+                    <p>Sản phẩm được chứng nhận Halal có giá trị cao hơn và được tin tưởng bởi người tiêu dùng.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Đảm bảo Chất lượng</h3>
+                    <p>Quá trình chứng nhận Halal cũng bao gồm đánh giá vệ sinh, an toàn thực phẩm và chất lượng sản phẩm.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Tăng Lòng tin Khách hàng</h3>
+                    <p>Chứng nhận Halal tạo niềm tin cho người tiêu dùng Muslim và cả những người không theo đạo Hồi.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Thuận lợi trong Xuất khẩu</h3>
+                    <p>Dễ dàng xuất khẩu sản phẩm vào các quốc gia Hồi giáo và đáp ứng yêu cầu nhập khẩu của họ.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Lợi thế Cạnh tranh</h3>
+                    <p>Tạo lợi thế cạnh tranh so với các đối thủ không có chứng nhận Halal trên thị trường.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-process">
+        <div class="container">
+            <h2>Quy trình Cấp Chứng nhận Halal</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Tư vấn và Đăng ký</h3>
+                        <p>Tư vấn yêu cầu Halal và hỗ trợ doanh nghiệp hoàn thiện hồ sơ đăng ký.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Đào tạo Nhân sự</h3>
+                        <p>Đào tạo nhân sự về các yêu cầu Halal và thiết lập hệ thống quản lý Halal nội bộ.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Chuẩn bị Tài liệu</h3>
+                        <p>Chuẩn bị tài liệu chi tiết về quy trình sản xuất, thành phần nguyên liệu và hệ thống quản lý.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Đánh giá Sơ bộ</h3>
+                        <p>Tiến hành đánh giá sơ bộ để xác định mức độ sẵn sàng và các điểm cần cải thiện.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Đánh giá Chính thức</h3>
+                        <p>Đoàn đánh giá Halal tiến hành đánh giá toàn diện tại cơ sở sản xuất.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Lấy mẫu và Phân tích</h3>
+                        <p>Lấy mẫu sản phẩm để phân tích và xác nhận không có thành phần Haram.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Cấp Chứng nhận</h3>
+                        <p>Sau khi đáp ứng đầy đủ các yêu cầu, doanh nghiệp sẽ được cấp chứng nhận Halal.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h3>Giám sát Định kỳ</h3>
+                        <p>Thực hiện đánh giá giám sát định kỳ để đảm bảo duy trì tuân thủ yêu cầu Halal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-benefits">
+        <div class="container">
+            <h2>Tại sao chọn dịch vụ Chứng nhận Halal của TechLAB Global?</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Đối tác Uy tín</h3>
+                        <p>Hợp tác với các tổ chức chứng nhận Halal uy tín, được công nhận bởi nhiều quốc gia Hồi giáo.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Chuyên gia Kinh nghiệm</h3>
+                        <p>Đội ngũ chuyên gia có hiểu biết sâu sắc về yêu cầu Halal và quy trình đánh giá.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Hỗ trợ Toàn diện</h3>
+                        <p>Cung cấp hỗ trợ từ giai đoạn tư vấn ban đầu đến quá trình duy trì chứng nhận.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Tiết kiệm Thời gian và Chi phí</h3>
+                        <p>Tối ưu hóa quy trình đánh giá, giúp tiết kiệm thời gian và chi phí cho doanh nghiệp.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Tư vấn Thị trường</h3>
+                        <p>Cung cấp thông tin và tư vấn về thị trường Halal, giúp doanh nghiệp xây dựng chiến lược tiếp cận hiệu quả.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-clients">
+        <div class="container">
+            <h2>Đối tượng áp dụng Chứng nhận Halal</h2>
+            <div class="clients-grid">
+                <div class="client-logo">Thực phẩm & Đồ uống</div>
+                <div class="client-logo">Mỹ phẩm & Chăm sóc cá nhân</div>
+                <div class="client-logo">Dược phẩm</div>
+                <div class="client-logo">Nhà hàng & Dịch vụ Ăn uống</div>
+                <div class="client-logo">Logistics & Vận chuyển</div>
+                <div class="client-logo">Du lịch & Khách sạn</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-cta">
+        <div class="container">
+            <h2>Đăng ký Chứng nhận Halal</h2>
+            <p>Liên hệ với chúng tôi ngay hôm nay để được tư vấn và hỗ trợ đăng ký Chứng nhận Halal</p>
+            <a href="../index.html#lien-he" class="btn">Liên hệ ngay</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TechLAB Global logo" class="footer-logo-img">
+                    <p>Chuyên gia kiểm nghiệm và chứng nhận</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="../index.html">Trang chủ</a></li>
+                        <li><a href="../index.html#dich-vu">Dịch vụ</a></li>
+                        <li><a href="../index.html#chung-nhan">Chứng nhận</a></li>
+                        <li><a href="../index.html#gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="../index.html#lien-he">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Dịch vụ</h4>
+                    <ul>
+                        <li><a href="kiem-nghiem-thuc-pham.html">Kiểm nghiệm Thực phẩm</a></li>
+                        <li><a href="kiem-nghiem-duoc-pham.html">Kiểm nghiệm Dược phẩm</a></li>
+                        <li><a href="chung-nhan-vietgap.html">Chứng nhận VietGAP</a></li>
+                        <li><a href="quan-trac-moi-truong.html">Quan trắc Môi trường</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Thông tin liên hệ</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Hà Nội: Tòa nhà 9 tầng, Km11, Quốc Lộ 21</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cần Thơ: Số CC-15, đường số 12, KDC công ty 8, KV2, P. Hưng Thạnh</p>
+                    <p><i class="fas fa-phone"></i> 0899.551.228</p>
+                    <p><i class="fas fa-envelope"></i> info@techlabglobal.com.vn</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61555675322896&locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2020 Công ty Cổ phần Khoa học và Công nghệ TechLAB Global</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <!-- Chat Widget Container -->
+    <div class="chat-widget-container">
+        <!-- Nút Chat Zalo -->
+        <div class="shake-animation">
+            <a href="https://zalo.me/1316484259137070690" target="_blank" 
+               class="chat-button chat-button-zalo">
+                <span class="sr-only">Chat với chúng tôi qua Zalo</span>
+                <div class="pulse-effect pulse-zalo pulse-ring"></div>
+                <img src="https://kiemnghiem.natekvn.com/images/Logo-zalo.svg" alt="Zalo" class="zalo-icon">
+            </a>
+        </div>
+        <!-- Nút Chat Messenger -->
+        <div class="shake-animation">
+            <a href="https://m.me/61555675322896" target="_blank" 
+               class="chat-button chat-button-messenger">
+                <span class="sr-only">Chat với chúng tôi qua Messenger</span>
+                <div class="pulse-effect pulse-messenger pulse-ring"></div>
+                <!-- Biểu tượng Messenger -->
+                <svg class="chat-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2.042C7.483 2.042 2.042 7.058 2.042 13.417C2.042 16.633 3.375 19.513 5.558 21.558V25.375L9.292 23.208C10.767 23.758 12.35 24.083 14 24.083C20.517 24.083 25.958 19.067 25.958 12.708C25.958 6.35 20.517 2.042 14 2.042ZM15.3 16.308L12.6 13.417L7.483 16.308L13.067 10.458L15.767 13.35L20.883 10.458L15.3 16.308Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="shake-animation">
+            <a href="tel:0899551228" 
+               class="chat-button chat-button-phone">
+                <span class="sr-only">Gọi cho chúng tôi</span>
+                <div class="pulse-effect pulse-phone pulse-ring"></div>
+                <!-- Biểu tượng điện thoại -->
+                <svg class="chat-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8333 20.7294C21.7225 20.9845 21.5601 21.2136 21.3582 21.4019C21.1563 21.5901 20.9194 21.7335 20.6615 21.8227C20.4036 21.9119 20.13 21.9451 19.86 21.92C16.7473 21.5856 13.7751 20.5341 11.19 18.85C8.77383 17.3147 6.72534 15.2662 5.19 12.85C3.49998 10.2412 2.44824 7.25059 2.12 4.11997C2.09501 3.85044 2.12788 3.57701 2.21649 3.31917C2.30511 3.06134 2.44756 2.82436 2.63476 2.62218C2.82196 2.42 3.05057 2.25718 3.30519 2.14563C3.55981 2.03408 3.83514 1.97618 4.11 1.97997H7.11C7.59531 1.97538 8.06579 2.15271 8.43376 2.47672C8.80173 2.80073 9.04208 3.24526 9.11 3.71997C9.23651 4.68003 9.47149 5.61861 9.81 6.51997C9.9445 6.8879 9.97372 7.29408 9.89259 7.68563C9.81146 8.07718 9.62273 8.43973 9.35 8.71997L8.09 9.97997C9.51356 12.4711 11.5289 14.4864 14.02 15.91L15.28 14.65C15.5603 14.3773 15.9228 14.1885 16.3144 14.1074C16.7059 14.0263 17.1121 14.0555 17.48 14.19C18.3814 14.5285 19.32 14.7635 20.28 14.89C20.7612 14.9585 21.2118 15.2032 21.5358 15.5775C21.8598 15.9518 22.0334 16.4296 22 16.92Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- End Chat Widget Container -->
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html> 

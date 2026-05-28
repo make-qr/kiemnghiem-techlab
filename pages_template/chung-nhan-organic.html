@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chứng nhận Organic - TechLAB Global</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service-page.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YE334L4TV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4YE334L4TV');
+    </script>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" /><!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRHPPTJ7');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.4;
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: rotate(0); }
+            10%, 30%, 50%, 70%, 90% { transform: rotate(-4deg); }
+            20%, 40%, 60%, 80% { transform: rotate(4deg); }
+        }
+        
+        .shake-animation:hover .zalo-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        .shake-animation:hover .chat-icon {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        /* Chat Widget Styles */
+        .chat-widget-container {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 50;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .chat-button {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        
+        .chat-button-zalo {
+            background-color: #0068ff;
+            color: white;
+        }
+        
+        .chat-button-zalo:hover {
+            background-color: #0055d4;
+        }
+        
+        .chat-button-messenger {
+            background-color: #0084ff;
+            color: white;
+        }
+        
+        .chat-button-messenger:hover {
+            background-color: #0066cc;
+        }
+        
+        .chat-button-phone {
+            background-color: #16a34a;
+            color: white;
+        }
+        
+        .chat-button-phone:hover {
+            background-color: #15803d;
+        }
+        
+        .chat-icon {
+            width: 1.8rem;
+            height: 1.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .zalo-icon {
+            width: 2rem;
+            height: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pulse-effect {
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .pulse-zalo {
+            background-color: rgba(0, 104, 255, 0.2);
+        }
+        
+        .pulse-messenger {
+            background-color: rgba(0, 132, 255, 0.2);
+        }
+        
+        .pulse-phone {
+            background-color: rgba(22, 163, 74, 0.2);
+        }
+        
+        .pulse-delay {
+            animation-delay: 1s;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                   <img src="../images/logo.png" alt="TechLAB Global logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../index.html#dich-vu">Dịch vụ</a></li>
+                    <li><a href="../index.html#chung-nhan">Chứng nhận</a></li>
+                    <li><a href="../index.html#gioi-thieu">Giới thiệu</a></li>
+                    <li><a href="../index.html#lien-he">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <h1>Chứng nhận Organic</h1>
+            <p>Chứng nhận sản phẩm hữu cơ theo tiêu chuẩn quốc tế</p>
+        </div>
+    </section>
+
+    <section class="service-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Giới thiệu về Chứng nhận Organic</h2>
+                    <p>Chứng nhận hữu cơ (Organic) là quá trình đánh giá và xác nhận sản phẩm được sản xuất theo phương pháp hữu cơ, không sử dụng hóa chất tổng hợp, phân bón hóa học, thuốc trừ sâu, hormone tăng trưởng, biến đổi gen và các chất phụ gia nhân tạo.</p>
+                    <p>Tại TechLAB Global, chúng tôi cung cấp dịch vụ chứng nhận hữu cơ theo các tiêu chuẩn quốc tế như USDA Organic, EU Organic, JAS, IFOAM và tiêu chuẩn hữu cơ Việt Nam (TCVN 11041-1:2017). Chúng tôi hỗ trợ doanh nghiệp trong toàn bộ quá trình từ tư vấn, đánh giá đến cấp chứng nhận, giúp nâng cao giá trị sản phẩm và khả năng cạnh tranh trên thị trường.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="../images/organic-certificate.jpg" alt="Chứng nhận Organic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-features">
+        <div class="container">
+            <h2>Lợi ích của Chứng nhận Organic</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Bảo vệ môi trường</h3>
+                    <p>Phương pháp canh tác hữu cơ giúp bảo vệ đất, nước và đa dạng sinh học.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Sản phẩm an toàn</h3>
+                    <p>Sản phẩm hữu cơ không chứa dư lượng hóa chất, thuốc trừ sâu và hormone tăng trưởng.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tag"></i>
+                    <h3>Giá trị cao hơn</h3>
+                    <p>Sản phẩm được chứng nhận hữu cơ có giá trị cao hơn và được người tiêu dùng tin tưởng.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Thị trường rộng mở</h3>
+                    <p>Mở rộng cơ hội tiếp cận thị trường quốc tế và đáp ứng nhu cầu ngày càng tăng về sản phẩm hữu cơ.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Phúc lợi xã hội</h3>
+                    <p>Cải thiện điều kiện làm việc và sức khỏe cho người sản xuất và cộng đồng địa phương.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Minh bạch</h3>
+                    <p>Hệ thống truy xuất nguồn gốc rõ ràng từ sản xuất đến người tiêu dùng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-process">
+        <div class="container">
+            <h2>Quy trình Cấp Chứng nhận Organic</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Đăng ký và Tư vấn</h3>
+                        <p>Tư vấn về tiêu chuẩn hữu cơ phù hợp và hỗ trợ hoàn thiện hồ sơ đăng ký.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Chuyển đổi và Đào tạo</h3>
+                        <p>Hỗ trợ trong quá trình chuyển đổi từ canh tác thông thường sang canh tác hữu cơ và đào tạo nhân sự.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Kiểm tra Nội bộ</h3>
+                        <p>Thực hiện kiểm tra nội bộ để đánh giá mức độ tuân thủ tiêu chuẩn hữu cơ.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Đánh giá Chứng nhận</h3>
+                        <p>Tiến hành đánh giá chính thức tại cơ sở sản xuất bởi đoàn đánh giá độc lập.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Lấy mẫu và Phân tích</h3>
+                        <p>Lấy mẫu đất, nước, sản phẩm để phân tích và đảm bảo không có dư lượng hóa chất.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Cấp Chứng nhận</h3>
+                        <p>Sau khi đáp ứng đầy đủ các yêu cầu, cơ sở sẽ được cấp chứng nhận hữu cơ.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Giám sát Định kỳ</h3>
+                        <p>Thực hiện đánh giá giám sát định kỳ hàng năm để duy trì hiệu lực của chứng nhận.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-benefits">
+        <div class="container">
+            <h2>Tại sao chọn dịch vụ Chứng nhận Organic của TechLAB Global?</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Kinh nghiệm và Chuyên môn</h3>
+                        <p>Đội ngũ chuyên gia có nhiều năm kinh nghiệm trong lĩnh vực chứng nhận hữu cơ.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Công nhận Quốc tế</h3>
+                        <p>Chứng nhận được công nhận bởi các tổ chức quốc tế và được chấp nhận tại nhiều thị trường.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Hỗ trợ Toàn diện</h3>
+                        <p>Cung cấp hỗ trợ từ giai đoạn đăng ký đến quá trình duy trì chứng nhận.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Quy trình Minh bạch</h3>
+                        <p>Quy trình đánh giá rõ ràng, minh bạch và tuân thủ nghiêm ngặt các tiêu chuẩn quốc tế.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <h3>Chi phí Cạnh tranh</h3>
+                        <p>Cung cấp dịch vụ chuyên nghiệp với mức chi phí hợp lý và cạnh tranh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-clients">
+        <div class="container">
+            <h2>Đối tượng áp dụng Chứng nhận Organic</h2>
+            <div class="clients-grid">
+                <div class="client-logo">Nông trại hữu cơ</div>
+                <div class="client-logo">Trồng trọt</div>
+                <div class="client-logo">Chăn nuôi</div>
+                <div class="client-logo">Thủy sản</div>
+                <div class="client-logo">Chế biến thực phẩm</div>
+                <div class="client-logo">Sản xuất đồ uống</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-cta">
+        <div class="container">
+            <h2>Đăng ký Chứng nhận Organic</h2>
+            <p>Liên hệ với chúng tôi ngay hôm nay để được tư vấn và hỗ trợ đăng ký Chứng nhận Organic</p>
+            <a href="../index.html#lien-he" class="btn">Liên hệ ngay</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="TechLAB Global logo" class="footer-logo-img">
+                    <p>Chuyên gia kiểm nghiệm và chứng nhận</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="../index.html">Trang chủ</a></li>
+                        <li><a href="../index.html#dich-vu">Dịch vụ</a></li>
+                        <li><a href="../index.html#chung-nhan">Chứng nhận</a></li>
+                        <li><a href="../index.html#gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="../index.html#lien-he">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Dịch vụ</h4>
+                    <ul>
+                        <li><a href="kiem-nghiem-thuc-pham.html">Kiểm nghiệm Thực phẩm</a></li>
+                        <li><a href="kiem-nghiem-duoc-pham.html">Kiểm nghiệm Dược phẩm</a></li>
+                        <li><a href="chung-nhan-vietgap.html">Chứng nhận VietGAP</a></li>
+                        <li><a href="quan-trac-moi-truong.html">Quan trắc Môi trường</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Thông tin liên hệ</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Hà Nội: Tòa nhà 9 tầng, Km11, Quốc Lộ 21</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cần Thơ: Số CC-15, đường số 12, KDC công ty 8, KV2, P. Hưng Thạnh</p>
+                    <p><i class="fas fa-phone"></i> 0899.551.228</p>
+                    <p><i class="fas fa-envelope"></i> info@techlabglobal.com.vn</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61555675322896&locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2020 Công ty Cổ phần Khoa học và Công nghệ TechLAB Global</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html> 

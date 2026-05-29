@@ -315,6 +315,143 @@ nav ul li a:hover:before {
     color: var(--white);
 }
 
+.service-card-highlight {
+    border: 2px solid var(--primary-color);
+    position: relative;
+}
+
+.service-card-highlight .card-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* Featured priority services */
+.featured-services {
+    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--white) 100%);
+    padding: 70px 0;
+}
+
+.featured-services-lead {
+    text-align: center;
+    max-width: 760px;
+    margin: -30px auto 40px;
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+.featured-services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.featured-service-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 32px 28px;
+    box-shadow: var(--box-shadow);
+    border-top: 4px solid var(--primary-color);
+}
+
+.featured-service-card i {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.featured-service-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.featured-service-card h3:after {
+    display: none;
+}
+
+.featured-service-card > p {
+    color: var(--text-light);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.service-badge {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.service-badge-water {
+    background-color: var(--primary-color);
+}
+
+.featured-service-points {
+    text-align: left;
+    margin-bottom: 22px;
+    padding-left: 18px;
+}
+
+.featured-service-points li {
+    list-style: disc;
+    color: var(--text-color);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.featured-service-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn-hotline {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+}
+
+.btn-hotline:hover {
+    background-color: #c41820;
+    color: var(--white);
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .featured-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-service-actions {
+        flex-direction: column;
+    }
+
+    .featured-service-actions .btn {
+        width: 100%;
+    }
+}
+
 /* Certifications Section */
 .certifications {
     background-color: var(--white);

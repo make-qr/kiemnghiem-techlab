@@ -1,0 +1,163 @@
+/* Conversion: sticky CTA + quick quote form */
+.sticky-cta-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: var(--white);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);
+    padding: 10px 12px;
+    gap: 10px;
+}
+
+.sticky-cta-bar a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.sticky-cta-call {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+.sticky-cta-call:hover {
+    background-color: #c41820;
+    color: var(--white);
+}
+
+.sticky-cta-zalo {
+    background-color: #0068ff;
+    color: var(--white);
+}
+
+.sticky-cta-zalo:hover {
+    background-color: #0055d4;
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .sticky-cta-bar {
+        display: flex;
+    }
+
+    body.has-sticky-cta {
+        padding-bottom: 72px;
+    }
+
+    .chat-widget-container {
+        bottom: 5.5rem;
+    }
+}
+
+.hero-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.hero .btn-hero-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 12px 28px;
+    font-size: 1.05rem;
+}
+
+.hero .btn-hero-primary:hover {
+    background-color: #c41820;
+    color: var(--white);
+}
+
+.hero .btn-hero-secondary {
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 12px 28px;
+}
+
+.hero .btn-hero-secondary:hover {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.quote-form-section {
+    background-color: var(--light-gray);
+    padding: 50px 0;
+}
+
+.quote-form-box {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 32px 28px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    border-top: 4px solid var(--primary-color);
+}
+
+.quote-form-box h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.quote-form-box h2:after {
+    display: none;
+}
+
+.quote-form-lead {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 24px;
+    font-size: 0.95rem;
+}
+
+.quote-form .form-group {
+    margin-bottom: 14px;
+}
+
+.quote-form .btn-submit-quote {
+    width: 100%;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 14px;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.quote-form .btn-submit-quote:hover {
+    background-color: #c41820;
+}
+
+.quote-form-note {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 12px;
+}
+
+.season-banner {
+    background: linear-gradient(90deg, var(--primary-dark), var(--primary-color));
+    color: var(--white);
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+}
+
+.season-banner strong {
+    color: #ffe082;
+}

@@ -7,6 +7,7 @@
     <title>Kiểm Nghiệm TechLAB Global - Dịch vụ Kiểm nghiệm & Chứng nhận</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/conversion.css">
+    <link rel="stylesheet" href="css/service-page.css">
     <link rel="canonical" href="https://kiemnghiem.techlabglobal.com.vn/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google tag (gtag.js) -->
@@ -36,147 +37,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-MRHPPTJ7');</script>
     <!-- End Google Tag Manager -->
-    <style>
-        @keyframes pulse-ring {
-            0% {
-                transform: scale(0.95);
-                opacity: 0.8;
-            }
-            50% {
-                transform: scale(1.2);
-                opacity: 0.4;
-            }
-            100% {
-                transform: scale(0.95);
-                opacity: 0.8;
-            }
-        }
-        
-        .pulse-ring {
-            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-        }
-        
-        @keyframes shake {
-            0%, 100% { transform: rotate(0); }
-            10%, 30%, 50%, 70%, 90% { transform: rotate(-4deg); }
-            20%, 40%, 60%, 80% { transform: rotate(4deg); }
-        }
-        
-        .shake-animation:hover .zalo-icon {
-            animation: shake 0.5s ease-in-out;
-        }
-        
-        .shake-animation:hover .chat-icon {
-            animation: shake 0.5s ease-in-out;
-        }
-        
-        /* Chat Widget Styles */
-        .chat-widget-container {
-            position: fixed;
-            bottom: 1.5rem;
-            right: 1.5rem;
-            z-index: 50;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .chat-button {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 500;
-            border-radius: 50%;
-            width: 3.5rem;
-            height: 3.5rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-            text-decoration: none;
-            overflow: hidden;
-        }
-        
-        .chat-button:hover {
-            transform: scale(1.1);
-        }
-        
-        .chat-button-zalo {
-            background-color: #0068ff;
-            color: white;
-        }
-        
-        .chat-button-zalo:hover {
-            background-color: #0055d4;
-        }
-        
-        .chat-button-messenger {
-            background-color: #0084ff;
-            color: white;
-        }
-        
-        .chat-button-messenger:hover {
-            background-color: #0066cc;
-        }
-        
-        .chat-button-phone {
-            background-color: #16a34a;
-            color: white;
-        }
-        
-        .chat-button-phone:hover {
-            background-color: #15803d;
-        }
-        
-        .chat-icon {
-            width: 1.8rem;
-            height: 1.8rem;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .zalo-icon {
-            width: 2rem;
-            height: 2rem;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .pulse-effect {
-            position: absolute;
-            inset: 0;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        .pulse-zalo {
-            background-color: rgba(0, 104, 255, 0.2);
-        }
-        
-        .pulse-messenger {
-            background-color: rgba(0, 132, 255, 0.2);
-        }
-        
-        .pulse-phone {
-            background-color: rgba(22, 163, 74, 0.2);
-        }
-        
-        .pulse-delay {
-            animation-delay: 1s;
-        }
-        
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -189,14 +49,17 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="#nang-luc">Năng lực</a></li>
                     <li><a href="#dich-vu-noi-bat">Ưu tiên</a></li>
+                    <li><a href="#bao-gia">Báo giá</a></li>
                     <li><a href="#dich-vu">Dịch vụ</a></li>
                     <li><a href="#chung-nhan">Chứng nhận</a></li>
-                    <li><a href="#gioi-thieu">Giới thiệu</a></li>
                     <li><a href="#lien-he">Liên hệ</a></li>
                 </ul>
             </nav>
+            <div class="header-actions">
+                <a href="tel:0899551228" class="header-call-btn" aria-label="Gọi 0899.551.228"><i class="fas fa-phone"></i></a>
+                <button type="button" class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            </div>
         </div>
     </header>
 
@@ -206,27 +69,12 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Dịch vụ Kiểm nghiệm & Chứng nhận Chuyên nghiệp</h1>
-            <p>Phòng thử nghiệm ISO/IEC 17025 — báo cáo phục vụ công bố sản phẩm và kiểm soát chất lượng</p>
+            <h1>Kiểm nghiệm Bánh Trung thu &amp; Nước uống — ISO/IEC 17025</h1>
+            <p>Báo giá trong ngày · Hỗ trợ hồ sơ công bố · Nhận mẫu Hà Nội &amp; Cần Thơ</p>
             <div class="hero-cta-group">
                 <a href="tel:0899551228" class="btn btn-hero-primary"><i class="fas fa-phone"></i> Gọi báo giá: 0899.551.228</a>
-                <a href="https://zalo.me/2097486021894945291" class="btn btn-hero-secondary" target="_blank">Chat Zalo tư vấn</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="nang-luc" class="accreditation-highlight">
-        <div class="container">
-            <div class="accreditation-content">
-                <div class="accreditation-image-wrap">
-                    <img src="images/giay-17025.jpg" alt="Chứng nhận năng lực ISO IEC 17025 TechLAB Global" class="accreditation-image" />
-                </div>
-                <div class="accreditation-text">
-                    <h2>Năng lực phòng kiểm nghiệm được công nhận</h2>
-                    <p>Phòng kiểm nghiệm TechLAB Global được VACI công nhận theo tiêu chuẩn <strong>ISO/IEC 17025:2017</strong> (Mã số: <strong>VALAS 217</strong>) cho lĩnh vực thử nghiệm sinh học, hóa học.</p>
-                    <p>Đây là cơ sở pháp lý và năng lực kỹ thuật giúp chúng tôi triển khai dịch vụ kiểm nghiệm, đánh giá chất lượng và hỗ trợ hồ sơ chứng nhận cho các công ty sản xuất, kinh doanh thực phẩm và đồ uống.</p>
-                    <a href="images/giay-17025.jpg" class="btn" target="_blank">Xem chứng nhận năng lực</a>
-                </div>
+                <a href="#bao-gia" class="btn btn-hero-secondary">Gửi yêu cầu báo giá</a>
+                <a href="https://zalo.me/2097486021894945291" class="btn btn-hero-secondary btn-hero-zalo" target="_blank">Chat Zalo</a>
             </div>
         </div>
     </section>
@@ -247,9 +95,9 @@
                         <li>Báo giá trong ngày — nhận mẫu linh hoạt</li>
                     </ul>
                     <div class="featured-service-actions">
-                        <a href="tel:0899551228" class="btn btn-hotline"><i class="fas fa-phone"></i> 0899.551.228</a>
+                        <a href="tel:0899551228" class="btn btn-hotline"><i class="fas fa-phone"></i> Gọi ngay</a>
                         <a href="index.html?dich-vu=banh-trung-thu#bao-gia" class="btn btn-outline-light">Gửi báo giá</a>
-                        <a href="pages/kiem-nghiem-banh-keo.html" class="btn btn-outline-light">Chi tiết dịch vụ</a>
+                        <a href="pages/kiem-nghiem-banh-keo.html" class="featured-detail-link">Chi tiết dịch vụ →</a>
                     </div>
                 </article>
                 <article class="featured-service-card">
@@ -263,9 +111,9 @@
                         <li>Kết quả minh bạch, có giá trị tra cứu pháp lý</li>
                     </ul>
                     <div class="featured-service-actions">
-                        <a href="tel:0899551228" class="btn btn-hotline"><i class="fas fa-phone"></i> 0899.551.228</a>
+                        <a href="tel:0899551228" class="btn btn-hotline"><i class="fas fa-phone"></i> Gọi ngay</a>
                         <a href="index.html?dich-vu=nuoc-uong#bao-gia" class="btn btn-outline-light">Gửi báo giá</a>
-                        <a href="pages/kiem-nghiem-nuoc-giai-khat.html" class="btn btn-outline-light">Chi tiết dịch vụ</a>
+                        <a href="pages/kiem-nghiem-nuoc-giai-khat.html" class="featured-detail-link">Chi tiết dịch vụ →</a>
                     </div>
                 </article>
             </div>
@@ -318,24 +166,34 @@
         </div>
     </section>
 
+    <section class="trust-strip">
+        <div class="container trust-strip-inner">
+            <span><i class="fas fa-certificate"></i> ISO/IEC 17025:2017</span>
+            <span><i class="fas fa-clock"></i> Báo giá trong ngày</span>
+            <span><i class="fas fa-file-alt"></i> Hỗ trợ hồ sơ công bố</span>
+            <span><i class="fas fa-map-marker-alt"></i> Nhận mẫu Hà Nội &amp; Cần Thơ</span>
+        </div>
+    </section>
+
+    <section id="nang-luc" class="accreditation-highlight">
+        <div class="container">
+            <div class="accreditation-content">
+                <div class="accreditation-image-wrap">
+                    <img src="images/giay-17025.jpg" alt="Chứng nhận năng lực ISO IEC 17025 TechLAB Global" class="accreditation-image" />
+                </div>
+                <div class="accreditation-text">
+                    <h2>Phòng thử nghiệm ISO/IEC 17025</h2>
+                    <p>Được VACI công nhận theo <strong>ISO/IEC 17025:2017</strong> (Mã số <strong>VALAS 217</strong>) cho thử nghiệm sinh học, hóa học — cơ sở pháp lý cho báo cáo kiểm nghiệm phục vụ công bố sản phẩm.</p>
+                    <a href="images/giay-17025.jpg" class="btn" target="_blank">Xem chứng nhận năng lực</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="dich-vu" class="services">
         <div class="container">
             <h2>Dịch vụ Kiểm nghiệm</h2>
             <div class="services-grid">
-                <div class="service-card service-card-highlight">
-                    <span class="card-tag">Ưu tiên</span>
-                    <i class="fas fa-cookie-bite"></i>
-                    <h3>Kiểm nghiệm Bánh Trung thu, Bánh các loại</h3>
-                    <p>Kịp mùa bán hàng: kiểm tra vi sinh, chất bảo quản, nhãn dinh dưỡng — báo giá nhanh qua hotline.</p>
-                    <a href="pages/kiem-nghiem-banh-keo.html?dich-vu=banh-trung-thu#bao-gia" class="btn">Báo giá ngay</a>
-                </div>
-                <div class="service-card service-card-highlight">
-                    <span class="card-tag">Ưu tiên</span>
-                    <i class="fas fa-tint"></i>
-                    <h3>Kiểm nghiệm Nước sạch, Nước uống</h3>
-                    <p>Đáp ứng QCVN nước uống đóng chai — hỗ trợ hồ sơ công bố và kiểm soát chất lượng định kỳ.</p>
-                    <a href="pages/kiem-nghiem-nuoc-giai-khat.html?dich-vu=nuoc-uong#bao-gia" class="btn">Báo giá ngay</a>
-                </div>
                 <div class="service-card">
                     <i class="fas fa-utensils"></i>
                     <h3>Kiểm nghiệm Thực phẩm</h3>
@@ -438,13 +296,57 @@
         </div>
     </section>
 
+    <section class="service-faq home-faq">
+        <div class="container">
+            <h2>Câu hỏi thường gặp</h2>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <h3>Phòng thử nghiệm có chứng nhận ISO/IEC 17025 không?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có. Phòng kiểm nghiệm TechLAB Global được VACI công nhận theo ISO/IEC 17025:2017 (Mã số VALAS 217) cho lĩnh vực thử nghiệm sinh học, hóa học.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bao lâu có kết quả kiểm nghiệm?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Thông thường 5–7 ngày làm việc tùy gói chỉ tiêu. Mùa cao điểm (bánh trung thu, nước uống) có lịch ưu tiên — gọi hotline để xác nhận thời gian cụ thể.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Có nhận mẫu tại Hà Nội và Cần Thơ không?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có. Chúng tôi nhận mẫu và tư vấn tại trụ sở Hà Nội (Km11, Quốc Lộ 21) và văn phòng Cần Thơ (KDC công ty 8, P. Hưng Thạnh).</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Kiểm nghiệm bánh trung thu / nước uống cần những gì?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tùy TCCS và loại sản phẩm: thường gồm vi sinh, hóa lý, nhãn dinh dưỡng (bánh) hoặc QCVN nước uống đóng chai. Gửi form báo giá hoặc gọi <a href="tel:0899551228">0899.551.228</a> để được tư vấn gói phù hợp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="gioi-thieu" class="about">
         <div class="container">
             <h2>Giới thiệu về TechLAB Global</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>TechLAB Global là đơn vị kiểm nghiệm và chứng nhận, đồng hành cùng doanh nghiệp trong việc kiểm soát chất lượng, hoàn thiện hồ sơ pháp lý và nâng cao năng lực cạnh tranh.</p>
-                    <p>Phòng kiểm nghiệm của chúng tôi đã được công nhận theo <strong>ISO/IEC 17025:2017</strong> (VACI - VALAS 217) cho lĩnh vực thử nghiệm sinh học, hóa học. Chứng nhận này thể hiện năng lực chuyên môn để TechLAB Global cung cấp dịch vụ cho các công ty, nhà sản xuất và đơn vị xuất khẩu.</p>
+                    <p>Phòng thử nghiệm được <a href="#nang-luc">công nhận ISO/IEC 17025</a> — đáp ứng yêu cầu công bố sản phẩm và xuất khẩu.</p>
                     <p>Với phương châm <strong>Tận tâm với khách hàng</strong>, chúng tôi cam kết kết quả chính xác, quy trình minh bạch và giải pháp phù hợp theo từng ngành hàng.</p>
                 </div>
                 <div class="about-image">
@@ -457,13 +359,13 @@
     <section id="lien-he" class="contact">
         <div class="container">
             <h2>Liên hệ với chúng tôi</h2>
-            <div class="contact-content">
+            <div class="contact-content contact-content-single">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-phone-volume"></i>
                         <div>
                             <h4>Hotline tư vấn nhanh</h4>
-                            <p>0899.551.228</p>
+                            <p><a href="tel:0899551228">0899.551.228</a></p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -481,58 +383,16 @@
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>Điện thoại: 0899.551.228</p>
-                    </div>
-                    <div class="info-item">
                         <i class="fas fa-envelope"></i>
-                        <p>Email: info@techlabglobal.com.vn</p>
+                        <p>Email: <a href="mailto:info@techlabglobal.com.vn">info@techlabglobal.com.vn</a></p>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formsubmit.co/cc4dea94548699c59cc882053a7052fe" method="POST">
-                    <!-- Honeypot field to prevent spam -->
-                    <input type="text" name="_honey" style="display:none">
-                    
-                    <!-- Disable captcha -->
-                    <input type="hidden" name="_captcha" value="false">
-                    
-                    <!-- Redirect after submission -->
-                    <input type="hidden" name="_next" value="https://kiemnghiem.techlabglobal.com.vn/thank-you.html">
-                    
-                    <!-- Email template subject -->
-                    <input type="hidden" name="_subject" value="Yêu cầu tư vấn từ Website TechLAB Global">
-                    
-                    <div class="form-group">
-                        <div class="form-row">
-                            <div class="col">
-                                <input type="text" name="name" placeholder="Họ và tên" required />
-                            </div>
-                            <div class="col">
-                                <input type="email" name="email" placeholder="Email" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Số điện thoại" />
-                    </div>
-                    <div class="form-group">
-                        <select name="service" id="contact-service">
-                            <option value="" disabled selected>Chọn dịch vụ</option>
-                            <option value="banh-trung-thu">Kiểm nghiệm Bánh Trung thu / Bánh</option>
-                            <option value="nuoc-uong">Kiểm nghiệm Nước sạch / Nước uống</option>
-                            <option value="thuc-pham">Kiểm nghiệm Thực phẩm</option>
-                            <option value="my-pham">Kiểm nghiệm Mỹ phẩm</option>
-                            <option value="duoc-pham">Kiểm nghiệm Dược phẩm</option>
-                            <option value="kiem-nghiem">Kiểm nghiệm khác</option>
-                            <option value="chung-nhan">Chứng nhận</option>
-                            <option value="tu-van">Tư vấn</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Nội dung" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Gửi yêu cầu</button>
-                </form>
+                <div class="contact-cta-box">
+                    <h3>Gửi yêu cầu báo giá</h3>
+                    <p>Điền form ngắn phía trên — chúng tôi phản hồi trong giờ hành chính.</p>
+                    <a href="#bao-gia" class="btn">Đến form báo giá</a>
+                    <p class="contact-cta-alt">Hoặc gọi <a href="tel:0899551228">0899.551.228</a> · <a href="https://zalo.me/2097486021894945291" target="_blank" rel="noopener">Chat Zalo</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -548,6 +408,7 @@
                     <h4>Liên kết nhanh</h4>
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="#bao-gia">Báo giá</a></li>
                         <li><a href="#dich-vu">Dịch vụ</a></li>
                         <li><a href="#chung-nhan">Chứng nhận</a></li>
                         <li><a href="#gioi-thieu">Giới thiệu</a></li>

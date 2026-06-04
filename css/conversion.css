@@ -48,14 +48,32 @@
 @media (max-width: 768px) {
     .sticky-cta-bar {
         display: flex;
+        padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
     }
 
     body.has-sticky-cta {
-        padding-bottom: 72px;
+        padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px));
     }
 
-    .chat-widget-container {
-        bottom: 5.5rem;
+    /* Sticky bar đã có Gọi + Zalo — ẩn nút chat nổi tránh che nhau */
+    body.has-sticky-cta .chat-widget-container {
+        display: none !important;
+    }
+
+    .season-banner {
+        font-size: 0.82rem;
+        line-height: 1.45;
+        padding: 8px 12px;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-cta-group .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -156,6 +174,9 @@
     text-align: center;
     padding: 10px 15px;
     font-size: 0.95rem;
+    margin-top: var(--header-height);
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .season-banner strong {

@@ -1,54 +1,109 @@
-// Add smooth scrolling to anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+function getHeaderOffset() {
+    var header = document.querySelector('header');
+    return header ? header.offsetHeight + 8 : 70;
+}
+
+// Smooth scrolling for in-page anchor links
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
+        var targetId = this.getAttribute('href');
+        if (!targetId || targetId === '#') return;
+
+        var targetElement = document.querySelector(targetId);
+        if (!targetElement) return;
+
         e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-        
-        if (targetElement) {
-            window.scrollTo({
-                top: targetElement.offsetTop - 70, // 70px offset for fixed header
-                behavior: 'smooth'
-            });
-        }
+        closeMobileNav();
+
+        window.scrollTo({
+            top: targetElement.offsetTop - getHeaderOffset(),
+            behavior: 'smooth'
+        });
     });
 });
 
-// Header scroll effect
-const header = document.querySelector('header');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
-        header.style.padding = '10px 0';
-    } else {
-        header.style.boxShadow = 'none';
-        header.style.padding = '15px 0';
+function closeMobileNav() {
+    var nav = document.querySelector('header nav');
+    var toggle = document.querySelector('.nav-toggle');
+    if (nav) nav.classList.remove('is-open');
+    if (toggle) toggle.classList.remove('is-active');
+    document.body.classList.remove('menu-open');
+}
+
+function setupMobileHeader() {
+    var container = document.querySelector('header .container');
+    if (!container) return;
+
+    var nav = container.querySelector('nav');
+    if (!nav) return;
+
+    if (!container.querySelector('.header-actions')) {
+        var actions = document.createElement('div');
+        actions.className = 'header-actions';
+
+        var callBtn = document.createElement('a');
+        callBtn.href = 'tel:0899551228';
+        callBtn.className = 'header-call-btn';
+        callBtn.setAttribute('aria-label', 'Gọi 0899.551.228');
+        callBtn.innerHTML = '<i class="fas fa-phone"></i>';
+
+        var toggle = document.createElement('button');
+        toggle.type = 'button';
+        toggle.className = 'nav-toggle';
+        toggle.setAttribute('aria-label', 'Mở menu');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerHTML = '<span></span><span></span><span></span>';
+
+        actions.appendChild(callBtn);
+        actions.appendChild(toggle);
+        container.appendChild(actions);
     }
-});
 
-// Form submission
-// REMOVED: The form submission event listener that was preventing FormSubmit from working properly
-// Now using FormSubmit.co for form processing instead of custom JavaScript
+    var toggleBtn = container.querySelector('.nav-toggle');
+    if (!toggleBtn || toggleBtn.dataset.bound) return;
+    toggleBtn.dataset.bound = '1';
 
-// Xử lý sự kiện mở/đóng FAQ
-document.addEventListener('DOMContentLoaded', function() {
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    
-    faqQuestions.forEach(function(question) {
-        question.addEventListener('click', function() {
-            const faqItem = this.parentNode;
-            
-            // Đóng tất cả các FAQ item khác
-            const allFaqItems = document.querySelectorAll('.faq-item');
-            allFaqItems.forEach(function(item) {
-                if (item !== faqItem && item.classList.contains('active')) {
-                    item.classList.remove('active');
-                }
+    toggleBtn.addEventListener('click', function () {
+        var isOpen = nav.classList.toggle('is-open');
+        toggleBtn.classList.toggle('is-active', isOpen);
+        document.body.classList.toggle('menu-open', isOpen);
+        toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMobileNav);
+    });
+}
+
+// Header scroll effect
+var header = document.querySelector('header');
+if (header) {
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) {
+            header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.1)';
+        } else {
+            header.style.boxShadow = '';
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    setupMobileHeader();
+
+    document.addEventListener('click', function (e) {
+        if (!document.body.classList.contains('menu-open')) return;
+        if (e.target.closest('header')) return;
+        closeMobileNav();
+    });
+
+    var faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(function (question) {
+        question.addEventListener('click', function () {
+            var faqItem = this.parentNode;
+            document.querySelectorAll('.faq-item.active').forEach(function (item) {
+                if (item !== faqItem) item.classList.remove('active');
             });
-            
-            // Toggle trạng thái active của FAQ item hiện tại
             faqItem.classList.toggle('active');
         });
     });
-}); 
+});

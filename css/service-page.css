@@ -8,7 +8,7 @@
     color: var(--white);
     text-align: center;
     padding: 150px 0 80px;
-    margin-top: 60px;
+    margin-top: var(--header-height, 70px);
 }
 
 .service-hero h1 {
@@ -95,6 +95,17 @@
     align-items: center;
 }
 
+.intro-content > * {
+    min-width: 0;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
 .intro-text h2 {
     text-align: left;
 }
@@ -102,11 +113,6 @@
 .intro-text h2:after {
     left: 0;
     transform: none;
-}
-
-.intro-image img {
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
 }
 
 /* Service Features Section */
@@ -117,7 +123,7 @@
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
     gap: 30px;
 }
 
@@ -197,6 +203,7 @@
     padding: 20px 30px;
     border-radius: 8px;
     flex-grow: 1;
+    min-width: 0;
 }
 
 .step-content h3 {
@@ -226,8 +233,13 @@
 }
 
 .benefit-item:hover {
-    transform: translateX(5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (hover: hover) {
+    .benefit-item:hover {
+        transform: translateX(5px);
+    }
 }
 
 .benefit-item i {
@@ -392,7 +404,7 @@
 
 .pain-points-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
@@ -438,13 +450,22 @@
     }
 }
 
+.season-banner + .service-hero {
+    margin-top: 0;
+}
+
 @media (max-width: 768px) {
     .service-hero {
-        padding: 130px 0 60px;
+        padding: 80px 0 50px;
     }
     
     .service-hero h1 {
         font-size: 2rem;
+    }
+
+    .features-grid,
+    .pain-points-grid {
+        grid-template-columns: 1fr;
     }
     
     .step-content {

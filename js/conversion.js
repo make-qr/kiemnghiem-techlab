@@ -1,4 +1,12 @@
 (function () {
+    var ADS_ID = 'AW-18270406607';
+    var SEND_TO = {
+        form: 'AW-18270406607/STV0CPOuncUcEM-PgYhE',
+        thankYou: 'AW-18270406607/76T2CPvgm8UcEM-PgYhE',
+        call: 'AW-18270406607/55kGCILim8UcEM-PgYhE',
+        zalo: 'AW-18270406607/CkOzCO-wncUcEM-PgYhE'
+    };
+
     var SERVICE_MAP = {
         'banh-trung-thu': 'banh-trung-thu',
         'banh-keo': 'banh-trung-thu',
@@ -31,7 +39,14 @@
         });
     }
 
-    function trackConversion(eventName, label) {
+    function adsConversion(sendTo) {
+        if (typeof gtag === 'function' && sendTo) {
+            gtag('event', 'conversion', { send_to: sendTo });
+        }
+    }
+
+    function trackConversion(eventName, label, sendTo) {
+        adsConversion(sendTo);
         if (typeof gtag === 'function') {
             gtag('event', eventName, {
                 event_category: 'conversion',
@@ -41,7 +56,8 @@
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
             event: eventName,
-            conversion_label: label || ''
+            conversion_label: label || '',
+            ads_send_to: sendTo || ''
         });
     }
 
@@ -49,21 +65,26 @@
         document.body.classList.add('has-sticky-cta');
         prefillServiceSelects();
 
+        if (/\/thank-you\.html$/i.test(window.location.pathname)) {
+            trackConversion('thank_you_page', 'thank_you', SEND_TO.thankYou);
+        }
+
         document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
             link.addEventListener('click', function () {
-                trackConversion('click_call', link.getAttribute('href'));
+                trackConversion('click_call', link.getAttribute('href'), SEND_TO.call);
             });
         });
 
         document.querySelectorAll('a[href*="zalo.me"]').forEach(function (link) {
             link.addEventListener('click', function () {
-                trackConversion('click_zalo', link.href);
+                trackConversion('click_zalo', link.href, SEND_TO.zalo);
             });
         });
 
         document.querySelectorAll('.quote-form, .contact-form').forEach(function (form) {
             form.addEventListener('submit', function () {
-                trackConversion('form_submit', form.classList.contains('quote-form') ? 'quote_form' : 'contact_form');
+                var label = form.classList.contains('quote-form') ? 'quote_form' : 'contact_form';
+                trackConversion('form_submit', label, SEND_TO.form);
             });
         });
     });

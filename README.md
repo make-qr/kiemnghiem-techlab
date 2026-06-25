@@ -16,7 +16,9 @@ kiemnghiem-techlab/
 │   └── conversion.css      # Sticky CTA, form báo giá
 ├── js/
 │   ├── main.js             # Smooth scroll, FAQ accordion
-│   └── conversion.js       # Prefill form, tracking GTM
+│   ├── conversion.js       # Prefill form, Google Ads conversion events
+│   ├── tracking-bootstrap.js  # dataLayer + gtag config
+│   └── meta-pixel.js       # Meta Pixel retarget (4620520364845904)
 ├── images/
 ├── pages/                  # Trang dịch vụ & chứng nhận
 ├── sitemap.xml
@@ -47,6 +49,16 @@ npx serve .
 
 - Thư mục `pages_template/` chỉ là bản nháp cũ — **không deploy** lên hosting.
 - Chỉ deploy: `index.html`, `thank-you.html`, `privacy-policy.html`, `css/`, `js/`, `images/`, `pages/`, `robots.txt`, `sitemap.xml`.
+
+## Tracking (GA4, GTM, Google Ads, Meta Pixel)
+
+Xem **[HUONG-DAN-TRACKING.md](HUONG-DAN-TRACKING.md)**.
+
+Sau khi đổi ID GTM/Pixel:
+
+```bash
+python3 scripts/apply-tracking.py
+```
 
 ## Deploy
 

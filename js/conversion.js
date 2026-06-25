@@ -66,7 +66,8 @@
         prefillServiceSelects();
 
         if (/\/thank-you\.html$/i.test(window.location.pathname)) {
-            trackConversion('thank_you_page', 'thank_you', SEND_TO.thankYou);
+            // Form hoàn tất (redirect từ formsubmit) — 1 conversion duy nhất cho lead form
+            trackConversion('thank_you_page', 'quote_form_complete', SEND_TO.form);
         }
 
         document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
@@ -83,8 +84,18 @@
 
         document.querySelectorAll('.quote-form, .contact-form').forEach(function (form) {
             form.addEventListener('submit', function () {
-                var label = form.classList.contains('quote-form') ? 'quote_form' : 'contact_form';
-                trackConversion('form_submit', label, SEND_TO.form);
+                // Chỉ đẩy GA4/GTM — Google Ads đếm ở thank-you.html để tránh đếm đôi
+                if (typeof gtag === 'function') {
+                    gtag('event', 'form_submit', {
+                        event_category: 'conversion',
+                        event_label: form.classList.contains('quote-form') ? 'quote_form' : 'contact_form'
+                    });
+                }
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'form_submit',
+                    conversion_label: form.classList.contains('quote-form') ? 'quote_form' : 'contact_form'
+                });
             });
         });
     });

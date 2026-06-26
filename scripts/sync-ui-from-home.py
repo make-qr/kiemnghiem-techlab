@@ -27,7 +27,29 @@ NAV_BLOCK = """            <nav>
                 <button type="button" class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
             </div>"""
 
-FOOTER_LINKS = """                <div class="footer-links">
+FOOTER_HUB_NETWORK = """                <div class="footer-hub-network">
+                    <h4>Hệ thống TechLAB Global</h4>
+                    <ul>
+                        <li><a href="https://techlabglobal.com.vn/">Website chính</a></li>
+                        <li><a href="https://techlabglobal.com.vn/chung-nhan-san-pham/cong-bo-va-kiem-nghiem/">Tin tức kiểm nghiệm</a></li>
+                        <li><a href="https://techlabglobal.com.vn/lien-he/">Liên hệ tổng đài</a></li>
+                        <li><a href="https://techlabglobal.com.vn/chung-nhan-san-pham/">Chứng nhận sản phẩm</a></li>
+                    </ul>
+                    <p class="footer-hub-note">Cổng <strong>kiểm nghiệm &amp; báo giá nhanh</strong> — một thương hiệu TechLAB Global.</p>
+                </div>
+"""
+
+FOOTER_LINKS = """                <div class="footer-hub-network">
+                    <h4>Hệ thống TechLAB Global</h4>
+                    <ul>
+                        <li><a href="https://techlabglobal.com.vn/">Website chính</a></li>
+                        <li><a href="https://techlabglobal.com.vn/chung-nhan-san-pham/cong-bo-va-kiem-nghiem/">Tin tức kiểm nghiệm</a></li>
+                        <li><a href="https://techlabglobal.com.vn/lien-he/">Liên hệ tổng đài</a></li>
+                        <li><a href="https://techlabglobal.com.vn/chung-nhan-san-pham/">Chứng nhận sản phẩm</a></li>
+                    </ul>
+                    <p class="footer-hub-note">Cổng kiểm nghiệm — TechLAB Global.</p>
+                </div>
+                <div class="footer-links">
                     <h4>Liên kết nhanh</h4>
                     <ul>
                         <li><a href="../index.html">Trang chủ</a></li>

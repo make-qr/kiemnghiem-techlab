@@ -1,0 +1,7 @@
+{
+  "hub": "https://techlabglobal.com.vn/",
+  "hub_news": "https://techlabglobal.com.vn/chung-nhan-san-pham/cong-bo-va-kiem-nghiem/",
+  "hub_contact": "https://techlabglobal.com.vn/lien-he/",
+  "hub_cert": "https://techlabglobal.com.vn/chung-nhan-san-pham/",
+  "spoke": "https://kiemnghiem.techlabglobal.com.vn/"
+}

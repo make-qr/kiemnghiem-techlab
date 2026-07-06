@@ -13,6 +13,15 @@
 | **Meta Pixel** | `4620520364845904` |
 | **Domain** | `kiemnghiem.techlabglobal.com.vn` |
 
+### Conversion labels (Google Ads)
+
+| Tên trong Ads | Label | Khi nào fire |
+|---------------|-------|--------------|
+| **TLG - Trang cảm ơn** | `76T2CPvgm8UcEM-PgYhE` | Load `thank-you.html` |
+| **Lượt gửi biểu mẫu khách hàng tiềm năng** | `STV0CPOuncUcEM-PgYhE` | Submit form + fallback thank-you |
+| Click gọi | `55kGCILim8UcEM-PgYhE` | Click `tel:` |
+| Click Zalo | `CkOzCO-wncUcEM-PgYhE` | Click `zalo.me` |
+
 ## Trên website (repo)
 
 | File | Vai trò |

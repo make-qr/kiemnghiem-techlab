@@ -61,14 +61,42 @@
         });
     }
 
+    function markFormConversionPending() {
+        try {
+            sessionStorage.setItem('tlg_form_ads_sent', '1');
+        } catch (e) {}
+    }
+
+    function consumeFormConversionPending() {
+        try {
+            var sent = sessionStorage.getItem('tlg_form_ads_sent') === '1';
+            sessionStorage.removeItem('tlg_form_ads_sent');
+            return sent;
+        } catch (e) {
+            return false;
+        }
+    }
+
+    function initThankYouConversions() {
+        if (!/\/thank-you\.html$/i.test(window.location.pathname)) {
+            return;
+        }
+
+        // TLG - Trang cảm ơn
+        trackConversion('thank_you_page', 'thank_you', SEND_TO.thankYou);
+
+        // Lượt gửi biểu mẫu khách hàng tiềm năng (fallback nếu submit chưa kịp gửi pixel)
+        if (!consumeFormConversionPending()) {
+            trackConversion('quote_form_complete', 'quote_form', SEND_TO.form);
+        }
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.add('has-sticky-cta');
         prefillServiceSelects();
 
-        if (/\/thank-you\.html$/i.test(window.location.pathname)) {
-            // Form hoàn tất (redirect từ formsubmit) — 1 conversion duy nhất cho lead form
-            trackConversion('thank_you_page', 'quote_form_complete', SEND_TO.form);
-        }
+        // Đợi gtag.js async load xong trước khi bắn conversion trên thank-you
+        window.addEventListener('load', initThankYouConversions);
 
         document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
             link.addEventListener('click', function () {
@@ -84,7 +112,9 @@
 
         document.querySelectorAll('.quote-form, .contact-form').forEach(function (form) {
             form.addEventListener('submit', function () {
-                // Chỉ đẩy GA4/GTM — Google Ads đếm ở thank-you.html để tránh đếm đôi
+                markFormConversionPending();
+                trackConversion('quote_form_submit', 'quote_form', SEND_TO.form);
+
                 if (typeof gtag === 'function') {
                     gtag('event', 'form_submit', {
                         event_category: 'conversion',

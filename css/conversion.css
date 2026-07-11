@@ -174,7 +174,7 @@
     text-align: center;
     padding: 10px 15px;
     font-size: 0.95rem;
-    margin-top: var(--header-height);
+    margin-top: 0;
     overflow-wrap: anywhere;
     word-break: break-word;
 }

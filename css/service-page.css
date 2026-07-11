@@ -11,7 +11,7 @@
     color: var(--white);
     text-align: center;
     padding: 150px 0 80px;
-    margin-top: var(--header-height, 70px);
+    margin-top: 0;
 }
 
 .service-hero h1 {
@@ -574,17 +574,8 @@ body.service-page {
     --gold: #fbbf24;
 }
 
-body.service-page .hub-strip {
-    margin-top: var(--header-height);
-}
-
 body.service-page .season-banner {
-    margin-top: 0;
     background: linear-gradient(90deg, var(--navy) 0%, var(--navy-2) 100%);
-}
-
-body.service-page .service-hero {
-    margin-top: 0;
 }
 
 body.service-page .trust-strip {

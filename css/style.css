@@ -27,7 +27,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
 body {
@@ -35,7 +35,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
-    overflow-x: clip;
+    overflow-x: hidden;
     max-width: 100%;
 }
 
@@ -1316,6 +1316,18 @@ iframe[id^="zalo-vapp"] {
     font-size: 0.875rem;
     padding: 0.45rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: var(--header-height);
+}
+
+/* Header cố định + hub (breadcrumb) → nội dung liền mạch, không gap thừa */
+.hub-strip + .season-banner,
+.hub-strip + .hero,
+.hub-strip + .service-hero,
+.hub-strip + .hs-page-hero,
+.hub-strip + .thank-you-section,
+.hub-strip + .legal-page,
+.hub-strip + main {
+    margin-top: 0;
 }
 .hub-strip-inner {
     display: flex;
@@ -1339,7 +1351,13 @@ iframe[id^="zalo-vapp"] {
     font-weight: 600;
 }
 .footer-hub-network {
-    min-width: 200px;
+    min-width: 0;
+}
+
+@media (min-width: 769px) {
+    .footer-hub-network {
+        min-width: 200px;
+    }
 }
 .footer-hub-network ul {
     list-style: none;
@@ -1506,6 +1524,44 @@ body.home .home-cta-band h2 {
 }
 
 @media (max-width: 768px) {
+    body.home .hero {
+        min-height: auto;
+        padding: 52px 0 40px;
+    }
+
+    body.home .hero .container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    body.home .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    body.home .hero-cta-group .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    body.home .trust-strip-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        gap: 10px 12px;
+        font-size: 0.82rem;
+    }
+
+    body.home .featured-service-thumb {
+        margin: -24px -20px 16px;
+        height: 140px;
+    }
+
+    .hub-strip {
+        font-size: 0.8rem;
+        padding: 0.35rem 0;
+    }
+
     body.home .hero h1 {
         font-size: 2.1rem;
     }

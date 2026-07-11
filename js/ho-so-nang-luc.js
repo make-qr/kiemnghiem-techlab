@@ -76,7 +76,9 @@
     var navLinks = document.querySelectorAll('.hs-side-nav a');
 
     function updateNav() {
-        var scrollPos = window.scrollY + 120;
+        var navEl = document.querySelector('.hs-side-nav');
+        var navHeight = navEl && navEl.offsetHeight > 0 ? navEl.offsetHeight : 0;
+        var scrollPos = window.scrollY + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height') || '70', 10) + navHeight + 24;
         var current = '';
         sections.forEach(function (section) {
             if (section.offsetTop <= scrollPos) {

@@ -633,6 +633,79 @@ body.service-page .service-cta .btn {
     color: var(--navy);
 }
 
+/* GEO — khối trả lời trước (answer-first) cho AI & người đọc */
+.geo-answer-first {
+    background: linear-gradient(180deg, #f0f5fa 0%, var(--white) 100%);
+    padding: 28px 0 32px;
+    border-bottom: 1px solid rgba(10, 37, 64, 0.08);
+}
+
+.geo-answer-box {
+    background: var(--white);
+    border-left: 4px solid var(--navy, #0a2540);
+    border-radius: 0 10px 10px 0;
+    padding: 20px 22px 18px;
+    box-shadow: 0 4px 18px rgba(10, 37, 64, 0.06);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+body.service-page .geo-answer-box {
+    border-left-color: var(--navy);
+}
+
+.geo-answer-lead {
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin: 0 0 14px;
+}
+
+.geo-answer-facts {
+    margin: 0 0 14px 1.1rem;
+    padding: 0;
+    list-style: disc;
+}
+
+.geo-answer-facts li {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #4a5a6a;
+    margin-bottom: 6px;
+}
+
+.geo-answer-cite {
+    font-size: 0.84rem;
+    color: var(--text-light);
+    margin: 0;
+    padding-top: 10px;
+    border-top: 1px solid var(--light-gray);
+}
+
+.geo-answer-cite a {
+    font-weight: 600;
+    color: var(--navy, #0a2540);
+}
+
+@media (max-width: 768px) {
+    .geo-answer-first {
+        padding: 20px 0 24px;
+    }
+
+    .geo-answer-box {
+        padding: 16px 14px 14px;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .geo-answer-lead {
+        font-size: 0.96rem;
+    }
+
+    .geo-answer-facts li {
+        font-size: 0.9rem;
+    }
+}
+
 /* Banner chứng nhận — ảnh vuông/nhỏ, overlay đậm hơn */
 .service-hero--cert {
     --hero-pos: center center;

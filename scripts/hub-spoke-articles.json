@@ -1,0 +1,34 @@
+{
+  "strategy": "Hub (techlabglobal.com.vn) bài ~1200 từ → link landing (kiemnghiem.techlabglobal.com.vn). Landing giữ answer-first ~80–120 từ + form.",
+  "hub_category": "https://techlabglobal.com.vn/chung-nhan-san-pham/cong-bo-va-kiem-nghiem/",
+  "articles": [
+    {
+      "file": "11-ban-do-dich-vu-kiem-nghiem-techlab.md",
+      "slug": "ban-do-dich-vu-kiem-nghiem-chung-nhan-techlab-global-2026",
+      "type": "pillar",
+      "publish_date": "2026-07-21",
+      "status": "draft",
+      "links_all_spokes": true
+    },
+    {
+      "file": "12-kiem-nghiem-nuoc-uong-qcvn-techlab.md",
+      "slug": "kiem-nghiem-nuoc-uong-dong-chai-qcvn-techlab-global",
+      "type": "deep-dive",
+      "publish_date": "2026-07-23",
+      "status": "draft",
+      "primary_spoke": "/pages/kiem-nghiem-nuoc-giai-khat.html"
+    },
+    {
+      "file": "13-kiem-nghiem-banh-keo-trung-thu-2026.md",
+      "slug": "kiem-nghiem-banh-keo-banh-trung-thu-techlab-global-2026",
+      "type": "deep-dive",
+      "publish_date": "2026-07-25",
+      "status": "draft",
+      "primary_spoke": "/pages/kiem-nghiem-banh-keo.html"
+    }
+  ],
+  "planned_next": [
+    "14-kiem-nghiem-my-pham-checklist-hub.md",
+    "15-chung-nhan-haccp-huong-dan-hub.md"
+  ]
+}

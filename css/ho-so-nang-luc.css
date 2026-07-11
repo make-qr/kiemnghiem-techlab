@@ -9,12 +9,15 @@ body.hs-page {
     max-width: 100%;
 }
 
-body.hs-page .hs-page-hero .container,
-body.hs-page .trust-strip .container,
-body.hs-page .hs-page-wrap.container {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+/* Mobile: full-width tránh tràn ngang */
+@media (max-width: 1099px) {
+    body.hs-page .hs-page-hero .container,
+    body.hs-page .trust-strip .container,
+    body.hs-page .hs-page-wrap.container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 body.hs-page .trust-strip {
@@ -90,16 +93,22 @@ body.hs-page .hs-side-nav a.is-active {
     font-weight: 600;
 }
 
-@media (min-width: 1100px) {
-    body.hs-page .hs-side-nav {
-        border-top: 3px solid var(--navy);
-        box-shadow: 0 6px 24px rgba(10, 37, 64, 0.1);
-        border-radius: 10px;
+/* Mobile: nội dung full-width, chống tràn */
+@media (max-width: 1099px) {
+    body.hs-page .hs-main {
+        padding: 0 14px 8px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        box-shadow: none;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
-    body.hs-page .hs-side-nav a.is-active {
-        border-left-color: var(--gold);
-        background: linear-gradient(90deg, #f8fafc 0%, var(--secondary-color) 100%);
+    body.hs-page .hs-main section > p:first-of-type {
+        max-width: none;
     }
 }
 
@@ -108,6 +117,14 @@ body.hs-page .hs-stat {
     border: 1px solid rgba(10, 37, 64, 0.08);
     border-top: 3px solid var(--navy);
     box-shadow: 0 2px 12px rgba(10, 37, 64, 0.05);
+}
+
+body.hs-page .hs-main p,
+body.hs-page .hs-main li,
+body.hs-page .hs-main h2,
+body.hs-page .hs-main h3 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 body.hs-page .hs-stat strong {
@@ -435,46 +452,41 @@ body.hs-page .hs-main section {
     border-left: none;
 }
 
-body.hs-page .hs-main {
-    padding: 0 14px 8px;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-    box-shadow: none;
-    min-width: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-body.hs-page .hs-main p,
-body.hs-page .hs-main li,
-body.hs-page .hs-main h2,
-body.hs-page .hs-main h3 {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-body.hs-page .hs-main section > p:first-of-type {
-    max-width: none;
-}
-
 .hs-main section {
     padding: 32px 0;
     border-bottom: 1px solid var(--medium-gray);
 }
 
 @media (min-width: 1100px) {
+    body.hs-page .hs-page-hero .container,
+    body.hs-page .trust-strip .container {
+        max-width: 1040px;
+    }
+
+    body.hs-page .hs-page-hero {
+        padding: 52px 0 40px;
+    }
+
+    body.hs-page .hs-page-hero h1,
+    .hs-page-hero h1 {
+        font-size: 1.95rem;
+    }
+
+    .hs-page-hero p {
+        font-size: 1.02rem;
+        max-width: 600px;
+    }
+
     .hs-page-wrap {
-        width: 90%;
-        max-width: 1200px;
+        width: 92%;
+        max-width: 1040px;
         margin: 0 auto;
-        padding: 40px 15px 60px;
+        padding: 24px 15px 48px;
     }
 
     .hs-layout {
-        grid-template-columns: 200px 1fr;
-        gap: 32px;
+        grid-template-columns: 168px 1fr;
+        gap: 22px;
     }
 
     .hs-side-nav {
@@ -484,17 +496,22 @@ body.hs-page .hs-main section > p:first-of-type {
         display: block;
         flex-wrap: unset;
         overflow-x: visible;
-        padding: 16px 0;
+        padding: 12px 0;
         border-radius: 10px;
         border-top: 3px solid var(--navy);
         border-bottom: none;
         box-shadow: 0 6px 24px rgba(10, 37, 64, 0.1);
     }
 
+    body.hs-page .hs-side-nav a.is-active {
+        border-left-color: var(--gold);
+        background: linear-gradient(90deg, #f8fafc 0%, var(--secondary-color) 100%);
+    }
+
     .hs-side-nav a {
         display: block;
-        padding: 10px 18px;
-        font-size: 0.9rem;
+        padding: 8px 14px;
+        font-size: 0.84rem;
         border-left: 3px solid transparent;
         border-radius: 0;
         background: transparent;
@@ -506,50 +523,110 @@ body.hs-page .hs-main section > p:first-of-type {
     }
 
     body.hs-page .hs-main {
-        padding: 8px 36px 12px;
-        border-radius: 12px;
+        padding: 4px 24px 8px;
+        border-radius: 10px;
         border: 1px solid rgba(10, 37, 64, 0.06);
-        box-shadow: 0 8px 32px rgba(10, 37, 64, 0.08);
+        box-shadow: 0 6px 24px rgba(10, 37, 64, 0.07);
+        overflow-x: visible;
+    }
+
+    body.hs-page .hs-main section > p:first-of-type {
+        max-width: 68ch;
+        font-size: 0.98rem;
     }
 
     .hs-main section {
-        padding: 48px 0;
+        padding: 28px 0;
+    }
+
+    .hs-main h2 {
+        font-size: 1.35rem;
+        margin-bottom: 14px;
     }
 
     .hs-stats {
         grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin: 18px 0;
+    }
+
+    .hs-stat {
+        padding: 14px 10px;
+    }
+
+    .hs-stat strong {
+        font-size: 1rem;
     }
 
     .hs-intro-grid {
-        grid-template-columns: 1.2fr 1fr;
+        grid-template-columns: 1fr 320px;
+        gap: 22px;
     }
 
-    .hs-intro-grid img {
+    .hs-intro-grid img,
+    .hs-intro-media {
         order: 0;
+    }
+
+    .hs-intro-media {
+        max-width: 320px;
+        justify-self: end;
+    }
+
+    .hs-intro-media img {
+        max-height: 380px;
+        object-fit: contain;
     }
 
     .hs-cert-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
 
     .hs-report-preview {
         grid-template-columns: 1fr 1fr;
+        max-width: 720px;
     }
 
     .hs-gallery-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
 
     .hs-process {
         grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+
+    .hs-process-step {
+        padding: 14px 10px;
+    }
+
+    .hs-process-step h3 {
+        font-size: 0.88rem;
     }
 
     .hs-branches {
         grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
     }
 
     .hs-banner-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .hs-banner-item img {
+        max-height: 190px;
+        object-fit: cover;
+    }
+
+    .hs-director-card {
+        max-width: 220px;
+    }
+
+    .hs-cta-band {
+        padding: 44px 0;
     }
 }
 

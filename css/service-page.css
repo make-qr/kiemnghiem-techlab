@@ -293,9 +293,7 @@
 
 /* Service CTA Section */
 .service-cta {
-    background: linear-gradient(rgba(15, 117, 188, 0.82), rgba(15, 117, 188, 0.82)), url('../images/cta-bg.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(115deg, rgba(10, 37, 64, 0.95) 0%, rgba(18, 58, 99, 0.92) 55%, rgba(15, 117, 188, 0.75) 100%);
     color: var(--white);
     text-align: center;
     padding: 80px 0;
@@ -565,4 +563,141 @@
 
 .faq-item.active .faq-question {
     border-bottom: 1px solid var(--medium-gray);
+}
+
+/* ============================================================
+   TRANG DỊCH VỤ — Navy + đồng bộ trang chủ (body.service-page)
+   ============================================================ */
+body.service-page {
+    --navy: #0a2540;
+    --navy-2: #123a63;
+    --gold: #fbbf24;
+}
+
+body.service-page .hub-strip {
+    margin-top: var(--header-height);
+}
+
+body.service-page .season-banner {
+    margin-top: 0;
+    background: linear-gradient(90deg, var(--navy) 0%, var(--navy-2) 100%);
+}
+
+body.service-page .service-hero {
+    margin-top: 0;
+}
+
+body.service-page .trust-strip {
+    background-color: var(--navy);
+}
+
+body.service-page .trust-strip i {
+    color: var(--gold);
+}
+
+body.service-page .intro-cta-line {
+    color: var(--navy);
+}
+
+body.service-page .pain-point-item h3 {
+    color: var(--navy);
+}
+
+body.service-page .feature-card i,
+body.service-page .step-content h3,
+body.service-page .faq-question h3 {
+    color: var(--navy);
+}
+
+body.service-page .step-number {
+    background-color: var(--navy);
+}
+
+body.service-page .faq-question:hover {
+    background-color: rgba(10, 37, 64, 0.06);
+}
+
+body.service-page .quote-form-box {
+    border-top-color: var(--navy);
+}
+
+body.service-page .client-logo {
+    color: var(--navy);
+}
+
+body.service-page .pain-points h2 {
+    text-align: left;
+}
+
+body.service-page .pain-points h2:after {
+    left: 0;
+    transform: none;
+}
+
+body.service-page .service-cta {
+    background: linear-gradient(115deg, var(--navy) 0%, var(--navy-2) 55%, #0f4a7a 100%);
+}
+
+body.service-page .service-cta .btn {
+    color: var(--navy);
+}
+
+/* Banner chứng nhận — ảnh vuông/nhỏ, overlay đậm hơn */
+.service-hero--cert {
+    --hero-pos: center center;
+    background: linear-gradient(115deg, rgba(8, 29, 51, 0.94) 0%, rgba(8, 29, 51, 0.86) 50%, rgba(10, 37, 64, 0.78) 100%), var(--hero-bg);
+}
+
+body.service-page .service-hero--cert {
+    text-align: center;
+}
+
+@media (min-width: 993px) {
+    body.service-page .service-hero {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 88px 0 64px;
+    }
+
+    body.service-page .service-hero h1,
+    body.service-page .service-hero p {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    body.service-page .service-hero p {
+        max-width: 640px;
+    }
+
+    body.service-page .hero-cta-group {
+        justify-content: flex-start;
+    }
+
+    body.service-page .service-hero--cert {
+        text-align: center;
+    }
+
+    body.service-page .service-hero--cert h1,
+    body.service-page .service-hero--cert p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body.service-page .service-hero--cert .hero-cta-group {
+        justify-content: center;
+    }
+
+    body.service-page .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    body.service-page .pain-points-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body.service-page .clients-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 } 

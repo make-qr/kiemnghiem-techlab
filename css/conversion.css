@@ -182,3 +182,154 @@
 .season-banner strong {
     color: #ffe082;
 }
+
+/* Header CTA — desktop */
+.header-quote-btn {
+    display: none;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.header-quote-btn:hover {
+    background-color: #c41820;
+    color: var(--white);
+}
+
+@media (min-width: 769px) {
+    .header-quote-btn {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.quote-form-privacy {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+
+.quote-form-privacy a {
+    color: var(--primary-color);
+}
+
+/* Social proof — khách hàng tiêu biểu */
+.home-clients {
+    background-color: var(--white);
+    padding: 60px 0;
+}
+
+.home-clients-lead {
+    text-align: center;
+    color: var(--text-light);
+    max-width: 640px;
+    margin: -30px auto 32px;
+}
+
+/* CTA band cuối trang */
+.home-cta-band {
+    background: linear-gradient(115deg, #0a2540, #0b5e95);
+    color: var(--white);
+    text-align: center;
+    padding: 56px 0;
+}
+
+.home-cta-band h2 {
+    color: var(--white);
+}
+
+.home-cta-band h2:after {
+    background-color: var(--white);
+}
+
+.home-cta-band p {
+    max-width: 560px;
+    margin: 0 auto 24px;
+    color: #dbeafe;
+}
+
+.home-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.home-cta-band .btn-cta-primary {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 12px 28px;
+    font-size: 1.05rem;
+}
+
+.home-cta-band .btn-cta-primary:hover {
+    background-color: #c41820;
+    color: var(--white);
+}
+
+.home-cta-band .btn-cta-secondary {
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 12px 28px;
+}
+
+.home-cta-band .btn-cta-secondary:hover {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.accreditation-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.accreditation-actions .btn-outline-navy {
+    background: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.accreditation-actions .btn-outline-navy:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.thank-you-tips {
+    max-width: 520px;
+    margin: 24px auto;
+    text-align: left;
+    background: #f6f9fc;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.thank-you-tips p {
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #0a2540;
+}
+
+.thank-you-tips ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text-light);
+}
+
+.back-home .btn-zalo {
+    background: #0068ff;
+    color: var(--white);
+}
+
+.back-home .btn-zalo:hover {
+    background: #0055d4;
+    color: var(--white);
+}

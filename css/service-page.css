@@ -1,10 +1,13 @@
 ﻿/* Service Page Specific Styles */
 
-/* Service Hero Section */
+/* Service Hero Section — banner mặc định: đội ngũ (hero-banner.jpg)
+   Đổi từng trang: <section class="service-hero" style="--hero-bg: url('../images/banners/ten-file.jpg')"> */
 .service-hero {
-    background: linear-gradient(rgba(15, 117, 188, 0.9), rgba(15, 117, 188, 0.9)), url('../images/service-hero-bg.jpg');
+    --hero-bg: url('../images/hero-banner.jpg');
+    --hero-pos: center 35%;
+    background: linear-gradient(115deg, rgba(8, 29, 51, 0.9) 0%, rgba(8, 29, 51, 0.72) 42%, rgba(15, 117, 188, 0.45) 100%), var(--hero-bg);
     background-size: cover;
-    background-position: center;
+    background-position: var(--hero-pos);
     color: var(--white);
     text-align: center;
     padding: 150px 0 80px;

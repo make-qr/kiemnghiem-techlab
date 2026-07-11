@@ -27,8 +27,13 @@
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon-32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="preload" as="image" href="images/hero-banner-trang-chu.png">
+    <meta property="og:title" content="Kiểm Nghiệm TechLAB Global - Dịch vụ Kiểm nghiệm &amp; Chứng nhận">
+    <meta property="og:description" content="Kiểm nghiệm bánh trung thu, nước uống tại phòng thử nghiệm ISO/IEC 17025. Báo giá nhanh. Hotline 0899.551.228">
+    <meta property="og:image" content="https://kiemnghiem.techlabglobal.com.vn/images/hero-banner-trang-chu.png">
+    <meta property="og:url" content="https://kiemnghiem.techlabglobal.com.vn/">
 </head>
-<body>
+<body class="home">
     
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
@@ -45,13 +50,14 @@
                 <ul>
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="#dich-vu-noi-bat">Ưu tiên</a></li>
+                    <li><a href="ho-so-nang-luc.html">Năng lực</a></li>
                     <li><a href="#bao-gia">Báo giá</a></li>
                     <li><a href="#dich-vu">Dịch vụ</a></li>
-                    <li><a href="#chung-nhan">Chứng nhận</a></li>
                     <li><a href="#lien-he">Liên hệ</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
+                <a href="#bao-gia" class="header-quote-btn">Báo giá ngay</a>
                 <a href="tel:0899551228" class="header-call-btn" aria-label="Gọi 0899.551.228"><i class="fas fa-phone"></i></a>
                 <button type="button" class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
             </div>
@@ -62,6 +68,8 @@
             <a href="https://techlabglobal.com.vn/">TechLAB Global</a>
             <span class="hub-strip-sep" aria-hidden="true">·</span>
             <a href="https://techlabglobal.com.vn/chung-nhan-san-pham/cong-bo-va-kiem-nghiem/">Tin tức &amp; kiến thức</a>
+            <span class="hub-strip-sep" aria-hidden="true">·</span>
+            <a href="ho-so-nang-luc.html">Hồ sơ năng lực</a>
             <span class="hub-strip-sep" aria-hidden="true">·</span>
             <span class="hub-strip-here">Báo giá kiểm nghiệm</span>
         </div>
@@ -74,13 +82,23 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Kiểm nghiệm Bánh Trung thu &amp; Nước uống — ISO/IEC 17025</h1>
-            <p>Báo giá trong ngày · Hỗ trợ hồ sơ công bố · Nhận mẫu Hà Nội &amp; Cần Thơ</p>
+            <p class="hero-eyebrow">VALAS 217 · ISO/IEC 17025:2017</p>
+            <h1>Kiểm nghiệm Bánh Trung thu &amp; Nước uống</h1>
+            <p>Báo giá trong ngày · Hỗ trợ hồ sơ công bố · Nhận mẫu HN · CT · HCM</p>
             <div class="hero-cta-group">
                 <a href="tel:0899551228" class="btn btn-hero-primary"><i class="fas fa-phone"></i> Gọi báo giá: 0899.551.228</a>
                 <a href="#bao-gia" class="btn btn-hero-secondary">Gửi yêu cầu báo giá</a>
-                <a href="https://zalo.me/2097486021894945291" class="btn btn-hero-secondary btn-hero-zalo" target="_blank">Chat Zalo</a>
+                <a href="https://zalo.me/2097486021894945291" class="btn btn-hero-secondary btn-hero-zalo" target="_blank" rel="noopener">Chat Zalo</a>
             </div>
+        </div>
+    </section>
+
+    <section class="trust-strip">
+        <div class="container trust-strip-inner">
+            <span><i class="fas fa-certificate"></i> ISO/IEC 17025:2017</span>
+            <span><i class="fas fa-clock"></i> Báo giá trong ngày</span>
+            <span><i class="fas fa-file-alt"></i> Hỗ trợ hồ sơ công bố</span>
+            <span><i class="fas fa-map-marker-alt"></i> Nhận mẫu HN · CT · HCM</span>
         </div>
     </section>
 
@@ -89,7 +107,10 @@
             <h2>Dịch vụ đang nhận mẫu ưu tiên</h2>
             <p class="featured-services-lead">Phòng thử nghiệm được công nhận ISO/IEC 17025 — báo cáo dùng được cho công bố sản phẩm, kiểm tra chất lượng và đối soát với đối tác phân phối.</p>
             <div class="featured-services-grid">
-                <article class="featured-service-card">
+                <article class="featured-service-card featured-service-card--moon">
+                    <div class="featured-service-thumb">
+                        <img src="images/bakery-testing.jpg" alt="Kiểm nghiệm bánh trung thu" loading="lazy" width="600" height="280" />
+                    </div>
                     <span class="service-badge">Mùa Trung Thu</span>
                     <i class="fas fa-moon"></i>
                     <h3>Kiểm nghiệm Bánh Trung thu &amp; Bánh các loại</h3>
@@ -105,7 +126,10 @@
                         <a href="pages/kiem-nghiem-banh-keo.html" class="featured-detail-link">Chi tiết dịch vụ →</a>
                     </div>
                 </article>
-                <article class="featured-service-card">
+                <article class="featured-service-card featured-service-card--water">
+                    <div class="featured-service-thumb">
+                        <img src="images/hero-banner-trang-chu.png" alt="Kiểm nghiệm nước uống tại phòng lab" loading="lazy" width="600" height="280" />
+                    </div>
                     <span class="service-badge service-badge-water">Nước sạch</span>
                     <i class="fas fa-tint"></i>
                     <h3>Kiểm nghiệm Nước sạch &amp; Nước uống</h3>
@@ -121,6 +145,39 @@
                         <a href="pages/kiem-nghiem-nuoc-giai-khat.html" class="featured-detail-link">Chi tiết dịch vụ →</a>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="nang-luc" class="accreditation-highlight">
+        <div class="container">
+            <div class="accreditation-content">
+                <div class="accreditation-image-wrap">
+                    <img src="images/ho-so-nang-luc/chung-nhan/valas-217-quyet-dinh.jpg" alt="Chứng nhận năng lực ISO IEC 17025 TechLAB Global VALAS 217" class="accreditation-image" />
+                </div>
+                <div class="accreditation-text">
+                    <h2>Phòng thử nghiệm ISO/IEC 17025</h2>
+                    <p>Được VACI công nhận theo <strong>ISO/IEC 17025:2017</strong> (Mã số <strong>VALAS 217</strong>) cho thử nghiệm sinh học, hóa học — cơ sở pháp lý cho báo cáo kiểm nghiệm phục vụ công bố sản phẩm.</p>
+                    <div class="accreditation-actions">
+                        <a href="ho-so-nang-luc.html" class="btn">Xem hồ sơ năng lực đầy đủ</a>
+                        <a href="images/ho-so-nang-luc/chung-nhan/valas-217-quyet-dinh.jpg" class="btn btn-outline-navy" target="_blank" rel="noopener">Xem chứng nhận</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-clients service-clients">
+        <div class="container">
+            <h2>Khách hàng tiêu biểu</h2>
+            <p class="home-clients-lead">Đồng hành cùng các thương hiệu thực phẩm, bánh kẹo và đồ uống hàng đầu Việt Nam.</p>
+            <div class="clients-grid">
+                <div class="client-logo">Kinh Đô</div>
+                <div class="client-logo">Bibica</div>
+                <div class="client-logo">Tràng An</div>
+                <div class="client-logo">Hải Hà Kotobuki</div>
+                <div class="client-logo">Mondelez Kinh Đô</div>
+                <div class="client-logo">Orion Việt Nam</div>
             </div>
         </div>
     </section>
@@ -166,31 +223,8 @@
                     </div>
                     <button type="submit" class="btn-submit-quote">Gửi yêu cầu báo giá</button>
                     <p class="quote-form-note">Hoặc gọi trực tiếp <a href="tel:0899551228">0899.551.228</a></p>
+                    <p class="quote-form-privacy">Bằng việc gửi form, bạn đồng ý <a href="privacy-policy.html">Chính sách bảo mật</a> của TechLAB Global.</p>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="trust-strip">
-        <div class="container trust-strip-inner">
-            <span><i class="fas fa-certificate"></i> ISO/IEC 17025:2017</span>
-            <span><i class="fas fa-clock"></i> Báo giá trong ngày</span>
-            <span><i class="fas fa-file-alt"></i> Hỗ trợ hồ sơ công bố</span>
-            <span><i class="fas fa-map-marker-alt"></i> Nhận mẫu Hà Nội &amp; Cần Thơ</span>
-        </div>
-    </section>
-
-    <section id="nang-luc" class="accreditation-highlight">
-        <div class="container">
-            <div class="accreditation-content">
-                <div class="accreditation-image-wrap">
-                    <img src="images/giay-17025.jpg" alt="Chứng nhận năng lực ISO IEC 17025 TechLAB Global" class="accreditation-image" />
-                </div>
-                <div class="accreditation-text">
-                    <h2>Phòng thử nghiệm ISO/IEC 17025</h2>
-                    <p>Được VACI công nhận theo <strong>ISO/IEC 17025:2017</strong> (Mã số <strong>VALAS 217</strong>) cho thử nghiệm sinh học, hóa học — cơ sở pháp lý cho báo cáo kiểm nghiệm phục vụ công bố sản phẩm.</p>
-                    <a href="images/giay-17025.jpg" class="btn" target="_blank">Xem chứng nhận năng lực</a>
-                </div>
             </div>
         </div>
     </section>
@@ -325,11 +359,11 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Có nhận mẫu tại Hà Nội và Cần Thơ không?</h3>
+                        <h3>Có nhận mẫu tại Hà Nội, Cần Thơ và HCM không?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Có. Chúng tôi nhận mẫu và tư vấn tại trụ sở Hà Nội (Km11, Quốc Lộ 21) và văn phòng Cần Thơ (KDC công ty 8, P. Hưng Thạnh).</p>
+                        <p>Có. Chúng tôi nhận mẫu và tư vấn tại Hà Nội (Km11, Quốc Lộ 21), Cần Thơ (KDC công ty 8, P. Hưng Thạnh) và chi nhánh HCM (KCN Tân Bình, P. Tây Thạnh). Hotline HCM: <a href="tel:0907616969">0907.61.69.69</a>.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -351,11 +385,11 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>TechLAB Global là đơn vị kiểm nghiệm và chứng nhận, đồng hành cùng doanh nghiệp trong việc kiểm soát chất lượng, hoàn thiện hồ sơ pháp lý và nâng cao năng lực cạnh tranh.</p>
-                    <p>Phòng thử nghiệm được <a href="#nang-luc">công nhận ISO/IEC 17025</a> — đáp ứng yêu cầu công bố sản phẩm và xuất khẩu.</p>
+                    <p>Phòng thử nghiệm được <a href="ho-so-nang-luc.html">công nhận ISO/IEC 17025</a> — đáp ứng yêu cầu công bố sản phẩm và xuất khẩu.</p>
                     <p>Với phương châm <strong>Tận tâm với khách hàng</strong>, chúng tôi cam kết kết quả chính xác, quy trình minh bạch và giải pháp phù hợp theo từng ngành hàng.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/natek-office.jpg" alt="Văn phòng TechLAB Global" />
+                    <img src="images/ho-so-nang-luc/doi-ngu/phong-hop-cong-ty.jpg" alt="TechLAB Global — trung tâm kiểm nghiệm" loading="lazy" />
                 </div>
             </div>
         </div>
@@ -388,6 +422,14 @@
                         </div>
                     </div>
                     <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Chi nhánh Hồ Chí Minh</h4>
+                            <p>Lô II-1, Đường số 1, Nhóm CN2, KCN Tân Bình, P. Tây Thạnh, TP. HCM</p>
+                            <p><a href="tel:0907616969">0907.61.69.69</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <p>Email: <a href="mailto:info@techlabglobal.com.vn">info@techlabglobal.com.vn</a></p>
                     </div>
@@ -398,6 +440,18 @@
                     <a href="#bao-gia" class="btn">Đến form báo giá</a>
                     <p class="contact-cta-alt">Hoặc gọi <a href="tel:0899551228">0899.551.228</a> · <a href="https://zalo.me/2097486021894945291" target="_blank" rel="noopener">Chat Zalo</a></p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-cta-band">
+        <div class="container">
+            <h2>Nhận báo giá kiểm nghiệm trong hôm nay</h2>
+            <p>Gọi ngay hoặc gửi form — tư vấn gói chỉ tiêu phù hợp TCCS / QCVN, phản hồi trong giờ hành chính.</p>
+            <div class="home-cta-actions">
+                <a href="tel:0899551228" class="btn btn-cta-primary"><i class="fas fa-phone"></i> Hotline: 0899.551.228</a>
+                <a href="#bao-gia" class="btn btn-cta-secondary">Gửi yêu cầu báo giá</a>
+                <a href="ho-so-nang-luc.html" class="btn btn-cta-secondary">Xem hồ sơ năng lực</a>
             </div>
         </div>
     </section>
@@ -423,6 +477,7 @@
                     <h4>Liên kết nhanh</h4>
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="ho-so-nang-luc.html">Hồ sơ năng lực</a></li>
                         <li><a href="#bao-gia">Báo giá</a></li>
                         <li><a href="#dich-vu">Dịch vụ</a></li>
                         <li><a href="#chung-nhan">Chứng nhận</a></li>
@@ -446,6 +501,8 @@
                     <h4>Thông tin liên hệ</h4>
                     <p><i class="fas fa-map-marker-alt"></i> Hà Nội: Tòa nhà 9 tầng, Km11, Quốc Lộ 21</p>
                     <p><i class="fas fa-map-marker-alt"></i> Cần Thơ: Số CC-15, đường số 12, KDC công ty 8, KV2, P. Hưng Thạnh</p>
+                    <p><i class="fas fa-map-marker-alt"></i> HCM: Lô II-1, Đường số 1, KCN Tân Bình, P. Tây Thạnh</p>
+                    <p><i class="fas fa-phone"></i> HCM: <a href="tel:0907616969">0907.61.69.69</a></p>
                     <p><i class="fas fa-phone"></i> <a href="tel:0899551228">0899.551.228</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:info@techlabglobal.com.vn">info@techlabglobal.com.vn</a></p>
                 </div>
@@ -525,12 +582,71 @@
           ]
         },
         {
+          "@type": "LocalBusiness",
+          "@id": "https://kiemnghiem.techlabglobal.com.vn/#localbusiness",
+          "name": "Phòng thử nghiệm TechLAB Global",
+          "url": "https://kiemnghiem.techlabglobal.com.vn/",
+          "telephone": "+84899551228",
+          "email": "info@techlabglobal.com.vn",
+          "image": "https://kiemnghiem.techlabglobal.com.vn/images/hero-banner-trang-chu.png",
+          "priceRange": "$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tòa nhà 9 tầng, Km11, Quốc Lộ 21",
+            "addressLocality": "Hà Nội",
+            "addressCountry": "VN"
+          },
+          "parentOrganization": { "@id": "https://techlabglobal.com.vn/#organization" },
+          "department": [
+            {
+              "@type": "LocalBusiness",
+              "name": "TechLAB Global — Chi nhánh HCM",
+              "telephone": "+84907616969",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Lô II-1, Đường số 1, Nhóm CN2, KCN Tân Bình, P. Tây Thạnh",
+                "addressLocality": "Hồ Chí Minh",
+                "addressCountry": "VN"
+              }
+            }
+          ]
+        },
+        {
           "@type": "WebSite",
           "@id": "https://kiemnghiem.techlabglobal.com.vn/#website",
           "name": "Kiểm nghiệm TechLAB Global",
           "url": "https://kiemnghiem.techlabglobal.com.vn/",
           "publisher": { "@id": "https://techlabglobal.com.vn/#organization" },
           "description": "Báo giá kiểm nghiệm thực phẩm, mỹ phẩm, nước uống — phòng lab ISO/IEC 17025"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Phòng thử nghiệm có chứng nhận ISO/IEC 17025 không?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Có. Phòng kiểm nghiệm TechLAB Global được VACI công nhận theo ISO/IEC 17025:2017 (Mã số VALAS 217) cho lĩnh vực thử nghiệm sinh học, hóa học."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bao lâu có kết quả kiểm nghiệm?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Thông thường 5–7 ngày làm việc tùy gói chỉ tiêu. Mùa cao điểm có lịch ưu tiên — gọi hotline 0899.551.228 để xác nhận."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Có nhận mẫu tại Hà Nội, Cần Thơ và HCM không?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Có. Nhận mẫu tại Hà Nội, Cần Thơ và HCM (KCN Tân Bình). Hotline HCM: 0907.61.69.69."
+              }
+            }
+          ]
         }
       ]
     }

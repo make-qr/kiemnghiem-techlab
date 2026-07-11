@@ -1,4 +1,6 @@
-﻿/* Variables */
+﻿@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+
+/* Variables */
 :root {
     --primary-color: #0f75bc; /* Logo blue */
     --primary-light: #2792dd;
@@ -29,7 +31,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
@@ -1359,4 +1361,152 @@ iframe[id^="zalo-vapp"] {
     line-height: 1.45;
     color: #94a3b8;
     margin: 0;
+}
+
+/* ============================================================
+   TRANG CHỦ — Bảng màu Navy + Đỏ (đợt nâng cấp giao diện)
+   Chỉ áp dụng cho body.home (index.html).
+   Trang dịch vụ giữ nguyên. Xóa cả khối này để hoàn tác.
+   ============================================================ */
+:root {
+    --navy: #0a2540;
+    --navy-2: #123a63;
+    --teal-accent: #00a3c4;
+    --warm-bg: #f6f9fc;
+}
+
+/* Hero: gradient navy + ảnh kiểm nghiệm nước (chỉ trang chủ) */
+body.home .hero {
+    background: linear-gradient(115deg, rgba(8, 29, 51, 0.92) 0%, rgba(8, 29, 51, 0.65) 38%, rgba(15, 117, 188, 0.35) 100%), url('../images/hero-banner-trang-chu.png');
+    background-size: cover;
+    background-position: 72% center;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 90px;
+}
+
+body.home .hero .hero-eyebrow {
+    display: inline-block;
+    border: 1px solid rgba(201, 162, 39, 0.45);
+    color: #f5e6b8;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 992px) {
+    body.home .hero .container {
+        text-align: left;
+        max-width: 520px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+body.home .featured-service-card {
+    overflow: hidden;
+}
+
+body.home .featured-service-thumb {
+    margin: -32px -28px 18px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+body.home .featured-service-card:has(.featured-service-thumb) > i.fas {
+    display: none;
+}
+
+body.home .featured-service-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+body.home .featured-service-card--water .featured-service-thumb img {
+    object-position: 70% center;
+}
+
+body.home .hero h1 {
+    font-size: 3rem;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
+}
+
+body.home .hero p {
+    color: #dbeafe;
+}
+
+/* Thanh mùa cao điểm: navy đậm + viền đỏ dứt khoát */
+body.home .season-banner {
+    background: linear-gradient(90deg, var(--navy) 0%, var(--navy-2) 100%);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* Trust strip: nền navy tạo nhịp sáng–tối giữa các section */
+body.home .trust-strip {
+    background-color: var(--navy);
+}
+
+/* Tiêu đề section đậm, dứt khoát hơn */
+body.home h2 {
+    color: var(--navy);
+}
+
+/* Featured services: nền tươi hơn + viền trên màu cho card */
+body.home .featured-services {
+    background: linear-gradient(180deg, #e8f2fb 0%, var(--white) 100%);
+}
+
+body.home .featured-service-card {
+    border-top: 4px solid var(--primary-color);
+}
+
+body.home .featured-service-card:nth-child(2) {
+    border-top-color: var(--teal-accent);
+}
+
+/* Nền xám → kem ấm, bớt cảm giác nhợt */
+body.home .services,
+body.home .about {
+    background-color: var(--warm-bg);
+}
+
+/* Card dịch vụ / chứng nhận: viền trên hiện màu khi hover */
+body.home .service-card,
+body.home .certification-card {
+    border-top: 3px solid transparent;
+}
+
+body.home .service-card:hover,
+body.home .certification-card:hover {
+    border-top-color: var(--accent-color);
+}
+
+/* Hộp thông tin liên hệ: navy đậm thay xanh nhạt cho phần CTA cuối */
+body.home .contact-info {
+    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%);
+}
+
+body.home .contact-cta-box {
+    background: var(--white);
+    border-top: 4px solid var(--accent-color);
+}
+
+body.home .home-cta-band h2 {
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    body.home .hero h1 {
+        font-size: 2.1rem;
+    }
 }

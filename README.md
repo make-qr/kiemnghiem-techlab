@@ -9,17 +9,22 @@ Mã nguồn trang landing page **kiemnghiem.techlabglobal.com.vn** — giới th
 ```
 kiemnghiem-techlab/
 ├── index.html              # Trang chủ + form báo giá
+├── ho-so-nang-luc.html     # Hồ sơ năng lực phòng thử nghiệm online
 ├── thank-you.html          # Trang cảm ơn sau khi gửi form
 ├── css/
 │   ├── style.css           # CSS chính
 │   ├── service-page.css    # Layout trang dịch vụ
-│   └── conversion.css      # Sticky CTA, form báo giá
+│   ├── conversion.css      # Sticky CTA, form báo giá
+│   └── ho-so-nang-luc.css  # Hồ sơ năng lực
 ├── js/
 │   ├── main.js             # Smooth scroll, FAQ accordion
 │   ├── conversion.js       # Prefill form, Google Ads conversion events
+│   ├── ho-so-nang-luc.js   # Lightbox, gallery tabs
 │   ├── tracking-bootstrap.js  # dataLayer + gtag config
 │   └── meta-pixel.js       # Meta Pixel retarget (4620520364845904)
 ├── images/
+│   ├── ho-so-nang-luc/     # Tài liệu public (chứng nhận, lab, PDF)
+│   └── tai-lieu/           # Kho tài liệu gốc (không link trực tiếp)
 ├── pages/                  # Trang dịch vụ & chứng nhận
 ├── sitemap.xml
 └── robots.txt
@@ -48,7 +53,8 @@ npx serve .
 ## Lưu ý
 
 - Thư mục `pages_template/` chỉ là bản nháp cũ — **không deploy** lên hosting.
-- Chỉ deploy: `index.html`, `thank-you.html`, `privacy-policy.html`, `css/`, `js/`, `images/`, `pages/`, `robots.txt`, `sitemap.xml`.
+- Chỉ deploy: `index.html`, `ho-so-nang-luc.html`, `thank-you.html`, `privacy-policy.html`, `css/`, `js/`, `images/`, `pages/`, `robots.txt`, `sitemap.xml`.
+- Thư mục `images/tai-lieu/` là kho gốc — web dùng `images/ho-so-nang-luc/` (đã lọc, đổi tên).
 
 ## Tracking (GA4, GTM, Google Ads, Meta Pixel)
 

@@ -37,35 +37,56 @@
 }
 
 .hero-cta-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
-    margin-top: 8px;
+    max-width: 720px;
+    margin: 12px auto 0;
+    align-items: stretch;
+}
+
+.hero-cta-group .btn {
+    width: 100%;
+    min-height: var(--btn-height, 48px);
+    padding: 0 14px;
+    font-size: 0.92rem;
+    white-space: normal;
 }
 
 .btn-hero-primary {
     background-color: var(--accent-color);
     color: var(--white);
-    padding: 12px 28px;
-    font-size: 1.05rem;
+    border-color: var(--accent-color);
 }
 
 .btn-hero-primary:hover {
     background-color: #c41820;
     color: var(--white);
+    border-color: #c41820;
 }
 
 .btn-hero-secondary {
     background-color: var(--white);
     color: var(--primary-color);
-    padding: 12px 28px;
+    border-color: var(--white);
 }
 
 .btn-hero-secondary:hover {
     background-color: transparent;
     color: var(--white);
-    border: 1px solid var(--white);
+    border-color: var(--white);
+}
+
+.btn-hero-zalo {
+    background-color: #0068ff;
+    color: var(--white);
+    border-color: #0068ff;
+}
+
+.btn-hero-zalo:hover {
+    background-color: #0055d4;
+    color: var(--white);
+    border-color: #0055d4;
 }
 
 .trust-strip-inner {
@@ -316,34 +337,43 @@
 }
 
 .service-cta .btn {
+    min-height: var(--btn-height, 48px);
+    padding: 0 22px;
+    font-size: var(--btn-font, 0.95rem);
     background-color: var(--white);
     color: var(--primary-color);
-    padding: 12px 30px;
-    font-size: 1.1rem;
+    border-color: var(--white);
 }
 
 .service-cta .btn:hover {
     background-color: transparent;
     color: var(--white);
-    border: 1px solid var(--white);
+    border-color: var(--white);
 }
 
 .service-cta-actions {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 240px));
     justify-content: center;
-    gap: 14px;
+    gap: 12px;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.service-cta-actions .btn {
+    width: 100%;
 }
 
 .service-cta .btn-hotline {
     background-color: var(--accent-color);
     color: var(--white);
-    border: none;
+    border-color: var(--accent-color);
 }
 
 .service-cta .btn-hotline:hover {
     background-color: #c41820;
     color: var(--white);
+    border-color: #c41820;
 }
 
 .trust-strip {
@@ -737,6 +767,8 @@ body.service-page .service-hero--cert {
 
     body.service-page .hero-cta-group {
         justify-content: flex-start;
+        margin-left: 0;
+        margin-right: auto;
     }
 
     body.service-page .service-hero--cert {
@@ -751,6 +783,8 @@ body.service-page .service-hero--cert {
 
     body.service-page .service-hero--cert .hero-cta-group {
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     body.service-page .features-grid {
@@ -763,5 +797,20 @@ body.service-page .service-hero--cert {
 
     body.service-page .clients-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    body.service-page .hero-cta-group {
+        display: flex;
+        flex-direction: column;
+        max-width: 420px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    body.service-page .service-hero--cert .hero-cta-group {
+        margin-left: auto;
+        margin-right: auto;
     }
 } 

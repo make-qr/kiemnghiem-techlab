@@ -16,6 +16,11 @@
     --success: #28a745;
     --box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     --header-height: 70px;
+    --btn-radius: 6px;
+    --btn-height: 48px;
+    --btn-pad-x: 22px;
+    --btn-font: 0.95rem;
+    --btn-border: 2px solid transparent;
 }
 
 /* Reset and Base Styles */
@@ -67,23 +72,38 @@ img {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: var(--btn-height);
+    padding: 0 var(--btn-pad-x);
+    border-radius: var(--btn-radius);
+    border: var(--btn-border);
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-weight: 500;
+    font-family: inherit;
+    font-size: var(--btn-font);
+    font-weight: 600;
+    line-height: 1.2;
     text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+    vertical-align: middle;
 }
 
 .btn:hover {
     background-color: var(--primary-light);
     color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(15, 117, 188, 0.22);
+}
+
+.btn i {
+    font-size: 0.95em;
+    line-height: 1;
 }
 
 section {
@@ -282,13 +302,14 @@ nav ul li a:hover:before {
 
 .hero .btn {
     background-color: var(--accent-color);
-    padding: 12px 30px;
-    font-size: 1.1rem;
+    min-height: var(--btn-height);
+    padding: 0 var(--btn-pad-x);
+    font-size: var(--btn-font);
 }
 
 .hero .btn:hover {
-    background-color: var(--white);
-    color: var(--primary-color);
+    background-color: #c41820;
+    color: var(--white);
 }
 
 /* Accreditation Highlight */
@@ -373,15 +394,20 @@ nav ul li a:hover:before {
 }
 
 .service-card .btn {
+    width: 100%;
+    max-width: 220px;
     background-color: transparent;
     color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    padding: 8px 15px;
+    border: 2px solid var(--primary-color);
+    min-height: 42px;
+    padding: 0 18px;
+    font-size: 0.9rem;
 }
 
 .service-card .btn:hover {
     background-color: var(--primary-color);
     color: var(--white);
+    border-color: var(--primary-color);
 }
 
 .service-card-highlight {
@@ -480,39 +506,51 @@ nav ul li a:hover:before {
 }
 
 .featured-service-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 12px;
+    align-items: stretch;
+}
+
+.featured-service-actions .btn {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 0.9rem;
 }
 
 .btn-hotline {
     background-color: var(--accent-color);
     color: var(--white);
-    border: none;
+    border-color: var(--accent-color);
 }
 
 .btn-hotline:hover {
     background-color: #c41820;
     color: var(--white);
+    border-color: #c41820;
 }
 
 .btn-outline-light {
     background-color: transparent;
     color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .btn-outline-light:hover {
     background-color: var(--primary-color);
     color: var(--white);
+    border-color: var(--primary-color);
 }
 
 .featured-detail-link {
+    grid-column: 1 / -1;
     color: var(--primary-color);
     font-weight: 600;
     text-decoration: none;
-    align-self: center;
-    padding: 4px 0;
+    text-align: center;
+    padding: 6px 0 0;
+    min-height: auto;
 }
 
 .featured-detail-link:hover {
@@ -524,21 +562,10 @@ nav ul li a:hover:before {
         grid-template-columns: 1fr;
     }
 
-    .featured-service-actions {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
     .featured-service-actions .btn {
-        flex: 1 1 calc(50% - 6px);
-        width: auto;
-        min-width: 0;
-    }
-
-    .featured-detail-link {
-        width: 100%;
-        text-align: center;
-        margin-top: 4px;
+        font-size: 0.88rem;
+        padding: 0 10px;
+        white-space: normal;
     }
 }
 
@@ -1535,13 +1562,17 @@ body.home .home-cta-band h2 {
     }
 
     body.home .hero-cta-group {
+        display: flex;
         flex-direction: column;
         align-items: stretch;
+        max-width: 420px;
     }
 
     body.home .hero-cta-group .btn {
         width: 100%;
+        max-width: none;
         justify-content: center;
+        white-space: normal;
     }
 
     body.home .trust-strip-inner {

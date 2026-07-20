@@ -1,130 +1,386 @@
 {
   "kiem-nghiem-nuoc-giai-khat": {
+    "service_name": "Kiểm nghiệm nước sạch & nước uống",
+    "meta_description": "Kiểm nghiệm nước sạch, nước tinh khiết, nước uống đóng chai theo QCVN tại lab ISO/IEC 17025 (VALAS 217). Báo giá trong ngày — 0899.551.228.",
     "lead": "TechLAB Global kiểm nghiệm nước sạch, nước tinh khiết, nước khoáng và nước uống đóng chai tại phòng thử nghiệm được VACI công nhận ISO/IEC 17025:2017 (mã VALAS 217).",
     "facts": [
       "Chỉ tiêu vi sinh, hóa lý theo QCVN 6-1, QCVN 6-2 và quy định công bố sản phẩm.",
       "Thời gian kết quả thông thường 5–7 ngày làm việc; báo giá phản hồi trong ngày.",
       "Nhận mẫu tại Hà Nội, Cần Thơ, Hồ Chí Minh — hotline 0899.551.228, HCM 0907.61.69.69."
+    ],
+    "faq": [
+      {
+        "q": "Nước uống đóng chai cần kiểm những chỉ tiêu gì?",
+        "a": "Thường gồm vi sinh (tổng số vi khuẩn hiếu khí, Coliform, E. coli…) và hóa lý theo QCVN 6-1/6-2 cùng yêu cầu công bố. TechLAB Global tư vấn gói chỉ tiêu theo loại nước tại lab ISO/IEC 17025 (VALAS 217)."
+      },
+      {
+        "q": "Bao lâu có kết quả kiểm nghiệm nước?",
+        "a": "Thông thường 5–7 ngày làm việc tùy gói chỉ tiêu. Báo giá phản hồi trong ngày làm việc — gọi 0899.551.228 hoặc chi nhánh HCM 0907.61.69.69."
+      },
+      {
+        "q": "Nhận mẫu nước ở đâu?",
+        "a": "Nhận mẫu tại Hà Nội, Cần Thơ và Hồ Chí Minh (KCN Tân Bình). Báo cáo từ phòng lab được công nhận ISO/IEC 17025 dùng được cho công bố và kiểm soát chất lượng."
+      }
     ]
   },
   "kiem-nghiem-banh-keo": {
+    "service_name": "Kiểm nghiệm bánh trung thu & bánh các loại",
+    "meta_description": "Kiểm nghiệm bánh trung thu, bánh kẹo, snack: vi sinh, hóa lý, phụ gia tại lab ISO 17025 (VALAS 217). Ưu tiên mùa cao điểm — 0899.551.228.",
     "lead": "TechLAB Global kiểm nghiệm bánh kẹo, bánh trung thu, snack và thực phẩm chế biến tại phòng lab ISO/IEC 17025 (VALAS 217), phục vụ công bố sản phẩm và kiểm soát chất lượng theo mùa.",
     "facts": [
       "Chỉ tiêu vi sinh, hóa lý, phụ gia, cảm quan theo TCCS và quy chuẩn hiện hành.",
       "Tư vấn gói chỉ tiêu phù hợp từng loại bánh — tránh kiểm thừa, tối ưu chi phí.",
       "Ưu tiên mùa cao điểm; báo giá trong ngày — 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Kiểm nghiệm bánh trung thu cần những chỉ tiêu nào?",
+        "a": "Thường gồm vi sinh, hóa lý, phụ gia và cảm quan theo TCCS/quy chuẩn. TechLAB tư vấn gói theo loại nhân bánh tại lab ISO/IEC 17025 (VALAS 217) để đủ hồ sơ công bố, không kiểm thừa."
+      },
+      {
+        "q": "Mùa Trung thu có nhận mẫu ưu tiên không?",
+        "a": "Có. TechLAB ưu tiên lịch nhận mẫu bánh trung thu và bánh các loại mùa cao điểm; báo giá trong ngày qua hotline 0899.551.228."
+      },
+      {
+        "q": "Báo cáo có dùng để công bố sản phẩm không?",
+        "a": "Có. Báo cáo từ phòng thử nghiệm được VACI công nhận ISO/IEC 17025:2017 (VALAS 217) dùng được cho công bố và đối soát đối tác phân phối."
+      }
     ]
   },
   "kiem-nghiem-thuc-pham": {
+    "service_name": "Kiểm nghiệm thực phẩm",
+    "meta_description": "Kiểm nghiệm thực phẩm tổng hợp: vi sinh, hóa lý, dinh dưỡng, kim loại nặng tại lab ISO 17025 (VALAS 217). Nhận mẫu HN·CT·HCM — 0899.551.228.",
     "lead": "TechLAB Global cung cấp dịch vụ kiểm nghiệm thực phẩm tổng hợp: thực phẩm chế biến, nguyên liệu, bán thành phẩm tại phòng thử nghiệm ISO/IEC 17025 (VALAS 217).",
     "facts": [
       "Phạm vi: vi sinh, hóa lý, dinh dưỡng, phụ gia, kim loại nặng theo TCCS/QCVN/TCVN.",
       "Báo cáo có giá trị pháp lý phục vụ công bố sản phẩm và đối soát đối tác phân phối.",
       "Nhận mẫu HN · CT · HCM; thời gian kết quả TB 5–7 ngày."
+    ],
+    "faq": [
+      {
+        "q": "Kiểm nghiệm thực phẩm cần những chỉ tiêu gì?",
+        "a": "Tùy loại sản phẩm: vi sinh, hóa lý, dinh dưỡng, phụ gia, kim loại nặng theo TCCS/QCVN/TCVN. TechLAB tư vấn gói chỉ tiêu tại lab ISO/IEC 17025 (VALAS 217)."
+      },
+      {
+        "q": "Bao lâu có kết quả?",
+        "a": "Thông thường 5–7 ngày làm việc. Báo giá trong ngày — hotline 0899.551.228 hoặc HCM 0907.61.69.69."
+      },
+      {
+        "q": "Có nhận mẫu tại Hà Nội, Cần Thơ, HCM không?",
+        "a": "Có. Nhận mẫu tại Hà Nội, Cần Thơ và Hồ Chí Minh. Báo cáo phục vụ công bố sản phẩm và kiểm soát chất lượng."
+      }
     ]
   },
   "kiem-nghiem-my-pham": {
+    "service_name": "Kiểm nghiệm mỹ phẩm",
+    "meta_description": "Kiểm nghiệm mỹ phẩm theo Thông tư 06/2011/TT-BYT tại lab ISO 17025 (VALAS 217): vi sinh, hóa lý, kim loại nặng. Báo giá trong ngày — 0899.551.228.",
     "lead": "TechLAB Global kiểm nghiệm mỹ phẩm (thành phẩm, nguyên liệu) theo Thông tư 06/2011/TT-BYT và tiêu chuẩn liên quan, tại phòng lab được công nhận ISO/IEC 17025 (VALAS 217).",
     "facts": [
       "Chỉ tiêu: vi sinh, hóa lý, độ pH, kim loại nặng, độ ổn định cơ bản.",
       "Hỗ trợ hồ sơ công bố mỹ phẩm và kiểm tra định kỳ lô sản xuất.",
       "Báo giá tư vấn trong ngày — hotline 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Kiểm nghiệm mỹ phẩm theo quy định nào?",
+        "a": "Thường theo Thông tư 06/2011/TT-BYT và tiêu chuẩn liên quan. TechLAB thực hiện tại lab ISO/IEC 17025 (VALAS 217), hỗ trợ hồ sơ công bố mỹ phẩm."
+      },
+      {
+        "q": "Mỹ phẩm cần kiểm những chỉ tiêu gì?",
+        "a": "Vi sinh, hóa lý, pH, kim loại nặng và các chỉ tiêu ổn định cơ bản tùy dạng sản phẩm. Gọi 0899.551.228 để nhận gói tư vấn."
+      },
+      {
+        "q": "Bao lâu có kết quả kiểm nghiệm mỹ phẩm?",
+        "a": "Thông thường 5–7 ngày làm việc tùy chỉ tiêu. Báo giá trong ngày; nhận mẫu HN · CT · HCM."
+      }
     ]
   },
   "kiem-nghiem-duoc-pham": {
+    "service_name": "Kiểm nghiệm dược phẩm & TPCN",
+    "meta_description": "Kiểm nghiệm dược phẩm, TPCN theo Dược điển Việt Nam tại lab ISO 17025 (VALAS 217). Hóa lý, vi sinh, kim loại nặng — 0899.551.228.",
     "lead": "TechLAB Global kiểm nghiệm dược phẩm, thực phẩm chức năng (TPCN) và nguyên liệu dược tại phòng thử nghiệm ISO/IEC 17025 (VALAS 217).",
     "facts": [
       "Chỉ tiêu hóa lý, vi sinh, độ ẩm, tro, kim loại nặng theo Dược điển Việt Nam và TCVN.",
       "Phù hợp kiểm soát chất lượng đầu vào, QC lô và đối soát nhà phân phối.",
       "Thời gian kết quả thường 5–7 ngày; nhận mẫu tại HN, CT, HCM."
+    ],
+    "faq": [
+      {
+        "q": "TPCN và dược phẩm kiểm theo tiêu chuẩn nào?",
+        "a": "Theo Dược điển Việt Nam, TCVN và yêu cầu QC nội bộ. TechLAB thực hiện tại phòng lab được công nhận ISO/IEC 17025 (VALAS 217)."
+      },
+      {
+        "q": "Có hỗ trợ kiểm soát nguyên liệu đầu vào không?",
+        "a": "Có. Phù hợp kiểm đầu vào, QC lô sản xuất và đối soát nhà phân phối. Báo giá qua 0899.551.228."
+      },
+      {
+        "q": "Thời gian trả kết quả bao lâu?",
+        "a": "Thường 5–7 ngày làm việc tùy gói chỉ tiêu. Nhận mẫu tại Hà Nội, Cần Thơ, Hồ Chí Minh."
+      }
     ]
   },
   "kiem-nghiem-dinh-duong": {
+    "service_name": "Phân tích thành phần dinh dưỡng",
+    "meta_description": "Phân tích dinh dưỡng thực phẩm & TPCN để ghi nhãn: protein, lipid, carb, năng lượng tại lab ISO 17025 (VALAS 217) — 0899.551.228.",
     "lead": "TechLAB Global phân tích thành phần dinh dưỡng trên thực phẩm, TPCN và sản phẩm ghi nhãn dinh dưỡng tại phòng lab ISO/IEC 17025 (VALAS 217).",
     "facts": [
       "Xác định protein, lipid, carbohydrate, năng lượng, vitamin và khoáng chất theo yêu cầu nhãn.",
       "Đối soát giá trị ghi trên bao bì với kết quả thử nghiệm — giảm rủi ro thanh tra.",
       "Tư vấn gói chỉ tiêu theo quy chuẩn ghi nhãn — 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Phân tích dinh dưỡng để làm gì?",
+        "a": "Để ghi nhãn dinh dưỡng đúng quy định và đối soát giá trị trên bao bì. TechLAB phân tích tại lab ISO/IEC 17025 (VALAS 217), giảm rủi ro khi thanh tra."
+      },
+      {
+        "q": "Thường phân tích những thành phần nào?",
+        "a": "Protein, lipid, carbohydrate, năng lượng; có thể bổ sung vitamin, khoáng chất theo yêu cầu nhãn. Tư vấn gói qua 0899.551.228."
+      },
+      {
+        "q": "Bao lâu có kết quả phân tích dinh dưỡng?",
+        "a": "Thường 5–7 ngày làm việc tùy chỉ tiêu. Nhận mẫu HN · CT · HCM; báo giá trong ngày."
+      }
     ]
   },
   "kiem-nghiem-thuc-an-chan-nuoi": {
+    "service_name": "Kiểm nghiệm thức ăn chăn nuôi",
+    "meta_description": "Kiểm nghiệm thức ăn chăn nuôi, thủy sản, premix: protein, aflatoxin, vi sinh tại lab ISO 17025 (VALAS 217) — 0899.551.228.",
     "lead": "TechLAB Global kiểm nghiệm thức ăn chăn nuôi, thức ăn thủy sản và premix tại phòng thử nghiệm ISO/IEC 17025 (VALAS 217).",
     "facts": [
       "Chỉ tiêu: protein, độ ẩm, vi sinh, aflatoxin, kim loại nặng theo TCVN/QCVN.",
       "Phục vụ kiểm soát chất lượng nhập nguyên liệu và xuất chứng từ cho đối tác.",
       "Báo giá trong ngày làm việc; nhận mẫu HN · CT · HCM."
-    ]
-  },
-  "quan-trac-moi-truong": {
-    "lead": "TechLAB Global thực hiện quan trắc môi trường: nước thải, khí thải, đất, nước mặt — theo yêu cầu dự án và quy chuẩn QCVN, NĐ 08/2022.",
-    "facts": [
-      "Lấy mẫu, phân tích và báo cáo phục vụ đăng ký môi trường, giám sát định kỳ.",
-      "Phòng thử nghiệm được công nhận ISO/IEC 17025 (VALAS 217).",
-      "Liên hệ tư vấn gói chỉ tiêu theo loại hình sản xuất — 0899.551.228."
-    ]
-  },
-  "tu-van-moi-truong": {
-    "lead": "TechLAB Global tư vấn môi trường: lập hồ sơ, báo cáo đánh giá tác động, phương án bảo vệ môi trường và đăng ký môi trường cho doanh nghiệp.",
-    "facts": [
-      "Kết hợp năng lực phòng lab ISO/IEC 17025 (VALAS 217) và kinh nghiệm triển khai thực tế.",
-      "Hỗ trợ doanh nghiệp thực phẩm, sản xuất và dịch vụ hoàn thiện hồ sơ pháp lý môi trường.",
-      "Tư vấn sơ bộ miễn phí qua hotline 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Thức ăn chăn nuôi cần kiểm những chỉ tiêu gì?",
+        "a": "Thường gồm protein, độ ẩm, vi sinh, aflatoxin, kim loại nặng theo TCVN/QCVN. TechLAB thực hiện tại lab ISO/IEC 17025 (VALAS 217)."
+      },
+      {
+        "q": "Có kiểm thức ăn thủy sản và premix không?",
+        "a": "Có. Nhận mẫu thức ăn chăn nuôi, thủy sản và premix; tư vấn gói chỉ tiêu theo loại nguyên liệu qua 0899.551.228."
+      },
+      {
+        "q": "Thời gian trả kết quả?",
+        "a": "Thông thường 5–7 ngày làm việc. Báo giá trong ngày; nhận mẫu tại Hà Nội, Cần Thơ, Hồ Chí Minh."
+      }
     ]
   },
   "dich-vu-kiem-nghiem-khac": {
+    "service_name": "Kiểm nghiệm mẫu đặc thù",
+    "meta_description": "Nhận kiểm nghiệm mẫu đặc thù, bao bì tiếp xúc thực phẩm, mẫu R&D tại lab ISO 17025 (VALAS 217). Tư vấn phương pháp trước — 0899.551.228.",
     "lead": "TechLAB Global nhận kiểm nghiệm các mẫu đặc thù ngoài danh mục tiêu chuẩn: nguyên liệu, bao bì tiếp xúc thực phẩm, mẫu R&D tại phòng lab ISO/IEC 17025 (VALAS 217).",
     "facts": [
       "Tư vấn khả năng thử nghiệm và phương pháp phù hợp trước khi nhận mẫu.",
       "Phạm vi công nhận VACI: thử nghiệm sinh học và hóa học — xem phụ lục hồ sơ năng lực.",
       "Gửi mô tả mẫu qua form hoặc gọi 0899.551.228 để báo giá."
+    ],
+    "faq": [
+      {
+        "q": "Mẫu ngoài danh mục tiêu chuẩn có nhận không?",
+        "a": "Có thể nhận sau khi tư vấn khả năng thử và phương pháp phù hợp. Phạm vi công nhận VACI gồm thử nghiệm sinh học và hóa học (VALAS 217)."
+      },
+      {
+        "q": "Bao bì tiếp xúc thực phẩm có kiểm được không?",
+        "a": "TechLAB tư vấn chỉ tiêu và phương pháp phù hợp trước khi nhận mẫu. Liên hệ 0899.551.228 kèm mô tả vật liệu."
+      },
+      {
+        "q": "Cần gửi thông tin gì để báo giá?",
+        "a": "Loại mẫu, mục đích kiểm (công bố/QC/R&D), chỉ tiêu mong muốn. Gửi form trên website hoặc gọi hotline để nhận báo giá."
+      }
+    ]
+  },
+  "quan-trac-moi-truong": {
+    "service_name": "Quan trắc môi trường",
+    "meta_description": "Quan trắc nước thải, khí thải, đất, nước mặt theo QCVN/NĐ 08 tại lab ISO 17025 (VALAS 217). Báo cáo giám sát định kỳ — 0899.551.228.",
+    "lead": "TechLAB Global thực hiện quan trắc môi trường: nước thải, khí thải, đất, nước mặt — theo yêu cầu dự án và quy chuẩn QCVN, NĐ 08/2022.",
+    "facts": [
+      "Lấy mẫu, phân tích và báo cáo phục vụ đăng ký môi trường, giám sát định kỳ.",
+      "Phòng thử nghiệm được công nhận ISO/IEC 17025 (VALAS 217).",
+      "Liên hệ tư vấn gói chỉ tiêu theo loại hình sản xuất — 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Quan trắc môi trường gồm những hạng mục nào?",
+        "a": "Thường gồm nước thải, khí thải, đất, nước mặt theo QCVN và yêu cầu dự án/NĐ 08/2022. TechLAB lấy mẫu, phân tích tại lab ISO/IEC 17025 (VALAS 217)."
+      },
+      {
+        "q": "Khác gì so với tư vấn môi trường?",
+        "a": "Quan trắc tập trung lấy mẫu–phân tích–báo cáo số liệu. Tư vấn môi trường thiên về hồ sơ pháp lý (đăng ký MT, ĐTM…). Có thể kết hợp cả hai."
+      },
+      {
+        "q": "Làm sao nhận báo giá quan trắc?",
+        "a": "Cung cấp loại hình sản xuất và chỉ tiêu cần giám sát. Gọi 0899.551.228 để tư vấn gói phù hợp."
+      }
+    ]
+  },
+  "tu-van-moi-truong": {
+    "service_name": "Tư vấn hồ sơ môi trường",
+    "meta_description": "Tư vấn đăng ký môi trường, ĐTM, báo cáo định kỳ cho doanh nghiệp. Kết hợp lab ISO 17025 (VALAS 217) — hotline 0899.551.228.",
+    "lead": "TechLAB Global tư vấn môi trường: lập hồ sơ, báo cáo đánh giá tác động, phương án bảo vệ môi trường và đăng ký môi trường cho doanh nghiệp.",
+    "facts": [
+      "Kết hợp năng lực phòng lab ISO/IEC 17025 (VALAS 217) và kinh nghiệm triển khai thực tế.",
+      "Hỗ trợ doanh nghiệp thực phẩm, sản xuất và dịch vụ hoàn thiện hồ sơ pháp lý môi trường.",
+      "Tư vấn sơ bộ miễn phí qua hotline 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Doanh nghiệp cần đăng ký môi trường khi nào?",
+        "a": "Khi thuộc đối tượng theo quy định hiện hành (NĐ 08/2022 và văn bản liên quan). TechLAB tư vấn xác định loại hồ sơ và lộ trình phù hợp."
+      },
+      {
+        "q": "Có kết hợp quan trắc khi làm hồ sơ không?",
+        "a": "Có. Hồ sơ thường cần số liệu quan trắc từ lab ISO/IEC 17025 (VALAS 217). TechLAB hỗ trợ đồng bộ tư vấn + quan trắc."
+      },
+      {
+        "q": "Tư vấn sơ bộ mất phí không?",
+        "a": "Tư vấn sơ bộ qua hotline 0899.551.228 miễn phí. Báo giá chi tiết sau khi nắm loại hình và quy mô dự án."
+      }
     ]
   },
   "chung-nhan-haccp": {
+    "service_name": "Tư vấn chứng nhận HACCP",
+    "meta_description": "Tư vấn chứng nhận HACCP cho cơ sở thực phẩm: khảo sát gap, xây hệ thống, đào tạo, hỗ trợ đánh giá. Kết hợp lab VALAS 217 — 0899.551.228.",
     "lead": "TechLAB Global tư vấn và triển khai chứng nhận HACCP (Hệ thống phân tích mối nguy và điểm kiểm soát tới hạn) cho doanh nghiệp thực phẩm, đồ uống.",
     "facts": [
       "HACCP là nền tảng an toàn thực phẩm, thường được yêu cầu bởi chuỗi phân phối và xuất khẩu.",
       "Đi kèm năng lực kiểm nghiệm ISO/IEC 17025 (VALAS 217) — đối soát chỉ tiêu thực tế.",
       "Khảo sát sơ bộ và báo giá tư vấn trong ngày — 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "HACCP và ISO 22000 khác nhau thế nào?",
+        "a": "HACCP tập trung phân tích mối nguy và điểm kiểm soát tới hạn trên dây chuyền. ISO 22000 là hệ thống quản lý an toàn thực phẩm rộng hơn, tích hợp HACCP với quản lý tổ chức và chuỗi cung ứng."
+      },
+      {
+        "q": "Thời gian triển khai HACCP bao lâu?",
+        "a": "Thường vài tuần đến vài tháng tùy quy mô và mức sẵn sàng. TechLAB khảo sát gap, lập lộ trình và báo giá rõ trước khi triển khai — 0899.551.228."
+      },
+      {
+        "q": "Có cần kiểm nghiệm khi làm HACCP không?",
+        "a": "Nên đối soát chỉ tiêu tại lab ISO/IEC 17025 (VALAS 217) để chứng minh kiểm soát mối nguy. TechLAB kết hợp tư vấn HACCP và kiểm nghiệm thực phẩm."
+      }
     ]
   },
   "chung-nhan-iso-22000": {
+    "service_name": "Tư vấn chứng nhận ISO 22000",
+    "meta_description": "Tư vấn chứng nhận ISO 22000 (FSMS) cho nhà sản xuất thực phẩm/đồ uống. Lộ trình, hồ sơ, kết hợp lab VALAS 217 — 0899.551.228.",
     "lead": "TechLAB Global hỗ trợ doanh nghiệp chứng nhận ISO 22000 — hệ thống quản lý an toàn thực phẩm tích hợp với HACCP và quản lý chuỗi cung ứng.",
     "facts": [
       "Phù hợp nhà sản xuất thực phẩm, đồ uống cần chứng nhận hệ thống toàn diện.",
       "Kết hợp kiểm nghiệm tại phòng lab VALAS 217 cho kiểm soát chất lượng định kỳ.",
       "Tư vấn lộ trình, hồ sơ và chi phí — liên hệ 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "ISO 22000 phù hợp doanh nghiệp nào?",
+        "a": "Nhà sản xuất/chế biến thực phẩm, đồ uống cần hệ thống quản lý an toàn thực phẩm toàn diện, thường phục vụ chuỗi phân phối và xuất khẩu."
+      },
+      {
+        "q": "Đã có HACCP rồi còn cần ISO 22000?",
+        "a": "ISO 22000 bao phủ rộng hơn HACCP (quản lý tổ chức, chuỗi cung ứng). TechLAB tư vấn lộ trình nâng cấp phù hợp mục tiêu kinh doanh."
+      },
+      {
+        "q": "Chi phí và thời gian khoảng bao nhiêu?",
+        "a": "Phụ thuộc quy mô và khoảng trống hệ thống hiện tại. Báo giá từng hạng mục sau khảo sát — gọi 0899.551.228."
+      }
     ]
   },
   "chung-nhan-vietgap": {
+    "service_name": "Tư vấn chứng nhận VietGAP",
+    "meta_description": "Tư vấn chứng nhận VietGAP cho nông sản: truy xuất nguồn gốc, thực hành sản xuất tốt. Kết hợp kiểm nghiệm VALAS 217 — 0899.551.228.",
     "lead": "TechLAB Global tư vấn chứng nhận VietGAP cho sản xuất nông sản — đảm bảo quy trình canh tác an toàn, truy xuất nguồn gốc.",
     "facts": [
       "VietGAP là tiêu chuẩn thực hành sản xuất nông nghiệp tốt tại Việt Nam.",
       "Hỗ trợ doanh nghiệp chế biến, xuất khẩu nông sản đáp ứng yêu cầu đối tác.",
       "Khảo sát và báo giá qua hotline 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "VietGAP áp dụng cho đối tượng nào?",
+        "a": "Cơ sở trồng trọt, chăn nuôi, nuôi trồng thủy sản muốn chứng minh thực hành sản xuất tốt và truy xuất nguồn gốc theo tiêu chuẩn Việt Nam."
+      },
+      {
+        "q": "VietGAP có cần kiểm nghiệm không?",
+        "a": "Thường cần đối soát chỉ tiêu an toàn (dư lượng, vi sinh…) tại lab đủ năng lực. TechLAB kết hợp tư vấn VietGAP và lab ISO/IEC 17025 (VALAS 217)."
+      },
+      {
+        "q": "Bắt đầu VietGAP từ đâu?",
+        "a": "Khảo sát hiện trạng, gap analysis, xây dựng quy trình và hồ sơ. Liên hệ 0899.551.228 để nhận checklist và báo giá."
+      }
     ]
   },
   "chung-nhan-organic": {
+    "service_name": "Tư vấn chứng nhận Organic",
+    "meta_description": "Tư vấn chứng nhận Organic (hữu cơ) cho nông sản/thực phẩm. Kiểm soát nguyên liệu, residues tại lab VALAS 217 — 0899.551.228.",
     "lead": "TechLAB Global tư vấn chứng nhận Organic (hữu cơ) cho nông sản và thực phẩm, theo tiêu chuẩn quốc tế và quy định Việt Nam.",
     "facts": [
       "Organic yêu cầu kiểm soát nguyên liệu, quy trình và truy xuất không hóa chất tổng hợp.",
       "Kết hợp kiểm nghiệm residues, vi sinh tại phòng lab ISO/IEC 17025 (VALAS 217).",
       "Tư vấn lộ trình chứng nhận — 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Chứng nhận Organic khác VietGAP thế nào?",
+        "a": "Organic siết chặt hơn về nguyên liệu và hóa chất tổng hợp, thường hướng thị trường hữu cơ/xuất khẩu. VietGAP là thực hành nông nghiệp tốt phổ biến trong nước."
+      },
+      {
+        "q": "Có cần kiểm dư lượng hóa chất không?",
+        "a": "Thường có. TechLAB hỗ trợ kiểm residues, vi sinh tại lab ISO/IEC 17025 (VALAS 217) song song lộ trình chứng nhận."
+      },
+      {
+        "q": "Thời gian lấy chứng nhận Organic?",
+        "a": "Phụ thuộc lịch sử vùng trồng và mức sẵn sàng hồ sơ — thường dài hơn chứng nhận thông thường. Tư vấn lộ trình qua 0899.551.228."
+      }
     ]
   },
   "chung-nhan-halal": {
+    "service_name": "Tư vấn chứng nhận Halal",
+    "meta_description": "Tư vấn chứng nhận Halal cho thực phẩm/đồ uống xuất khẩu Malaysia, Indonesia, Trung Đông. Kết hợp lab VALAS 217 — 0899.551.228.",
     "lead": "TechLAB Global tư vấn chứng nhận Halal cho thực phẩm, đồ uống và nguyên liệu nhằm phục vụ thị trường Hồi giáo trong và ngoài nước.",
     "facts": [
       "Halal xác nhận sản phẩm tuân thủ quy tắc Shariah trong sản xuất và thành phần.",
       "Hỗ trợ doanh nghiệp xuất khẩu sang thị trường Malaysia, Indonesia, Trung Đông.",
       "Liên hệ khảo sát và báo giá — 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "Halal cần thiết khi nào?",
+        "a": "Khi bán vào thị trường Hồi giáo trong nước hoặc xuất khẩu (Malaysia, Indonesia, Trung Đông…). Chứng nhận xác nhận thành phần và quy trình đạt yêu cầu Halal."
+      },
+      {
+        "q": "Nguyên liệu có phải kiểm nghiệm không?",
+        "a": "Thường cần kiểm soát thành phần và hồ sơ nguồn gốc; có thể kết hợp kiểm nghiệm tại lab ISO/IEC 17025 (VALAS 217) khi đối tác yêu cầu."
+      },
+      {
+        "q": "TechLAB hỗ trợ những bước nào?",
+        "a": "Khảo sát gap, hướng dẫn hồ sơ, lộ trình đánh giá và kết nối kiểm nghiệm khi cần. Báo giá qua 0899.551.228."
+      }
     ]
   },
   "chung-nhan-smeta-sedex": {
+    "service_name": "Tư vấn SMETA / Sedex",
+    "meta_description": "Tư vấn đánh giá SMETA/Sedex (trách nhiệm xã hội, lao động, an toàn) cho nhà máy FMCG xuất khẩu. Gap analysis — 0899.551.228.",
     "lead": "TechLAB Global tư vấn đánh giá SMETA / Sedex — tiêu chuẩn trách nhiệm xã hội (đạo đức, lao động, an toàn) mà nhiều chuỗi bán lẻ quốc tế yêu cầu.",
     "facts": [
       "SMETA là phương pháp đánh giá đạo đức do Sedex phát triển, phổ biến trong FMCG.",
       "Hỗ trợ nhà máy thực phẩm, đồ uống chuẩn bị audit đối tác nước ngoài.",
       "Tư vấn gap analysis và lộ trình — hotline 0899.551.228."
+    ],
+    "faq": [
+      {
+        "q": "SMETA / Sedex là gì?",
+        "a": "SMETA là phương pháp đánh giá trách nhiệm xã hội (lao động, đạo đức, an toàn, môi trường) do Sedex phát triển, phổ biến với chuỗi bán lẻ và FMCG quốc tế."
+      },
+      {
+        "q": "Nhà máy thực phẩm có cần SMETA không?",
+        "a": "Khi xuất khẩu hoặc cung ứng cho đối tác quốc tế yêu cầu audit đạo đức/lao động. TechLAB hỗ trợ gap analysis và chuẩn bị audit."
+      },
+      {
+        "q": "Bắt đầu chuẩn bị SMETA thế nào?",
+        "a": "Đánh giá khoảng trống so với yêu cầu 2-pillar/4-pillar, lập kế hoạch khắc phục. Liên hệ 0899.551.228 để nhận lộ trình."
+      }
     ]
   }
 }

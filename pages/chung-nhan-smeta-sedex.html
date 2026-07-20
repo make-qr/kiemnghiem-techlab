@@ -153,29 +153,51 @@
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="https://kiemnghiem.techlabglobal.com.vn/thank-you.html">
                     <input type="hidden" name="_subject" value="Chứng nhận SMETA / SEDEX - TechLAB Global">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="Địa chỉ IP" data-field="client_ip" value="">
+                    <input type="hidden" name="Trình duyệt" data-field="user_agent" value="">
+                    <input type="hidden" name="Trang gửi form" data-field="page_url" value="">
+                    <input type="hidden" name="Thời điểm gửi" data-field="submitted_at" value="">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Họ và tên *" required>
+                        <input type="text" name="Họ và tên" data-field="name" placeholder="Họ và tên *" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Số điện thoại *" required>
+                        <input type="tel" name="Số điện thoại" data-field="phone" placeholder="Số điện thoại *" required>
                     </div>
                     <div class="form-group">
-                        <select name="product_type" required>
-                            <option value="chung-nhan" selected>Chứng nhận SMETA / SEDEX</option>
-                            <option value="thuc-pham">Thực phẩm</option>
-                            <option value="chung-nhan">Chứng nhận / Tư vấn</option>
-                            <option value="khac">Khác</option>
+                        <select name="Thành phố" data-field="city" required>
+                            <option value="" disabled selected>Thành phố *</option>
+                            <option value="Hà Nội" data-slug="ha-noi">Hà Nội</option>
+                            <option value="TP. Hồ Chí Minh" data-slug="ho-chi-minh">TP. Hồ Chí Minh</option>
+                            <option value="Cần Thơ" data-slug="can-tho">Cần Thơ</option>
+                            <option value="Đà Nẵng" data-slug="da-nang">Đà Nẵng</option>
+                            <option value="Hải Phòng" data-slug="hai-phong">Hải Phòng</option>
+                            <option value="Khác" data-slug="khac" data-other="1">Khác</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="sample_count" placeholder="Mô tả ngắn nhu cầu (vd: 1 cơ sở, 3 mẫu)">
+                    <div class="form-group" data-other-for="city" hidden>
+                        <input type="text" name="Thành phố (chi tiết)" data-field="city_other" placeholder="Nhập tên thành phố / tỉnh *">
                     </div>
                     <div class="form-group">
-                        <select name="urgency">
+                        <select name="Loại sản phẩm / dịch vụ" data-field="product_type" required>
+                            <option value="Chứng nhận SMETA / SEDEX" data-slug="chung-nhan" selected>Chứng nhận SMETA / SEDEX</option>
+                            <option value="Thực phẩm" data-slug="thuc-pham">Thực phẩm</option>
+                            <option value="Chứng nhận / Tư vấn" data-slug="chung-nhan">Chứng nhận / Tư vấn</option>
+                            <option value="Khác" data-slug="khac" data-other="1">Khác</option>
+                        </select>
+                    </div>
+                    <div class="form-group" data-other-for="product_type" hidden>
+                        <input type="text" name="Loại sản phẩm (chi tiết)" data-field="product_type_other" placeholder="Nhập loại sản phẩm / nhu cầu kiểm nghiệm *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Số mẫu / mô tả nhu cầu" data-field="sample_count" placeholder="Mô tả ngắn nhu cầu (vd: 1 cơ sở, 3 mẫu)">
+                    </div>
+                    <div class="form-group">
+                        <select name="Thời gian cần kết quả" data-field="urgency">
                             <option value="" disabled selected>Thời gian cần hỗ trợ</option>
-                            <option value="gap">Cần gấp</option>
-                            <option value="binh-thuong">Bình thường</option>
-                            <option value="tu-van">Chưa rõ — cần tư vấn</option>
+                            <option value="Cần gấp" data-slug="gap">Cần gấp</option>
+                            <option value="Bình thường" data-slug="binh-thuong">Bình thường</option>
+                            <option value="Chưa rõ — cần tư vấn" data-slug="tu-van">Chưa rõ — cần tư vấn</option>
                         </select>
                     </div>
                     <button type="submit" class="btn-submit-quote">Gửi yêu cầu</button>

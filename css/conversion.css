@@ -145,6 +145,10 @@
     margin-bottom: 14px;
 }
 
+.quote-form .form-group[hidden] {
+    display: none;
+}
+
 .quote-form .btn-submit-quote {
     width: 100%;
     background-color: var(--accent-color);

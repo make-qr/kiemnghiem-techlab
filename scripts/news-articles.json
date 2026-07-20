@@ -1,6 +1,558 @@
 {
   "articles": [
     {
+      "slug": "kiem-nghiem-vi-sinh-thuc-pham",
+      "title": "Vi sinh thực phẩm: Coliform, E. coli, Salmonella — đọc kết quả thế nào?",
+      "meta": "Giải thích chỉ tiêu vi sinh thực phẩm thường gặp (Coliform, E. coli, Salmonella), cách đọc kết quả và khi nào cần kiểm — TechLAB Global VALAS 217.",
+      "excerpt": "Vi sinh là nhóm chỉ tiêu then chốt trong công bố và QC thực phẩm. Hiểu ý nghĩa từng chỉ tiêu giúp chọn đúng gói kiểm, tránh thừa hoặc thiếu.",
+      "lead": "Kiểm nghiệm vi sinh thực phẩm giúp đánh giá mức độ nhiễm khuẩn và rủi ro an toàn. Các chỉ tiêu như tổng số vi khuẩn hiếu khí, Coliform, E. coli, Salmonella thường xuất hiện trong TCCS và yêu cầu đối tác phân phối.",
+      "tag": "Vi sinh",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Vì sao phải kiểm vi sinh?</h2>\n\n            <p>Vi sinh phản ánh điều kiện vệ sinh sản xuất, bảo quản và nguy cơ ngộ độc. Báo cáo vi sinh thường bắt buộc khi công bố sản phẩm, đối soát siêu thị hoặc xuất khẩu.</p>\n\n            <h2>Chỉ tiêu thường gặp và ý nghĩa</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Chỉ tiêu</th><th>Ý nghĩa ngắn</th></tr></thead>\n                <tbody>\n                    <tr><td>Tổng số VK hiếu khí</td><td>Mức nhiễm khuẩn chung; cao có thể do vệ sinh hoặc bảo quản kém</td></tr>\n                    <tr><td>Coliform</td><td>Chỉ thị vệ sinh; có thể liên quan nhiễm bẩn từ môi trường/người</td></tr>\n                    <tr><td>E. coli</td><td>Chỉ thị nhiễm phân; thường yêu cầu không phát hiện hoặc dưới ngưỡng</td></tr>\n                    <tr><td>Salmonella</td><td>Mầm bệnh; thường yêu cầu không phát hiện trong mẫu quy định</td></tr>\n                    <tr><td>Nấm men – nấm mốc</td><td>Quan trọng với bánh, đồ khô, sản phẩm độ ẩm phù hợp nấm phát triển</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Doanh nghiệp chuẩn bị gì khi gửi mẫu?</h2>\n\n            <ul>\n                <li>Loại sản phẩm và TCCS/quy chuẩn áp dụng</li>\n                <li>Mục đích: công bố, QC lô, đối soát đối tác</li>\n                <li>Điều kiện bảo quản mẫu theo hướng dẫn phòng lab (lạnh/đông nếu cần)</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Chi tiết: <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Kiểm nghiệm thực phẩm</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham#bao-gia",
+          "label": "Báo giá kiểm vi sinh",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kim-loai-nang-trong-thuc-pham",
+      "title": "Kim loại nặng trong thực phẩm (Pb, Cd, As, Hg): khi nào bắt buộc kiểm?",
+      "meta": "Kim loại nặng Pb, Cd, As, Hg trong thực phẩm: ngưỡng quan tâm, khi nào cần kiểm nghiệm và vai trò lab ISO 17025 — TechLAB Global.",
+      "excerpt": "Chì, cadimi, asen, thủy ngân tích tụ trong chuỗi thực phẩm. Nhiều nhóm sản phẩm bắt buộc kiểm theo QCVN/TCVN trước công bố hoặc nhập khẩu.",
+      "lead": "Kim loại nặng (thường gồm chì Pb, cadimi Cd, asen As, thủy ngân Hg) là chỉ tiêu an toàn quan trọng. Doanh nghiệp cần kiểm khi quy chuẩn bắt buộc, khi nguyên liệu rủi ro cao, hoặc khi đối tác/chuỗi phân phối yêu cầu.",
+      "tag": "Hóa lý",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Kim loại nặng ảnh hưởng thế nào?</h2>\n\n            <p>Tích tụ lâu dài có thể gây hại sức khỏe. Quy chuẩn Việt Nam và nhiều thị trường xuất khẩu quy định ngưỡng tối đa theo nhóm thực phẩm.</p>\n\n            <h2>Khi nào nên / phải kiểm?</h2>\n\n            <ol>\n                <li><strong>Bắt buộc theo quy chuẩn</strong> áp dụng cho loại sản phẩm (công bố, nhập khẩu, thanh tra).</li>\n                <li><strong>Nguyên liệu rủi ro:</strong> hải sản, gạo, rau từ vùng đất ô nhiễm, gia vị, thực phẩm bổ sung…</li>\n                <li><strong>Yêu cầu đối tác:</strong> siêu thị, xuất khẩu, audit nhà cung cấp.</li>\n            </ol>\n\n            <h2>Chuẩn bị gửi mẫu</h2>\n\n            <ul>\n                <li>Xác định danh mục kim loại theo quy chuẩn sản phẩm</li>\n                <li>Mô tả nguồn nguyên liệu và mục đích báo cáo</li>\n                <li>Số lượng mẫu đủ theo hướng dẫn lab</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Xem <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Kiểm nghiệm thực phẩm</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham#bao-gia",
+          "label": "Báo giá kim loại nặng",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "du-luong-thuoc-bvtv-rau-cu",
+      "title": "Dư lượng thuốc bảo vệ thực vật trên rau củ quả: doanh nghiệp cần biết gì?",
+      "meta": "Dư lượng thuốc BVTV trên rau củ quả: vì sao kiểm, chỉ tiêu MRL và quy trình nhận mẫu tại TechLAB Global (VALAS 217).",
+      "excerpt": "Kiểm dư lượng thuốc BVTV giúp nông sản, sơ chế và xuất khẩu đáp ứng ngưỡng cho phép, giảm rủi ro lô hàng bị trả về.",
+      "lead": "Dư lượng thuốc bảo vệ thực vật (BVTV) trên rau củ quả là chỉ tiêu an toàn được kiểm soát chặt. Doanh nghiệp thu mua, sơ chế, xuất khẩu hoặc công bố sản phẩm chế biến từ nông sản thường cần kết quả phân tích từ phòng lab đủ năng lực.",
+      "tag": "Nông sản",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Vì sao phải kiểm dư lượng BVTV?</h2>\n\n            <p>Thuốc BVTV tồn dư vượt ngưỡng có thể ảnh hưởng sức khỏe và làm lô hàng không đạt yêu cầu thị trường trong nước hoặc xuất khẩu. Kết quả kiểm giúp chứng minh tuân thủ và truy xuất nguồn gốc.</p>\n\n            <h2>Doanh nghiệp nên chuẩn bị</h2>\n\n            <ul>\n                <li>Loại rau củ quả / bán thành phẩm và thị trường đích</li>\n                <li>Danh mục hoạt chất cần quan tâm (theo quy định hoặc yêu cầu đối tác)</li>\n                <li>Thông tin vùng trồng / nhà cung cấp nếu có</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Tư vấn gói chỉ tiêu theo loại nông sản — <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Kiểm nghiệm thực phẩm</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham#bao-gia",
+          "label": "Báo giá dư lượng BVTV",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "doc-to-vi-nam-aflatoxin",
+      "title": "Độc tố vi nấm (aflatoxin) trong ngũ cốc, hạt và thức ăn chăn nuôi",
+      "meta": "Aflatoxin và độc tố vi nấm trong ngũ cốc, hạt, thức ăn chăn nuôi: rủi ro, khi nào kiểm và lab ISO 17025 — TechLAB Global.",
+      "excerpt": "Aflatoxin hình thành khi nấm mốc phát triển trên ngũ cốc, đậu, hạt. Kiểm nghiệm giúp kiểm soát nguyên liệu và sản phẩm thành phẩm.",
+      "lead": "Độc tố vi nấm (mycotoxin), đặc biệt aflatoxin, là mối nguy phổ biến trên ngũ cốc, hạt, sản phẩm khô và thức ăn chăn nuôi. Kiểm nghiệm giúp doanh nghiệp kiểm soát đầu vào và đáp ứng quy chuẩn an toàn.",
+      "tag": "Mycotoxin",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Aflatoxin xuất hiện khi nào?</h2>\n\n            <p>Điều kiện ẩm, nóng và bảo quản kém tạo thuận lợi cho nấm mốc sinh độc tố. Nguyên liệu nhập khẩu hoặc tồn kho lâu cần được đối soát định kỳ.</p>\n\n            <h2>Nhóm sản phẩm nên ưu tiên kiểm</h2>\n\n            <ul>\n                <li>Ngũ cốc, bột, cám</li>\n                <li>Hạt (đậu phộng, hạt điều…)</li>\n                <li>Thức ăn chăn nuôi / premix</li>\n                <li>Một số sản phẩm chế biến từ nguyên liệu trên</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Liên quan: <a href=\"../pages/kiem-nghiem-thuc-an-chan-nuoi.html\">Kiểm nghiệm thức ăn chăn nuôi</a> và <a href=\"../pages/kiem-nghiem-thuc-pham.html\">thực phẩm</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-an-chan-nuoi#bao-gia",
+          "label": "Báo giá aflatoxin",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "du-luong-khang-sinh-thuy-san",
+      "title": "Dư lượng kháng sinh / thuốc thú y trong thịt, thủy sản và sữa",
+      "meta": "Dư lượng kháng sinh và thuốc thú y trong thịt, thủy sản, sữa: vì sao kiểm soát và cách gửi mẫu tại TechLAB Global VALAS 217.",
+      "excerpt": "Kiểm dư lượng kháng sinh giúp sản phẩm động vật đáp ứng quy định an toàn thực phẩm và yêu cầu xuất khẩu.",
+      "lead": "Dư lượng kháng sinh và thuốc thú y trong thịt, thủy sản, sữa là chỉ tiêu được giám sát chặt. Doanh nghiệp chế biến, phân phối hoặc xuất khẩu cần kết quả phân tích tin cậy để hoàn thiện hồ sơ và giảm rủi ro lô hàng.",
+      "tag": "An toàn TP",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Vì sao phải kiểm?</h2>\n\n            <p>Dư lượng vượt ngưỡng ảnh hưởng sức khỏe người tiêu dùng và có thể khiến lô hàng không đạt yêu cầu thị trường. Nhiều chuỗi bán lẻ và thị trường xuất khẩu yêu cầu bằng chứng kiểm soát.</p>\n\n            <h2>Chuẩn bị mẫu</h2>\n\n            <ul>\n                <li>Loại mẫu: thịt, thủy sản, sữa / bán thành phẩm</li>\n                <li>Danh mục chất cần quan tâm theo quy định hoặc hợp đồng</li>\n                <li>Bảo quản lạnh/đông theo hướng dẫn lab</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Xem <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Kiểm nghiệm thực phẩm</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham#bao-gia",
+          "label": "Báo giá dư lượng kháng sinh",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "phan-tich-dinh-duong-ghi-nhan",
+      "title": "Phân tích dinh dưỡng để ghi nhãn: protein, lipid, carbohydrate, năng lượng",
+      "meta": "Phân tích dinh dưỡng (protein, lipid, carb, năng lượng) phục vụ ghi nhãn bao bì tại lab ISO 17025 VALAS 217 — TechLAB Global.",
+      "excerpt": "Số liệu dinh dưỡng trên bao bì cần dựa trên phân tích thực tế. Lab ISO 17025 giúp doanh nghiệp ghi nhãn đúng và đối soát công thức.",
+      "lead": "Ghi nhãn dinh dưỡng đòi hỏi số liệu protein, lipid, carbohydrate, năng lượng (và chỉ tiêu khác khi cần) từ phân tích phòng thử nghiệm. TechLAB hỗ trợ doanh nghiệp lấy số liệu tin cậy để hoàn thiện bao bì và hồ sơ.",
+      "tag": "Dinh dưỡng",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Chỉ tiêu nền tảng trên nhãn</h2>\n\n            <ul>\n                <li>Protein</li>\n                <li>Lipid (chất béo)</li>\n                <li>Carbohydrate</li>\n                <li>Năng lượng (kcal/kJ)</li>\n                <li>Vitamin / khoáng / chất xơ khi nhãn tuyên bố hoặc quy định yêu cầu</li>\n            </ul>\n\n            <h2>Khi nào nên phân tích lại?</h2>\n\n            <p>Khi đổi công thức, đổi nhà cung cấp nguyên liệu chính, hoặc trước đợt công bố / tái đăng ký nhãn. Phân tích định kỳ giúp phát hiện lệch so với giá trị đã ghi.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Chi tiết: <a href=\"../pages/kiem-nghiem-dinh-duong.html\">Phân tích thành phần dinh dưỡng</a>. Xem thêm bài <a href=\"ghi-nhan-dinh-duong-thong-tu-29-2023.html\">Thông tư 29/2023</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-dinh-duong#bao-gia",
+          "label": "Báo giá phân tích dinh dưỡng",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "challenge-test-va-han-su-dung",
+      "title": "Challenge test và đánh giá hạn sử dụng: khác kiểm nghiệm thường chỗ nào?",
+      "meta": "Challenge test và đánh giá hạn sử dụng thực phẩm khác kiểm nghiệm chỉ tiêu thường ra sao — TechLAB Global tư vấn gói phù hợp.",
+      "excerpt": "Kiểm nghiệm thường đo chỉ tiêu tại một thời điểm. Challenge test / shelf-life đánh giá khả năng bảo quản và an toàn theo thời gian.",
+      "lead": "Challenge test và đánh giá hạn sử dụng (shelf-life) giúp doanh nghiệp xác định điều kiện bảo quản và thời hạn sử dụng phù hợp. Đây là hướng tiếp cận khác với việc chỉ kiểm một lần các chỉ tiêu vi sinh/hóa lý thông thường.",
+      "tag": "Shelf-life",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Khác biệt cốt lõi</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Hạng mục</th><th>Kiểm nghiệm thường</th><th>Challenge test / hạn sử dụng</th></tr></thead>\n                <tbody>\n                    <tr><td>Mục tiêu</td><td>Đạt chỉ tiêu tại thời điểm lấy mẫu</td><td>Đánh giá ổn định / an toàn theo thời gian</td></tr>\n                    <tr><td>Thiết kế</td><td>Theo TCCS/QCVN hoặc yêu cầu đối tác</td><td>Theo kịch bản bảo quản, chủng vi sinh hoặc điều kiện giả lập</td></tr>\n                    <tr><td>Đầu ra</td><td>Phiếu kết quả chỉ tiêu</td><td>Cơ sở khoa học cho hạn dùng / điều kiện bảo quản</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Khi nào nên cân nhắc?</h2>\n\n            <ul>\n                <li>Sản phẩm mới hoặc đổi công thức / bao bì</li>\n                <li>Muốn kéo dài hạn dùng có căn cứ</li>\n                <li>Đối tác yêu cầu dữ liệu ổn định vi sinh</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Hãy mô tả sản phẩm và mục tiêu hạn dùng — TechLAB tư vấn hướng tiếp cận phù hợp tại lab <strong>ISO/IEC 17025 (VALAS 217)</strong>. Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Kiểm nghiệm thực phẩm</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham#bao-gia",
+          "label": "Tư vấn hạn sử dụng",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kiem-nghiem-tpcn-truoc-cong-bo",
+      "title": "Kiểm nghiệm TPCN / thực phẩm chức năng trước khi công bố",
+      "meta": "Kiểm nghiệm thực phẩm chức năng (TPCN) trước công bố: chỉ tiêu hóa lý, vi sinh và lab ISO 17025 — TechLAB Global VALAS 217.",
+      "excerpt": "TPCN thường cần kiểm soát chất lượng thành phần và an toàn vi sinh trước khi hoàn thiện hồ sơ công bố.",
+      "lead": "Thực phẩm chức năng (TPCN) và sản phẩm liên quan cần kiểm nghiệm phù hợp để kiểm soát chất lượng và hỗ trợ hồ sơ công bố. Phòng lab ISO/IEC 17025 giúp doanh nghiệp có báo cáo có giá trị pháp lý rõ ràng.",
+      "tag": "TPCN",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Nhóm chỉ tiêu thường quan tâm</h2>\n\n            <ul>\n                <li>Hóa lý / định lượng thành phần công bố (khi yêu cầu)</li>\n                <li>Vi sinh theo quy định sản phẩm</li>\n                <li>Kim loại nặng và chỉ tiêu an toàn khác theo hồ sơ</li>\n            </ul>\n\n            <h2>Chuẩn bị trước khi gửi mẫu</h2>\n\n            <ul>\n                <li>Thành phần công bố trên nhãn / hồ sơ</li>\n                <li>Dạng bào chế (viên, bột, nước…)</li>\n                <li>Mục đích: công bố, QC lô, đối soát</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Xem <a href=\"../pages/kiem-nghiem-duoc-pham.html\">Kiểm nghiệm dược phẩm &amp; TPCN</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-duoc-pham#bao-gia",
+          "label": "Báo giá kiểm TPCN",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kiem-nghiem-banh-keo-mat-ong-dau-an",
+      "title": "Kiểm nghiệm bánh kẹo, mật ong và dầu ăn: chỉ tiêu doanh nghiệp cần biết",
+      "meta": "Tổng hợp chỉ tiêu kiểm nghiệm bánh kẹo, mật ong, dầu ăn phục vụ công bố và QC — TechLAB Global lab ISO 17025 VALAS 217.",
+      "excerpt": "Ba nhóm sản phẩm phổ biến với bộ chỉ tiêu khác nhau. Chọn đúng gói giúp đủ hồ sơ, không kiểm thừa.",
+      "lead": "Bánh kẹo, mật ong và dầu ăn là các nhóm thực phẩm phổ biến cần kiểm nghiệm trước công bố hoặc đưa vào phân phối. Mỗi nhóm có bộ chỉ tiêu đặc thù theo TCCS/quy chuẩn.",
+      "tag": "Thực phẩm",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Gợi ý chỉ tiêu theo nhóm</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Nhóm</th><th>Chỉ tiêu thường gặp</th></tr></thead>\n                <tbody>\n                    <tr><td>Bánh kẹo</td><td>Vi sinh, hóa lý, phụ gia / cảm quan theo TCCS</td></tr>\n                    <tr><td>Mật ong</td><td>Chỉ tiêu chất lượng và an toàn theo quy chuẩn/TCCS áp dụng</td></tr>\n                    <tr><td>Dầu ăn</td><td>Chỉ tiêu chất lượng dầu và an toàn theo quy định sản phẩm</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <p>Gói chính xác phụ thuộc loại sản phẩm cụ thể và mục đích báo cáo. TechLAB tư vấn trước khi nhận mẫu để tối ưu chi phí.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/kiem-nghiem-banh-keo.html\">Bánh kẹo</a> · <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Thực phẩm tổng hợp</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-banh-keo#bao-gia",
+          "label": "Nhận báo giá",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "haccp-va-iso-22000-khac-nhau",
+      "title": "HACCP và ISO 22000 khác nhau thế nào? Doanh nghiệp thực phẩm chọn gì?",
+      "meta": "So sánh HACCP và ISO 22000: phạm vi, đối tượng và lộ trình tư vấn chứng nhận tại TechLAB Global.",
+      "excerpt": "HACCP tập trung điểm kiểm soát tới hạn trên dây chuyền. ISO 22000 là hệ thống quản lý an toàn thực phẩm rộng hơn.",
+      "lead": "HACCP và ISO 22000 đều hướng tới an toàn thực phẩm nhưng khác phạm vi. Hiểu đúng giúp doanh nghiệp chọn lộ trình chứng nhận phù hợp mục tiêu kinh doanh và yêu cầu khách hàng.",
+      "tag": "Chứng nhận",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>So sánh nhanh</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Tiêu chí</th><th>HACCP</th><th>ISO 22000</th></tr></thead>\n                <tbody>\n                    <tr><td>Trọng tâm</td><td>Phân tích mối nguy & CCP trên quy trình</td><td>Hệ thống quản lý an toàn thực phẩm toàn diện</td></tr>\n                    <tr><td>Phạm vi</td><td>Thường gắn dây chuyền / sản phẩm</td><td>Tổ chức + chuỗi cung ứng + HACCP</td></tr>\n                    <tr><td>Phù hợp khi</td><td>Yêu cầu nền tảng ATSTP, chuỗi phân phối</td><td>Cần chứng nhận hệ thống, xuất khẩu / khách hàng lớn</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Có thể kết hợp kiểm nghiệm không?</h2>\n\n            <p>Có. Đối soát chỉ tiêu tại lab <strong>ISO/IEC 17025 (VALAS 217)</strong> giúp chứng minh kiểm soát mối nguy bằng số liệu thực tế.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Tư vấn khảo sát gap, lộ trình và báo giá — hotline <a href=\"tel:0899551228\">0899.551.228</a>. <a href=\"../pages/chung-nhan-haccp.html\">Chứng nhận HACCP</a> · <a href=\"../pages/chung-nhan-iso-22000.html\">ISO 22000</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/chung-nhan-haccp#bao-gia",
+          "label": "Tư vấn HACCP / ISO 22000",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kiem-nghiem-nuoc-uong-qcvn",
+      "title": "Kiểm nghiệm nước uống đóng chai theo QCVN: chỉ tiêu và thời gian trả kết quả",
+      "meta": "Kiểm nghiệm nước sạch, nước tinh khiết, nước uống đóng chai theo QCVN tại lab ISO 17025 VALAS 217 — TechLAB Global.",
+      "excerpt": "Nước uống đóng chai thường kiểm vi sinh và hóa lý theo QCVN. Báo giá trong ngày, kết quả thường 5–7 ngày làm việc.",
+      "lead": "Kiểm nghiệm nước sạch và nước uống đóng chai theo quy chuẩn kỹ thuật quốc gia giúp doanh nghiệp công bố sản phẩm và kiểm soát chất lượng lô. TechLAB thực hiện tại phòng lab được công nhận ISO/IEC 17025 (VALAS 217).",
+      "tag": "Nước",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Chỉ tiêu thường theo QCVN</h2>\n\n            <p>Tùy loại nước (tinh khiết, khoáng, nước uống đóng chai…), bộ chỉ tiêu thường gồm <strong>vi sinh</strong> và <strong>hóa lý</strong> theo QCVN 6-1, QCVN 6-2 và yêu cầu công bố.</p>\n\n            <h2>Thời gian & nhận mẫu</h2>\n\n            <ul>\n                <li>Báo giá trong ngày làm việc</li>\n                <li>Kết quả thường 5–7 ngày tùy gói</li>\n                <li>Nhận mẫu HN · CT · HCM</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/kiem-nghiem-nuoc-giai-khat.html\">Kiểm nghiệm nước sạch &amp; nước uống</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-nuoc-giai-khat#bao-gia",
+          "label": "Báo giá kiểm nước",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kiem-nghiem-my-pham-thong-tu-06",
+      "title": "Kiểm nghiệm mỹ phẩm theo Thông tư 06: chỉ tiêu doanh nghiệp hay hỏi",
+      "meta": "Kiểm nghiệm mỹ phẩm theo Thông tư 06/2011/TT-BYT: vi sinh, hóa lý, kim loại nặng tại lab ISO 17025 — TechLAB Global.",
+      "excerpt": "Mỹ phẩm thành phẩm và nguyên liệu thường cần kiểm soát vi sinh, pH, kim loại nặng trước công bố hoặc QC định kỳ.",
+      "lead": "Kiểm nghiệm mỹ phẩm theo Thông tư 06/2011/TT-BYT và tiêu chuẩn liên quan giúp doanh nghiệp hoàn thiện hồ sơ công bố và kiểm soát chất lượng lô sản xuất.",
+      "tag": "Mỹ phẩm",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Chỉ tiêu thường gặp</h2>\n\n            <ul>\n                <li>Vi sinh mỹ phẩm</li>\n                <li>Hóa lý / pH</li>\n                <li>Kim loại nặng</li>\n                <li>Các chỉ tiêu ổn định cơ bản theo dạng sản phẩm</li>\n            </ul>\n\n            <h2>Chuẩn bị gửi mẫu</h2>\n\n            <ul>\n                <li>Dạng sản phẩm (kem, sữa rửa mặt, son…)</li>\n                <li>Mục đích: công bố hay QC</li>\n                <li>Thông tin công thức / tiêu chuẩn nội bộ nếu có</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/kiem-nghiem-my-pham.html\">Kiểm nghiệm mỹ phẩm</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-my-pham#bao-gia",
+          "label": "Báo giá kiểm mỹ phẩm",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "dang-ky-moi-truong-vs-quan-trac",
+      "title": "Đăng ký môi trường và quan trắc định kỳ khác nhau thế nào?",
+      "meta": "Phân biệt đăng ký/hồ sơ môi trường và quan trắc định kỳ: khi nào cần từng loại — TechLAB Global tư vấn + lab VALAS 217.",
+      "excerpt": "Quan trắc tạo số liệu mẫu–phân tích–báo cáo. Tư vấn môi trường thiên về hồ sơ pháp lý. Doanh nghiệp thường cần kết hợp cả hai.",
+      "lead": "Nhiều doanh nghiệp nhầm lẫn giữa quan trắc môi trường và tư vấn hồ sơ (đăng ký môi trường, ĐTM…). Hiểu đúng giúp chọn dịch vụ phù hợp, tránh chậm tiến độ pháp lý.",
+      "tag": "Môi trường",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>So sánh nhanh</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th></th><th>Quan trắc</th><th>Tư vấn hồ sơ môi trường</th></tr></thead>\n                <tbody>\n                    <tr><td>Bản chất</td><td>Lấy mẫu, phân tích, báo cáo số liệu</td><td>Lập/hoàn thiện hồ sơ pháp lý</td></tr>\n                    <tr><td>Đầu ra</td><td>Kết quả quan trắc theo QCVN / yêu cầu dự án</td><td>Hồ sơ đăng ký MT, ĐTM, báo cáo định kỳ…</td></tr>\n                    <tr><td>Lab ISO 17025</td><td>Thường bắt buộc cho số liệu phân tích</td><td>Thường cần kèm số liệu quan trắc</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/quan-trac-moi-truong.html\">Quan trắc môi trường</a> · <a href=\"../pages/tu-van-moi-truong.html\">Tư vấn môi trường</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/quan-trac-moi-truong#bao-gia",
+          "label": "Tư vấn / báo giá môi trường",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "chai-nhua-dung-nuoc-uong-thoi-nhiem",
+      "title": "Kiểm nghiệm chai nhựa đựng nước uống: thôi nhiễm và an toàn bao bì",
+      "meta": "Chai nhựa đựng nước uống thuộc vật liệu tiếp xúc thực phẩm: thôi nhiễm, QCVN và quy trình báo giá tại TechLAB Global.",
+      "excerpt": "Chai PET/nhựa đựng nước cần đáp ứng quy chuẩn vật liệu tiếp xúc thực phẩm trước khi công bố hoặc đưa vào sử dụng.",
+      "lead": "Chai nhựa đựng nước uống là vật liệu tiếp xúc trực tiếp với thực phẩm/đồ uống. Kiểm nghiệm giúp đánh giá rủi ro thôi nhiễm và hỗ trợ hồ sơ công bố chất lượng bao bì.",
+      "tag": "Bao bì FCM",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Vì sao chai nhựa cần kiểm?</h2>\n\n            <p>Trong điều kiện nhiệt độ, thời gian bảo quản và loại đồ uống khác nhau, một số chất từ nhựa có thể thôi nhiễm. Quy chuẩn kỹ thuật quốc gia yêu cầu kiểm soát trước khi lưu thông.</p>\n\n            <h2>Doanh nghiệp nên cung cấp</h2>\n\n            <ul>\n                <li>Loại nhựa / mã sản phẩm</li>\n                <li>Điều kiện sử dụng dự kiến</li>\n                <li>Mục đích: công bố bao bì hay đối soát nhà cung cấp</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/dich-vu-kiem-nghiem-khac.html\">Dịch vụ kiểm nghiệm khác / bao bì</a> · <a href=\"vi-sao-kiem-nghiem-bao-bi-tiep-xuc-thuc-pham.html\">Vì sao phải kiểm bao bì?</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/dich-vu-kiem-nghiem-khac#bao-gia",
+          "label": "Báo giá kiểm chai nhựa",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "vietgap-organic-halal-overview",
+      "title": "VietGAP, Organic, Halal: chứng nhận nào phù hợp doanh nghiệp của bạn?",
+      "meta": "So sánh VietGAP, Organic và Halal: đối tượng, mục tiêu thị trường và lộ trình tư vấn tại TechLAB Global.",
+      "excerpt": "Ba chứng nhận phục vụ mục tiêu khác nhau — thị trường nội địa, hữu cơ hoặc xuất khẩu Hồi giáo. Chọn đúng để tránh đầu tư lệch.",
+      "lead": "VietGAP, Organic và Halal là các chứng nhận phổ biến trong nông sản–thực phẩm nhưng khác đối tượng và thị trường. Doanh nghiệp nên chọn theo chiến lược bán hàng thay vì làm đồng thời mọi chứng nhận.",
+      "tag": "Chứng nhận",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Chọn chứng nhận theo mục tiêu</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Chứng nhận</th><th>Phù hợp khi</th></tr></thead>\n                <tbody>\n                    <tr><td>VietGAP</td><td>Nông sản trong nước, truy xuất, thực hành sản xuất tốt</td></tr>\n                    <tr><td>Organic</td><td>Hướng hữu cơ / thị trường yêu cầu không hóa chất tổng hợp</td></tr>\n                    <tr><td>Halal</td><td>Thị trường Hồi giáo trong nước hoặc xuất khẩu MY/ID/Trung Đông</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Khảo sát gap và báo giá lộ trình — <a href=\"tel:0899551228\">0899.551.228</a>. <a href=\"../pages/chung-nhan-vietgap.html\">VietGAP</a> · <a href=\"../pages/chung-nhan-organic.html\">Organic</a> · <a href=\"../pages/chung-nhan-halal.html\">Halal</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/chung-nhan-vietgap#bao-gia",
+          "label": "Tư vấn chứng nhận",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "smeta-sedex-nha-may-thuc-pham",
+      "title": "SMETA / Sedex: nhà máy thực phẩm xuất khẩu cần chuẩn bị gì?",
+      "meta": "SMETA/Sedex cho nhà máy thực phẩm: đánh giá trách nhiệm xã hội, gap analysis và lộ trình tại TechLAB Global.",
+      "excerpt": "Nhiều chuỗi bán lẻ quốc tế yêu cầu audit SMETA/Sedex về lao động, đạo đức, an toàn và môi trường.",
+      "lead": "SMETA là phương pháp đánh giá trách nhiệm xã hội do Sedex phát triển, phổ biến với nhà máy cung ứng FMCG và thực phẩm xuất khẩu. Chuẩn bị sớm giúp giảm điểm không phù hợp khi audit.",
+      "tag": "Assurance",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>SMETA quan tâm những gì?</h2>\n\n            <ul>\n                <li>Lao động và điều kiện làm việc</li>\n                <li>Đạo đức kinh doanh</li>\n                <li>An toàn sức khỏe</li>\n                <li>Môi trường (tùy 2-pillar / 4-pillar)</li>\n            </ul>\n\n            <h2>Bắt đầu thế nào?</h2>\n\n            <ol>\n                <li>Gap analysis so với yêu cầu khách hàng</li>\n                <li>Lập kế hoạch khắc phục</li>\n                <li>Đào tạo nội bộ và thu thập bằng chứng</li>\n                <li>Sẵn sàng audit</li>\n            </ol>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Tư vấn gap và lộ trình — hotline <a href=\"tel:0899551228\">0899.551.228</a>. <a href=\"../pages/chung-nhan-smeta-sedex.html\">Chứng nhận SMETA / SEDEX</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/chung-nhan-smeta-sedex#bao-gia",
+          "label": "Tư vấn SMETA",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "pfas-trong-thuc-pham-bao-bi",
+      "title": "PFAS trong thực phẩm và bao bì: doanh nghiệp cần biết gì?",
+      "meta": "PFAS (hóa chất bền vững) trong thực phẩm và bao bì: xu hướng kiểm soát toàn cầu và cách doanh nghiệp chủ động — TechLAB Global.",
+      "excerpt": "PFAS đang được nhiều thị trường quan tâm. Doanh nghiệp nên theo dõi yêu cầu khách hàng và chuẩn bị phương án kiểm soát chuỗi cung ứng.",
+      "lead": "PFAS là nhóm hợp chất bền vững ngoài môi trường, ngày càng được các thị trường và chuỗi bán lẻ quan tâm trong thực phẩm và bao bì. Doanh nghiệp nên nắm xu hướng để chủ động khi khách hàng yêu cầu bằng chứng kiểm soát.",
+      "tag": "Trend",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Vì sao PFAS được nhắc nhiều?</h2>\n\n            <p>Khả năng tồn lưu lâu và rủi ro sức khỏe tiềm ẩn khiến nhiều quốc gia thắt chặt giám sát. Bao bì chống thấm dầu/nước và một số chuỗi thực phẩm nằm trong tầm ngắm.</p>\n\n            <h2>Doanh nghiệp nên làm gì ngay?</h2>\n\n            <ul>\n                <li>Rà yêu cầu hợp đồng / thị trường xuất khẩu</li>\n                <li>Rà soát nhà cung cấp bao bì và nguyên liệu</li>\n                <li>Liên hệ lab để tư vấn khả năng thử / hướng tiếp cận phù hợp</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Liên hệ <a href=\"tel:0899551228\">0899.551.228</a> để được tư vấn theo nhu cầu cụ thể. Năng lực thử nghiệm phụ thuộc phạm vi công nhận và phương pháp tại thời điểm gửi mẫu — Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/dich-vu-kiem-nghiem-khac#bao-gia",
+          "label": "Liên hệ tư vấn PFAS",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "vi-nhua-trong-thuc-pham",
+      "title": "Vi nhựa trong thực phẩm và nước uống: doanh nghiệp cần quan tâm gì?",
+      "meta": "Vi nhựa trong thực phẩm và nước: xu hướng nghiên cứu, rủi ro truyền thông và bước doanh nghiệp nên chủ động — TechLAB Global.",
+      "excerpt": "Vi nhựa là chủ đề nóng về an toàn thực phẩm. Doanh nghiệp nên theo dõi yêu cầu khách hàng và kiểm soát bao bì/nguồn nước.",
+      "lead": "Vi nhựa (microplastics) đang được nghiên cứu và thảo luận rộng rãi trong thực phẩm, nước uống và môi trường. Dù khung pháp lý còn đang hoàn thiện ở nhiều nơi, doanh nghiệp nên chủ động giám sát rủi ro chuỗi cung ứng.",
+      "tag": "Trend",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Rủi ro với doanh nghiệp</h2>\n\n            <ul>\n                <li>Yêu cầu minh bạch từ khách hàng / nhà bán lẻ</li>\n                <li>Rủi ro truyền thông nếu phát hiện nhiễm</li>\n                <li>Liên quan bao bì và quy trình sản xuất</li>\n            </ul>\n\n            <h2>Bước tiếp theo nên làm</h2>\n\n            <ol>\n                <li>Rà soát bao bì và nguồn nước đầu vào</li>\n                <li>Theo dõi quy định thị trường đích</li>\n                <li>Thảo luận với lab về khả năng hỗ trợ kỹ thuật</li>\n            </ol>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Gọi <a href=\"tel:0899551228\">0899.551.228</a> để tư vấn theo sản phẩm cụ thể. Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham#bao-gia",
+          "label": "Liên hệ tư vấn",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "cronobacter-sua-bot",
+      "title": "Cronobacter sakazakii và rủi ro với sữa bột / sản phẩm dinh dưỡng",
+      "meta": "Cronobacter sakazakii: vì sao quan trọng với sữa bột và dinh dưỡng trẻ nhỏ; kiểm soát vi sinh tại lab ISO 17025 — TechLAB Global.",
+      "excerpt": "Cronobacter là mối quan tâm với sữa bột và môi trường sản xuất khô. Kiểm soát vi sinh và vệ sinh nhà máy là then chốt.",
+      "lead": "Cronobacter sakazakii là vi khuẩn được quan tâm đặc biệt với sữa bột và một số sản phẩm dinh dưỡng. Doanh nghiệp sản xuất/đóng gói cần kiểm soát môi trường và thành phẩm theo yêu cầu an toàn.",
+      "tag": "Vi sinh",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Vì sao Cronobacter được nhắc tới?</h2>\n\n            <p>Nhóm sản phẩm dành cho trẻ nhỏ và môi trường sản xuất độ ẩm thấp có rủi ro đặc thù. Kiểm soát vệ sinh, nguyên liệu và thành phẩm giúp giảm nguy cơ.</p>\n\n            <h2>Doanh nghiệp nên làm gì?</h2>\n\n            <ul>\n                <li>Rà quy trình vệ sinh và giám sát môi trường nhà máy</li>\n                <li>Xác định chỉ tiêu vi sinh theo quy định sản phẩm</li>\n                <li>Gửi mẫu thành phẩm / nguyên liệu khi cần đối soát</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Kiểm nghiệm thực phẩm</a> · <a href=\"../pages/kiem-nghiem-dinh-duong.html\">Dinh dưỡng</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham#bao-gia",
+          "label": "Báo giá kiểm vi sinh",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "eu-10-2011-bao-bi-xuat-khau",
+      "title": "EU 10/2011 và xuất khẩu bao bì sang châu Âu: doanh nghiệp cần chuẩn bị gì?",
+      "meta": "Quy định EU về thôi nhiễm nhựa tiếp xúc thực phẩm khi xuất khẩu bao bì sang châu Âu — định hướng chuẩn bị hồ sơ với TechLAB Global.",
+      "excerpt": "Xuất khẩu bao bì/nhựa FCM vào EU thường cần chứng minh tuân thủ yêu cầu thôi nhiễm. Doanh nghiệp nên xác định sản phẩm và điều kiện sử dụng trước.",
+      "lead": "Quy định (EU) No 10/2011 là khung quan trọng với vật liệu nhựa tiếp xúc thực phẩm khi đưa vào thị trường châu Âu. Doanh nghiệp Việt Nam sản xuất bao bì xuất khẩu cần chuẩn bị hồ sơ và dữ liệu thử nghiệm phù hợp.",
+      "tag": "Xuất khẩu",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Doanh nghiệp cần xác định trước</h2>\n\n            <ul>\n                <li>Loại nhựa và điều kiện sử dụng (nhiệt độ, loại thực phẩm)</li>\n                <li>Thị trường / khách hàng EU yêu cầu tài liệu gì</li>\n                <li>Chỉ tiêu thôi nhiễm cần chứng minh</li>\n            </ul>\n\n            <h2>Liên hệ tư vấn</h2>\n\n            <p>TechLAB tư vấn hướng tiếp cận theo mô tả sản phẩm và thị trường đích. Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"../pages/dich-vu-kiem-nghiem-khac.html\">Kiểm nghiệm bao bì / mẫu đặc thù</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/dich-vu-kiem-nghiem-khac#bao-gia",
+          "label": "Tư vấn bao bì xuất khẩu",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "qcvn-vs-fda-gb4806-bao-bi",
+      "title": "So sánh yêu cầu bao bì VN (QCVN) với FDA và GB 4806",
+      "meta": "Bao bì tiếp xúc thực phẩm: QCVN Việt Nam, FDA (Mỹ) và GB 4806 (Trung Quốc) khác nhau thế nào — TechLAB Global.",
+      "excerpt": "Mỗi thị trường có bộ quy định FCM riêng. Xác định thị trường đích trước khi chọn gói thử nghiệm và hồ sơ.",
+      "lead": "Bao bì tiếp xúc thực phẩm chịu các khung quy định khác nhau tùy thị trường: QCVN tại Việt Nam, FDA tại Mỹ, GB 4806 tại Trung Quốc. Doanh nghiệp đa thị trường cần lập kế hoạch tuân thủ riêng cho từng đích.",
+      "tag": "Bao bì FCM",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Bảng định hướng</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Khung</th><th>Thị trường</th><th>Ghi chú</th></tr></thead>\n                <tbody>\n                    <tr><td>QCVN 12-x/BYT</td><td>Việt Nam</td><td>Nền tảng công bố / lưu thông trong nước</td></tr>\n                    <tr><td>FDA 21 CFR (nhóm liên quan)</td><td>Mỹ</td><td>Theo loại vật liệu và điều kiện dùng</td></tr>\n                    <tr><td>GB 4806</td><td>Trung Quốc</td><td>Tiêu chuẩn sản phẩm FCM</td></tr>\n                    <tr><td>EU 10/2011</td><td>EU (nhựa)</td><td>Thôi nhiễm nhựa FCM</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n\n            <p>Mô tả vật liệu và thị trường đích để được tư vấn gói phù hợp. Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. <a href=\"vi-sao-kiem-nghiem-bao-bi-tiep-xuc-thuc-pham.html\">Tổng quan kiểm bao bì</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../pages/dich-vu-kiem-nghiem-khac#bao-gia",
+          "label": "Tư vấn quy chuẩn bao bì",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "gui-mau-kiem-nghiem-can-chuan-bi-gi",
+      "title": "Gửi mẫu kiểm nghiệm: checklist doanh nghiệp cần chuẩn bị",
+      "meta": "Checklist gửi mẫu kiểm nghiệm: thông tin sản phẩm, số lượng mẫu, bảo quản và mục đích báo cáo — TechLAB Global VALAS 217.",
+      "excerpt": "Chuẩn bị đủ thông tin trước khi gửi mẫu giúp báo giá nhanh, đúng chỉ tiêu và tránh phải lấy lại mẫu.",
+      "lead": "Gửi mẫu đúng cách giúp phòng lab tư vấn chỉ tiêu chính xác và trả kết quả đúng hạn. Dưới đây là checklist thực tế doanh nghiệp nên chuẩn bị trước khi liên hệ TechLAB Global.",
+      "tag": "Hướng dẫn",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Checklist trước khi gửi mẫu</h2>\n\n            <ol>\n                <li><strong>Tên và mô tả sản phẩm</strong> (thành phần chính, dạng bào chế/đóng gói)</li>\n                <li><strong>Mục đích:</strong> công bố, QC, đối soát, xuất khẩu…</li>\n                <li><strong>Quy chuẩn / TCCS</strong> đang áp dụng (nếu có)</li>\n                <li><strong>Danh mục chỉ tiêu</strong> mong muốn hoặc nhờ lab đề xuất</li>\n                <li><strong>Số lượng mẫu</strong> theo hướng dẫn sau khi báo giá</li>\n                <li><strong>Điều kiện bảo quản</strong> khi vận chuyển (thường/ lạnh/ đông)</li>\n            </ol>\n\n            <h2>Nhận mẫu ở đâu?</h2>\n\n            <p>Hà Nội, Cần Thơ, Hồ Chí Minh. Hotline <a href=\"tel:0899551228\">0899.551.228</a> · HCM <a href=\"tel:0907616969\">0907.61.69.69</a>.</p>\n\n            <h2>Bước tiếp theo</h2>\n\n            <p>Gửi form trên <a href=\"../index.html#bao-gia\">trang chủ</a> hoặc gọi ngay để nhận báo giá trong ngày. Lab <strong>ISO/IEC 17025 (VALAS 217)</strong>.</p>",
+      "cta_links": [
+        {
+          "href": "../index.html#bao-gia",
+          "label": "Gửi yêu cầu báo giá",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "bao-gia-kiem-nghiem-gom-nhung-gi",
+      "title": "Báo giá kiểm nghiệm gồm những gì? Cách tối ưu chi phí chỉ tiêu",
+      "meta": "Báo giá kiểm nghiệm gồm phí chỉ tiêu, xử lý mẫu và thời gian trả KQ. Cách chọn gói đúng để không kiểm thừa — TechLAB Global.",
+      "excerpt": "Chi phí phụ thuộc danh mục chỉ tiêu và độ phức tạp mẫu. Tư vấn gói đúng TCCS giúp đủ hồ sơ, tiết kiệm ngân sách.",
+      "lead": "Báo giá kiểm nghiệm không phải một con số cố định: phụ thuộc chỉ tiêu, loại mẫu, phương pháp và thời gian trả kết quả. Hiểu cấu phần giúp doanh nghiệp tối ưu chi phí mà vẫn đủ hồ sơ.",
+      "tag": "Báo giá",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Báo giá thường phản ánh những gì?</h2>\n\n            <ul>\n                <li>Danh mục chỉ tiêu và phương pháp thử</li>\n                <li>Loại / độ phức tạp của nền mẫu</li>\n                <li>Yêu cầu thời gian (thường / ưu tiên nếu có)</li>\n                <li>Số lượng mẫu và yêu cầu báo cáo</li>\n            </ul>\n\n            <h2>Cách tối ưu chi phí</h2>\n\n            <ol>\n                <li>Bám TCCS/QCVN — tránh chỉ tiêu không cần cho mục đích hồ sơ</li>\n                <li>Gộp mẫu cùng loại khi phù hợp quy trình</li>\n                <li>Nói rõ mục đích (công bố vs QC) để lab đề xuất gói đúng</li>\n            </ol>\n\n            <h2>Nhận báo giá tại TechLAB</h2>\n\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian kết quả thường 5–7 ngày làm việc; báo giá trong ngày. Form nhanh: <a href=\"../index.html#bao-gia\">Nhận báo giá</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../index.html#bao-gia",
+          "label": "Nhận báo giá ngay",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "nhan-mau-ha-noi-can-tho-hcm",
+      "title": "Nhận mẫu kiểm nghiệm Hà Nội – Cần Thơ – Hồ Chí Minh: quy trình nhanh",
+      "meta": "TechLAB Global nhận mẫu kiểm nghiệm tại Hà Nội, Cần Thơ, HCM. Hotline 0899.551.228 · HCM 0907.61.69.69 — lab ISO 17025 VALAS 217.",
+      "excerpt": "Ba điểm nhận mẫu giúp doanh nghiệp gửi nhanh, giảm thời gian chờ. Báo giá trong ngày, kết quả thường 5–7 ngày làm việc.",
+      "lead": "TechLAB Global nhận mẫu kiểm nghiệm tại Hà Nội, Cần Thơ và Hồ Chí Minh. Doanh nghiệp có thể gọi hotline để được hướng dẫn địa điểm, đóng gói và tiến độ trả kết quả.",
+      "tag": "Nhận mẫu",
+      "date": "2026-07-20",
+      "date_display": "20/07/2026",
+      "body": "            <h2>Điểm nhận mẫu</h2>\n\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Khu vực</th><th>Liên hệ</th></tr></thead>\n                <tbody>\n                    <tr><td>Hà Nội</td><td>Hotline 0899.551.228 — Km11, Quốc Lộ 21</td></tr>\n                    <tr><td>Cần Thơ</td><td>0899.551.228 — P. Hưng Thạnh</td></tr>\n                    <tr><td>Hồ Chí Minh</td><td>0907.61.69.69 — KCN Tân Bình</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Quy trình nhanh</h2>\n\n            <ol>\n                <li>Gọi hoặc gửi form mô tả mẫu / chỉ tiêu</li>\n                <li>Nhận báo giá và hướng dẫn số lượng mẫu</li>\n                <li>Gửi mẫu đúng điều kiện bảo quản</li>\n                <li>Nhận kết quả (thường 5–7 ngày làm việc)</li>\n            </ol>\n\n            <h2>Xác thực năng lực</h2>\n\n            <p>Phòng thử nghiệm <strong>ISO/IEC 17025:2017 — VALAS 217</strong>. Xem <a href=\"../ho-so-nang-luc.html\">Hồ sơ năng lực</a>.</p>",
+      "cta_links": [
+        {
+          "href": "../index.html#bao-gia",
+          "label": "Gửi yêu cầu báo giá",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
       "slug": "vi-sao-kiem-nghiem-bao-bi-tiep-xuc-thuc-pham",
       "title": "Vì sao phải kiểm nghiệm bao bì tiếp xúc thực phẩm trước khi công bố?",
       "meta": "Bao bì tiếp xúc thực phẩm có thể thôi nhiễm hóa chất vào thực phẩm. Giải thích lý do kiểm nghiệm, QCVN liên quan và khi nào cần công bố — TechLAB Global (VALAS 217).",
@@ -11,8 +563,16 @@
       "date_display": "20/07/2026",
       "body": "            <h2>Hai lý do chính doanh nghiệp cần kiểm nghiệm bao bì</h2>\n            <ol>\n                <li><strong>An toàn sức khỏe:</strong> Vật liệu nhựa, cao su, kim loại, thủy tinh–gốm sứ có thể giải phóng chất thôi nhiễm vào thực phẩm nếu không đạt quy chuẩn.</li>\n                <li><strong>Yêu cầu pháp lý:</strong> Bao bì sản xuất trong nước hoặc nhập khẩu dùng chứa thực phẩm thường phải được kiểm nghiệm và công bố chất lượng theo quy định hiện hành trước khi đưa vào lưu thông.</li>\n            </ol>\n\n            <h2>Quy chuẩn thường dùng tại Việt Nam</h2>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Quy chuẩn / tiêu chuẩn</th><th>Phạm vi</th></tr></thead>\n                <tbody>\n                    <tr><td>QCVN 12-1, 12-2, 12-3:2011/BYT</td><td>Bao bì, dụng cụ bằng nhựa, cao su, kim loại</td></tr>\n                    <tr><td>QCVN 12-4:2015/BYT</td><td>Thủy tinh và gốm sứ tiếp xúc thực phẩm</td></tr>\n                    <tr><td>TCVN 12723:2019</td><td>Giấy và các tông tiếp xúc thực phẩm</td></tr>\n                    <tr><td>TCVN 12272:2018</td><td>Đũa ăn</td></tr>\n                </tbody>\n            </table>\n            </div>\n            <p>Với hàng xuất khẩu, đối tác có thể yêu cầu thêm quy định nước ngoài (ví dụ EU về thôi nhiễm nhựa, FDA, tiêu chuẩn Trung Quốc). Doanh nghiệp nên xác định thị trường đích trước khi chọn gói chỉ tiêu.</p>\n\n            <h2>TechLAB Global hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (mã VALAS 217)</strong>. Chúng tôi tư vấn gói chỉ tiêu theo loại vật liệu (nhựa, giấy, kim loại…), nhận mẫu tại Hà Nội, Cần Thơ, Hồ Chí Minh và phản hồi báo giá trong ngày làm việc.</p>\n            <p>Xem thêm dịch vụ mẫu đặc thù / bao bì tại trang <a href=\"../pages/dich-vu-kiem-nghiem-khac.html\">Dịch vụ kiểm nghiệm khác</a> hoặc gửi form báo giá trên trang chủ.</p>",
       "cta_links": [
-        {"href": "../pages/dich-vu-kiem-nghiem-khac.html#bao-gia", "label": "Báo giá kiểm bao bì", "class": "btn btn-hero-primary"},
-        {"href": "tel:0899551228", "label": "Gọi 0899.551.228", "class": "btn btn-hero-secondary"}
+        {
+          "href": "../pages/dich-vu-kiem-nghiem-khac.html#bao-gia",
+          "label": "Báo giá kiểm bao bì",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
       ]
     },
     {
@@ -26,8 +586,16 @@
       "date_display": "20/07/2026",
       "body": "            <h2>Chỉ tiêu thường gặp</h2>\n            <ul>\n                <li><strong>Vi sinh:</strong> tổng số vi khuẩn hiếu khí, Coliform, E. coli, nấm men–nấm mốc (tùy loại bánh và TCCS).</li>\n                <li><strong>Hóa lý:</strong> độ ẩm, chỉ tiêu liên quan chất lượng và an toàn theo công bố.</li>\n                <li><strong>Phụ gia / cảm quan:</strong> khi TCCS hoặc đối tác yêu cầu kiểm soát màu, hương, chất bảo quản.</li>\n            </ul>\n            <p>Gói chỉ tiêu tối ưu phụ thuộc loại nhân (thập cẩm, đậu xanh, trứng muối…), bao bì và mục đích sử dụng báo cáo (công bố, QC nội bộ, đối soát siêu thị).</p>\n\n            <h2>Thời gian & nhận mẫu</h2>\n            <p>Tại TechLAB Global, thời gian kết quả thông thường <strong>5–7 ngày làm việc</strong> tùy gói. Báo giá phản hồi trong ngày. Nhận mẫu tại Hà Nội, Cần Thơ và Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>).</p>\n\n            <h2>Báo cáo từ lab ISO 17025</h2>\n            <p>Phòng thử nghiệm được công nhận <strong>ISO/IEC 17025:2017 (VALAS 217)</strong> — báo cáo có thể dùng cho công bố sản phẩm và đối soát đối tác. Chi tiết dịch vụ: <a href=\"../pages/kiem-nghiem-banh-keo.html\">Kiểm nghiệm bánh kẹo / bánh trung thu</a>.</p>",
       "cta_links": [
-        {"href": "../pages/kiem-nghiem-banh-keo.html#bao-gia", "label": "Báo giá bánh trung thu", "class": "btn btn-hero-primary"},
-        {"href": "tel:0899551228", "label": "Gọi 0899.551.228", "class": "btn btn-hero-secondary"}
+        {
+          "href": "../pages/kiem-nghiem-banh-keo.html#bao-gia",
+          "label": "Báo giá bánh trung thu",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
       ]
     },
     {
@@ -41,8 +609,16 @@
       "date_display": "19/07/2026",
       "body": "            <h2>Vì sao phải phân tích dinh dưỡng trước khi ghi nhãn?</h2>\n            <p>Giá trị dinh dưỡng trên bao bì phải phản ánh thành phần thực tế của sản phẩm. Phân tích tại phòng lab được công nhận giúp:</p>\n            <ul>\n                <li>Có cơ sở khoa học để điền bảng dinh dưỡng;</li>\n                <li>Đối soát công thức / nhà máy khi thay đổi nguyên liệu;</li>\n                <li>Giảm rủi ro khi thanh tra hoặc khiếu nại từ nhà phân phối.</li>\n            </ul>\n\n            <h2>Chỉ tiêu thường phân tích</h2>\n            <ul>\n                <li>Protein, lipid, carbohydrate, năng lượng</li>\n                <li>Vitamin, khoáng chất (khi nhãn tuyên bố hoặc quy định yêu cầu)</li>\n                <li>Chất xơ và chỉ tiêu chuyên biệt khác theo loại sản phẩm</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ ghi nhãn thế nào?</h2>\n            <p>TechLAB Global phân tích thành phần dinh dưỡng tại phòng lab <strong>ISO/IEC 17025 (VALAS 217)</strong>, tư vấn gói chỉ tiêu theo loại thực phẩm/TPCN. Thời gian kết quả thường 5–7 ngày làm việc; nhận mẫu HN · CT · HCM.</p>\n            <p>Xem dịch vụ: <a href=\"../pages/kiem-nghiem-dinh-duong.html\">Phân tích thành phần dinh dưỡng</a>.</p>",
       "cta_links": [
-        {"href": "../pages/kiem-nghiem-dinh-duong.html#bao-gia", "label": "Báo giá phân tích dinh dưỡng", "class": "btn btn-hero-primary"},
-        {"href": "tel:0899551228", "label": "Gọi 0899.551.228", "class": "btn btn-hero-secondary"}
+        {
+          "href": "../pages/kiem-nghiem-dinh-duong.html#bao-gia",
+          "label": "Báo giá phân tích dinh dưỡng",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
       ]
     },
     {
@@ -56,8 +632,16 @@
       "date_display": "19/07/2026",
       "body": "            <h2>ISO/IEC 17025 nghĩa là gì với doanh nghiệp?</h2>\n            <p>ISO/IEC 17025 là tiêu chuẩn quốc tế về năng lực phòng thử nghiệm. Báo cáo từ lab được công nhận thường được cơ quan quản lý và đối tác chấp nhận dễ hơn trong hồ sơ công bố, xuất khẩu hoặc đối soát chuỗi cung ứng.</p>\n\n            <h2>TechLAB Global — VALAS 217</h2>\n            <ul>\n                <li>Phạm vi: thử nghiệm sinh học và hóa học (theo phụ lục công nhận)</li>\n                <li>Nhận mẫu: Hà Nội, Cần Thơ, Hồ Chí Minh</li>\n                <li>Hotline: <a href=\"tel:0899551228\">0899.551.228</a> · HCM <a href=\"tel:0907616969\">0907.61.69.69</a></li>\n            </ul>\n            <p>Doanh nghiệp có thể xem chứng nhận và hồ sơ tại trang <a href=\"../ho-so-nang-luc.html\">Hồ sơ năng lực</a>.</p>\n\n            <h2>Khi nào nên chọn lab ISO 17025?</h2>\n            <p>Khi mục đích là công bố sản phẩm, nộp hồ sơ cho đối tác lớn, xuất khẩu, hoặc cần bằng chứng pháp lý rõ ràng. Với QC nội bộ thuần túy, vẫn nên ưu tiên lab đủ phương pháp và minh bạch thời gian trả kết quả.</p>",
       "cta_links": [
-        {"href": "../ho-so-nang-luc.html", "label": "Xem hồ sơ năng lực", "class": "btn btn-hero-primary"},
-        {"href": "../index.html#bao-gia", "label": "Nhận báo giá", "class": "btn btn-hero-secondary"}
+        {
+          "href": "../ho-so-nang-luc.html",
+          "label": "Xem hồ sơ năng lực",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "../index.html#bao-gia",
+          "label": "Nhận báo giá",
+          "class": "btn btn-hero-secondary"
+        }
       ]
     },
     {
@@ -71,8 +655,16 @@
       "date_display": "18/07/2026",
       "body": "            <h2>Hộp nhựa thuộc nhóm quy chuẩn nào?</h2>\n            <p>Với bao bì/dụng cụ bằng nhựa tiếp xúc thực phẩm, doanh nghiệp thường đối chiếu <strong>QCVN 12-1:2011/BYT</strong> (và các quy chuẩn liên quan trong bộ QCVN 12). Chỉ tiêu cụ thể phụ thuộc loại nhựa, điều kiện sử dụng (nhiệt độ, loại thực phẩm chứa) và mục đích công bố.</p>\n\n            <h2>Doanh nghiệp nên chuẩn bị gì trước khi gửi mẫu?</h2>\n            <ul>\n                <li>Mô tả sản phẩm: loại nhựa, kích thước, mục đích dùng (nóng/lạnh, dầu/nước…)</li>\n                <li>Số lượng mẫu theo hướng dẫn của phòng lab</li>\n                <li>Thông tin công bố / thị trường tiêu thụ (trong nước hay xuất khẩu)</li>\n            </ul>\n\n            <h2>Nhận báo giá tại TechLAB</h2>\n            <p>Gửi mô tả mẫu qua form báo giá hoặc gọi <a href=\"tel:0899551228\">0899.551.228</a>. TechLAB tư vấn khả năng thử và gói chỉ tiêu tại lab <strong>ISO/IEC 17025 (VALAS 217)</strong>, nhận mẫu HN · CT · HCM.</p>\n            <p>Liên quan: <a href=\"vi-sao-kiem-nghiem-bao-bi-tiep-xuc-thuc-pham.html\">Vì sao phải kiểm nghiệm bao bì?</a> · <a href=\"../pages/dich-vu-kiem-nghiem-khac.html\">Dịch vụ kiểm nghiệm khác</a>.</p>",
       "cta_links": [
-        {"href": "../pages/dich-vu-kiem-nghiem-khac.html#bao-gia", "label": "Gửi yêu cầu báo giá", "class": "btn btn-hero-primary"},
-        {"href": "tel:0899551228", "label": "Gọi 0899.551.228", "class": "btn btn-hero-secondary"}
+        {
+          "href": "../pages/dich-vu-kiem-nghiem-khac.html#bao-gia",
+          "label": "Gửi yêu cầu báo giá",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
       ]
     },
     {
@@ -86,8 +678,16 @@
       "date_display": "18/07/2026",
       "body": "            <h2>Phiếu kiểm nghiệm đóng vai trò gì?</h2>\n            <p>Kết quả kiểm nghiệm cho thấy sản phẩm (hoặc bán thành phẩm/nguyên liệu liên quan) đạt các chỉ tiêu đã đăng ký theo TCCS, QCVN hoặc quy chuẩn áp dụng. Cơ quan tiếp nhận hồ sơ và đối tác phân phối thường yêu cầu báo cáo rõ ràng, truy xuất được.</p>\n\n            <h2>Chọn chỉ tiêu thế nào cho đúng?</h2>\n            <ul>\n                <li>Bám TCCS của sản phẩm và quy chuẩn bắt buộc (vi sinh, kim loại nặng, phụ gia…)</li>\n                <li>Tránh kiểm thừa chỉ tiêu không yêu cầu — tối ưu chi phí</li>\n                <li>Xác định mục đích: công bố lần đầu, thay đổi công thức, đối soát định kỳ</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ hồ sơ công bố</h2>\n            <p>TechLAB Global tư vấn gói chỉ tiêu, thực hiện thử nghiệm tại lab <strong>ISO/IEC 17025 (VALAS 217)</strong>, thời gian kết quả thường 5–7 ngày làm việc. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh.</p>\n            <p>Bắt đầu từ trang <a href=\"../pages/kiem-nghiem-thuc-pham.html\">Kiểm nghiệm thực phẩm</a> hoặc form báo giá trên <a href=\"../index.html#bao-gia\">trang chủ</a>.</p>",
       "cta_links": [
-        {"href": "../pages/kiem-nghiem-thuc-pham.html#bao-gia", "label": "Báo giá kiểm nghiệm thực phẩm", "class": "btn btn-hero-primary"},
-        {"href": "tel:0899551228", "label": "Gọi 0899.551.228", "class": "btn btn-hero-secondary"}
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham.html#bao-gia",
+          "label": "Báo giá kiểm nghiệm thực phẩm",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
       ]
     }
   ]

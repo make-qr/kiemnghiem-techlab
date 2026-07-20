@@ -1,0 +1,262 @@
+/* News / tin tức — TechLAB Kiểm nghiệm */
+.news-hero {
+    background: linear-gradient(115deg, #0a2540 0%, #0b5e95 100%);
+    color: var(--white);
+    padding: 56px 0 48px;
+    text-align: center;
+}
+
+.news-hero h1 {
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.news-hero h1:after {
+    background: var(--white);
+}
+
+.news-hero-lead {
+    max-width: 640px;
+    margin: 0 auto;
+    color: #dbeafe;
+    font-size: 1.05rem;
+}
+
+.news-list-section {
+    padding: 48px 0 64px;
+    background: var(--light-gray);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 22px;
+}
+
+.news-card {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 22px 22px 20px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 3px solid var(--primary-color);
+    transition: box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+    box-shadow: 0 8px 24px rgba(10, 37, 64, 0.12);
+}
+
+.news-card-meta {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+}
+
+.news-card-tag {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.news-card h2 {
+    font-size: 1.15rem;
+    text-align: left;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.news-card h2:after {
+    display: none;
+}
+
+.news-card h2 a {
+    color: var(--primary-dark);
+}
+
+.news-card h2 a:hover {
+    color: var(--primary-color);
+}
+
+.news-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+    flex: 1;
+}
+
+.news-card-link {
+    font-weight: 600;
+    font-size: 0.92rem;
+    margin-top: 4px;
+}
+
+/* Article page */
+body.news-article {
+    background: var(--white);
+}
+
+.news-article-hero {
+    background: linear-gradient(115deg, #0a2540 0%, #0b5e95 100%);
+    color: var(--white);
+    padding: 44px 0 36px;
+}
+
+.news-article-hero .container {
+    max-width: 780px;
+}
+
+.news-breadcrumb {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    color: #bfdbfe;
+}
+
+.news-breadcrumb a {
+    color: #e0f2fe;
+}
+
+.news-article-hero h1 {
+    color: var(--white);
+    text-align: left;
+    font-size: 1.85rem;
+    margin-bottom: 12px;
+}
+
+.news-article-hero h1:after {
+    left: 0;
+    transform: none;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.news-article-meta {
+    font-size: 0.88rem;
+    color: #bfdbfe;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+
+.news-article-body {
+    padding: 40px 0 24px;
+}
+
+.news-article-body .container {
+    max-width: 780px;
+}
+
+.news-lead {
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: var(--primary-dark);
+    font-weight: 500;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.news-article-body h2 {
+    text-align: left;
+    font-size: 1.35rem;
+    margin: 28px 0 12px;
+}
+
+.news-article-body h2:after {
+    left: 0;
+    transform: none;
+    width: 48px;
+}
+
+.news-article-body h3 {
+    font-size: 1.1rem;
+    margin: 20px 0 8px;
+}
+
+.news-article-body p,
+.news-article-body li {
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.news-article-body ul,
+.news-article-body ol {
+    margin: 0 0 16px 1.2rem;
+}
+
+.news-article-body li {
+    margin-bottom: 6px;
+    list-style: disc;
+}
+
+.news-table-wrap {
+    overflow-x: auto;
+    margin: 16px 0 22px;
+}
+
+.news-article-body table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.news-article-body th,
+.news-article-body td {
+    border: 1px solid var(--medium-gray);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.news-article-body th {
+    background: #f0f5fa;
+    color: var(--primary-dark);
+}
+
+.news-cta-box {
+    margin: 32px 0;
+    padding: 22px 24px;
+    background: linear-gradient(135deg, #f0f7fc, #fff);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 8px 8px 0;
+}
+
+.news-cta-box p {
+    margin-bottom: 14px;
+}
+
+.news-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.news-related {
+    padding: 32px 0 56px;
+    background: var(--light-gray);
+}
+
+.news-related h2 {
+    font-size: 1.4rem;
+    margin-bottom: 28px;
+}
+
+.news-related .news-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .news-hero h1,
+    .news-article-hero h1 {
+        font-size: 1.55rem;
+    }
+
+    .news-article-hero,
+    .news-hero {
+        padding: 36px 0 28px;
+    }
+}

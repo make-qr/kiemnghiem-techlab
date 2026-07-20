@@ -1,5 +1,4 @@
 (function () {
-    var ADS_ID = 'AW-18270406607';
     var SEND_TO = {
         form: 'AW-18270406607/STV0CPOuncUcEM-PgYhE',
         thankYou: 'AW-18270406607/76T2CPvgm8UcEM-PgYhE',
@@ -22,6 +21,7 @@
     };
 
     var clientIpPromise = null;
+    var cachedIp = '';
 
     function getQueryParam(name) {
         var params = new URLSearchParams(window.location.search);
@@ -33,29 +33,33 @@
     }
 
     function fetchClientIp() {
+        if (cachedIp) {
+            return Promise.resolve(cachedIp);
+        }
         if (clientIpPromise) return clientIpPromise;
 
-        clientIpPromise = fetch('https://api.ipify.org?format=json')
-            .then(function (res) {
-                if (!res.ok) throw new Error('ipify failed');
+        function fromIpify(url) {
+            return fetch(url, { cache: 'no-store' }).then(function (res) {
+                if (!res.ok) throw new Error('ip lookup failed');
                 return res.json();
-            })
-            .then(function (data) {
+            }).then(function (data) {
                 return (data && data.ip) || '';
-            })
-            .catch(function () {
-                return fetch('https://api64.ipify.org?format=json')
-                    .then(function (res) {
-                        if (!res.ok) throw new Error('ipify64 failed');
-                        return res.json();
-                    })
-                    .then(function (data) {
-                        return (data && data.ip) || '';
-                    })
-                    .catch(function () {
-                        return '';
-                    });
             });
+        }
+
+        clientIpPromise = Promise.race([
+            fromIpify('https://api.ipify.org?format=json').catch(function () {
+                return fromIpify('https://api64.ipify.org?format=json');
+            }),
+            new Promise(function (resolve) {
+                setTimeout(function () {
+                    resolve('');
+                }, 3000);
+            })
+        ]).then(function (ip) {
+            cachedIp = ip || '';
+            return cachedIp;
+        });
 
         return clientIpPromise;
     }
@@ -108,80 +112,151 @@
         });
     }
 
+    function nowVietnam() {
+        return new Date().toLocaleString('vi-VN', {
+            timeZone: 'Asia/Ho_Chi_Minh',
+            hour12: false
+        });
+    }
+
     function fillSubmissionMeta(form, ip) {
+        var ipValue = ip || cachedIp || '(không lấy được)';
+        var uaValue = navigator.userAgent || '(không lấy được)';
+        var urlValue = window.location.href;
+        var timeValue = nowVietnam();
+
         var ipInput = field(form, 'client_ip');
         var uaInput = field(form, 'user_agent');
         var urlInput = field(form, 'page_url');
         var timeInput = field(form, 'submitted_at');
 
-        if (ipInput) {
-            ipInput.value = ip || '(không lấy được)';
+        if (ipInput) ipInput.value = ipValue;
+        if (uaInput) uaInput.value = uaValue;
+        if (urlInput) urlInput.value = urlValue;
+        if (timeInput) timeInput.value = timeValue;
+
+        return {
+            'Địa_chỉ_IP': ipValue,
+            'Trình_duyệt': uaValue,
+            'Trang_gửi_form': urlValue,
+            'Thời_điểm_gửi': timeValue
+        };
+    }
+
+    function getAjaxEndpoint(form) {
+        var action = form.getAttribute('action') || '';
+        if (action.indexOf('/ajax/') !== -1) return action;
+        return action.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
+    }
+
+    function getNextUrl(form) {
+        var next = form.querySelector('input[name="_next"]');
+        return (next && next.value) || 'https://kiemnghiem.techlabglobal.com.vn/thank-you.html';
+    }
+
+    function buildPayload(form, ip) {
+        var meta = fillSubmissionMeta(form, ip);
+        var payload = {};
+        var formData = new FormData(form);
+
+        formData.forEach(function (value, key) {
+            if (key === '_honey') return;
+            if (value === null || value === undefined) return;
+            var text = String(value).trim();
+            if (!text && (key === 'Địa_chỉ_IP' || key === 'Trình_duyệt' || key === 'Trang_gửi_form' || key === 'Thời_điểm_gửi')) {
+                return;
+            }
+            payload[key] = text;
+        });
+
+        payload['Địa_chỉ_IP'] = meta['Địa_chỉ_IP'];
+        payload['Trình_duyệt'] = meta['Trình_duyệt'];
+        payload['Trang_gửi_form'] = meta['Trang_gửi_form'];
+        payload['Thời_điểm_gửi'] = meta['Thời_điểm_gửi'];
+        payload._template = payload._template || 'table';
+        payload._captcha = 'false';
+
+        return payload;
+    }
+
+    function setSubmitting(form, isSubmitting) {
+        var btn = form.querySelector('button[type="submit"]');
+        if (!btn) return;
+        if (isSubmitting) {
+            btn.disabled = true;
+            if (!btn.dataset.originalText) {
+                btn.dataset.originalText = btn.textContent;
+            }
+            btn.textContent = 'Đang gửi...';
+        } else {
+            btn.disabled = false;
+            if (btn.dataset.originalText) {
+                btn.textContent = btn.dataset.originalText;
+            }
         }
-        if (uaInput) {
-            uaInput.value = navigator.userAgent || '(không lấy được)';
-        }
-        if (urlInput) {
-            urlInput.value = window.location.href;
-        }
-        if (timeInput) {
-            timeInput.value = new Date().toLocaleString('vi-VN', {
-                timeZone: 'Asia/Ho_Chi_Minh',
-                hour12: false
+    }
+
+    function trackFormSubmit(form) {
+        markFormConversionPending();
+        trackConversion('quote_form_submit', 'quote_form', SEND_TO.form);
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'form_submit', {
+                event_category: 'conversion',
+                event_label: form.classList.contains('quote-form') ? 'quote_form' : 'contact_form'
             });
         }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'form_submit',
+            conversion_label: form.classList.contains('quote-form') ? 'quote_form' : 'contact_form'
+        });
     }
 
     function setupQuoteFormSubmit(form) {
         setupOtherDetailFields(form);
+        fillSubmissionMeta(form, cachedIp);
 
         form.addEventListener('submit', function (event) {
-            if (form.getAttribute('data-meta-ready') === '1') {
-                markFormConversionPending();
-                trackConversion('quote_form_submit', 'quote_form', SEND_TO.form);
-
-                if (typeof gtag === 'function') {
-                    gtag('event', 'form_submit', {
-                        event_category: 'conversion',
-                        event_label: form.classList.contains('quote-form') ? 'quote_form' : 'contact_form'
-                    });
-                }
-                window.dataLayer = window.dataLayer || [];
-                window.dataLayer.push({
-                    event: 'form_submit',
-                    conversion_label: form.classList.contains('quote-form') ? 'quote_form' : 'contact_form'
-                });
+            event.preventDefault();
+            if (form.getAttribute('data-sending') === '1') return;
+            if (!form.checkValidity()) {
+                form.reportValidity();
                 return;
             }
 
-            event.preventDefault();
-
-            var btn = form.querySelector('button[type="submit"]');
-            if (btn) {
-                btn.disabled = true;
-                btn.dataset.originalText = btn.textContent;
-                btn.textContent = 'Đang gửi...';
-            }
+            form.setAttribute('data-sending', '1');
+            setSubmitting(form, true);
 
             fetchClientIp().then(function (ip) {
-                fillSubmissionMeta(form, ip);
-                form.setAttribute('data-meta-ready', '1');
-                if (typeof form.requestSubmit === 'function') {
-                    form.requestSubmit();
-                } else {
-                    markFormConversionPending();
-                    trackConversion('quote_form_submit', 'quote_form', SEND_TO.form);
-                    form.submit();
-                }
+                var payload = buildPayload(form, ip);
+                var endpoint = getAjaxEndpoint(form);
+
+                return fetch(endpoint, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                }).then(function (res) {
+                    if (!res.ok) {
+                        throw new Error('FormSubmit HTTP ' + res.status);
+                    }
+                    return res.json().catch(function () {
+                        return {};
+                    });
+                });
+            }).then(function () {
+                trackFormSubmit(form);
+                window.location.href = getNextUrl(form);
             }).catch(function () {
-                fillSubmissionMeta(form, '');
-                form.setAttribute('data-meta-ready', '1');
-                if (typeof form.requestSubmit === 'function') {
-                    form.requestSubmit();
-                } else {
-                    markFormConversionPending();
-                    trackConversion('quote_form_submit', 'quote_form', SEND_TO.form);
-                    form.submit();
-                }
+                // Fallback: native POST với meta đã điền
+                fillSubmissionMeta(form, cachedIp);
+                form.removeAttribute('data-sending');
+                setSubmitting(form, false);
+                trackFormSubmit(form);
+                HTMLFormElement.prototype.submit.call(form);
             });
         });
     }
@@ -255,16 +330,15 @@
         });
 
         var forms = document.querySelectorAll('.quote-form, .contact-form');
-        forms.forEach(setupQuoteFormSubmit);
+        forms.forEach(function (form) {
+            fillSubmissionMeta(form, '');
+            setupQuoteFormSubmit(form);
+        });
 
         if (forms.length) {
             fetchClientIp().then(function (ip) {
                 forms.forEach(function (form) {
-                    var ipInput = field(form, 'client_ip');
-                    if (ipInput && !ipInput.value) {
-                        ipInput.value = ip || '(không lấy được)';
-                    }
-                    fillSubmissionMeta(form, ip || ipInput && ipInput.value);
+                    fillSubmissionMeta(form, ip);
                 });
             });
         }

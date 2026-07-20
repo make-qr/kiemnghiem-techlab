@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
-"""Sinh trang tin tức từ scripts/news-articles.json."""
+"""Sinh trang tin tức + sitemap.xml từ scripts/news-articles.json."""
 from __future__ import annotations
 
 import json
+import html
+from datetime import date
 from pathlib import Path
+from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "scripts" / "news-articles.json").read_text(encoding="utf-8"))
 OUT = ROOT / "tin-tuc"
 BASE = "https://kiemnghiem.techlabglobal.com.vn"
+CSS_V = "20260720e"
 
 COMMON_HEAD = """<!DOCTYPE html>
 <html lang="vi">
@@ -18,9 +22,9 @@ COMMON_HEAD = """<!DOCTYPE html>
     <meta name="description" content="{meta}">
     <title>{title} | TechLAB Global</title>
     <link rel="canonical" href="{canonical}">
-    <link rel="stylesheet" href="../css/style.css?v=20260720d">
-    <link rel="stylesheet" href="../css/conversion.css?v=20260720d">
-    <link rel="stylesheet" href="../css/news.css?v=20260720d">
+    <link rel="stylesheet" href="../css/style.css?v={css_v}">
+    <link rel="stylesheet" href="../css/conversion.css?v={css_v}">
+    <link rel="stylesheet" href="../css/news.css?v={css_v}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../js/tracking-bootstrap.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YE334L4TV"></script>
@@ -35,9 +39,9 @@ COMMON_HEAD = """<!DOCTYPE html>
     <meta property="og:title" content="{title}">
     <meta property="og:description" content="{meta}">
     <meta property="og:url" content="{canonical}">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="{og_type}">
 </head>
-<body class="news-article">
+<body class="{body_class}">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 """
@@ -90,6 +94,7 @@ FOOTER = """    <footer>
                         <li><a href="index.html">Tin tức</a></li>
                         <li><a href="../ho-so-nang-luc.html">Hồ sơ năng lực</a></li>
                         <li><a href="../index.html#bao-gia">Báo giá</a></li>
+                        <li><a href="../sitemap.xml">Sitemap</a></li>
                         <li><a href="../privacy-policy.html">Chính sách bảo mật</a></li>
                     </ul>
                 </div>
@@ -113,20 +118,95 @@ FOOTER = """    <footer>
     <script src="../js/conversion.js?v=20260720b"></script>
 """
 
+FILTER_JS = """
+    <script>
+    (function () {
+        var buttons = document.querySelectorAll('.news-filter-btn');
+        var cards = document.querySelectorAll('.news-card[data-tag]');
+        var empty = document.getElementById('news-empty');
+        if (!buttons.length) return;
+        buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var tag = btn.getAttribute('data-filter');
+                buttons.forEach(function (b) { b.classList.toggle('is-active', b === btn); });
+                var visible = 0;
+                cards.forEach(function (card) {
+                    var show = tag === 'all' || card.getAttribute('data-tag') === tag;
+                    card.classList.toggle('is-hidden', !show);
+                    if (show) visible += 1;
+                });
+                if (empty) empty.classList.toggle('is-visible', visible === 0);
+            });
+        });
+    })();
+    </script>
+"""
+
+
+def esc(s: str) -> str:
+    return html.escape(s, quote=True)
+
+
+def card_html(article: dict, featured: bool = False) -> str:
+    slug = article["slug"]
+    tag = article["tag"]
+    title = esc(article["title"])
+    excerpt = esc(article["excerpt"])
+    date_d = esc(article["date_display"])
+    tag_e = esc(tag)
+    if featured:
+        return f"""            <article class="news-card news-card--featured" data-tag="{tag_e}">
+                <div class="news-card-visual">
+                    <span class="news-featured-label">Bài nổi bật</span>
+                    <h2><a href="{slug}.html">{title}</a></h2>
+                </div>
+                <div class="news-card-inner">
+                    <div class="news-card-meta"><span class="news-card-tag">{tag_e}</span></div>
+                    <p>{excerpt}</p>
+                    <div class="news-card-footer">
+                        <a class="news-card-link" href="{slug}.html">Đọc bài viết <i class="fas fa-arrow-right"></i></a>
+                        <span class="news-card-date">{date_d}</span>
+                    </div>
+                </div>
+            </article>"""
+    return f"""            <article class="news-card" data-tag="{tag_e}">
+                <div class="news-card-accent" aria-hidden="true"></div>
+                <div class="news-card-inner">
+                    <div class="news-card-meta"><span class="news-card-tag">{tag_e}</span></div>
+                    <h2><a href="{slug}.html">{title}</a></h2>
+                    <p>{excerpt}</p>
+                    <div class="news-card-footer">
+                        <a class="news-card-link" href="{slug}.html">Đọc tiếp <i class="fas fa-arrow-right"></i></a>
+                        <span class="news-card-date">{date_d}</span>
+                    </div>
+                </div>
+            </article>"""
+
+
+def related_aside(current_slug: str, limit: int = 5) -> str:
+    others = [a for a in DATA["articles"] if a["slug"] != current_slug][:limit]
+    items = "\n".join(
+        f'                        <li><a href="{a["slug"]}.html">{esc(a["title"])}</a></li>'
+        for a in others
+    )
+    return f"""                <aside class="news-aside" aria-label="Thông tin bổ sung">
+                    <div class="news-aside-card">
+                        <h3>Bài liên quan</h3>
+                        <ul class="news-aside-list">
+{items}
+                        </ul>
+                    </div>
+                    <div class="news-aside-card news-aside-cta">
+                        <h3>Cần báo giá?</h3>
+                        <p>Lab ISO/IEC 17025 (VALAS 217) — nhận mẫu HN · CT · HCM.</p>
+                        <a href="../index.html#bao-gia" class="btn btn-hero-primary">Gửi yêu cầu</a>
+                    </div>
+                </aside>"""
+
 
 def related_cards(current_slug: str, limit: int = 3) -> str:
     others = [a for a in DATA["articles"] if a["slug"] != current_slug][:limit]
-    cards = []
-    for a in others:
-        cards.append(
-            f"""            <article class="news-card">
-                <div class="news-card-meta"><span class="news-card-tag">{a["tag"]}</span><span>{a["date_display"]}</span></div>
-                <h2><a href="{a["slug"]}.html">{a["title"]}</a></h2>
-                <p>{a["excerpt"]}</p>
-                <a class="news-card-link" href="{a["slug"]}.html">Đọc tiếp →</a>
-            </article>"""
-        )
-    return "\n".join(cards)
+    return "\n".join(card_html(a) for a in others)
 
 
 def render_article(article: dict) -> str:
@@ -154,34 +234,51 @@ def render_article(article: dict) -> str:
         },
         "mainEntityOfPage": canonical,
     }
-    return f"""{COMMON_HEAD.format(meta=article["meta"], title=article["title"], canonical=canonical)}
+    head = COMMON_HEAD.format(
+        meta=esc(article["meta"]),
+        title=esc(article["title"]),
+        canonical=canonical,
+        css_v=CSS_V,
+        og_type="article",
+        body_class="news-article",
+    )
+    return f"""{head}
 {HEADER}
     <section class="news-article-hero">
         <div class="container">
-            <nav class="news-breadcrumb" aria-label="Breadcrumb">
-                <a href="../index.html">Trang chủ</a> · <a href="index.html">Tin tức</a> · {article["tag"]}
-            </nav>
-            <h1>{article["title"]}</h1>
-            <div class="news-article-meta">
-                <span>{article["date_display"]}</span>
-                <span>{article["tag"]}</span>
-                <span>TechLAB Global</span>
+            <div class="news-article-hero-inner">
+                <nav class="news-breadcrumb" aria-label="Breadcrumb">
+                    <a href="../index.html">Trang chủ</a>
+                    <span class="news-breadcrumb-sep">/</span>
+                    <a href="index.html">Tin tức</a>
+                    <span class="news-breadcrumb-sep">/</span>
+                    <span>{esc(article["tag"])}</span>
+                </nav>
+                <h1>{esc(article["title"])}</h1>
+                <div class="news-article-meta">
+                    <span class="news-card-tag">{esc(article["tag"])}</span>
+                    <span><i class="far fa-calendar-alt"></i> {esc(article["date_display"])}</span>
+                    <span>TechLAB Global</span>
+                </div>
             </div>
         </div>
     </section>
-    <article class="news-article-body">
-        <div class="container">
-            <p class="news-lead">{article["lead"]}</p>
+    <div class="news-layout">
+        <article class="news-article-body">
+            <div class="container">
+                <p class="news-lead">{article["lead"]}</p>
 {article["body"]}
-            <div class="news-cta-box">
-                <p><strong>Cần báo giá kiểm nghiệm?</strong> TechLAB Global — phòng lab ISO/IEC 17025 (VALAS 217), nhận mẫu HN · CT · HCM.</p>
-                <div class="news-cta-actions">{cta_html}</div>
+                <div class="news-cta-box">
+                    <p><strong>Cần báo giá kiểm nghiệm?</strong> TechLAB Global — phòng lab ISO/IEC 17025 (VALAS 217), nhận mẫu HN · CT · HCM.</p>
+                    <div class="news-cta-actions">{cta_html}</div>
+                </div>
             </div>
-        </div>
-    </article>
+        </article>
+{related_aside(slug)}
+    </div>
     <section class="news-related">
         <div class="container">
-            <h2>Bài viết liên quan</h2>
+            <h2>Đọc tiếp</h2>
             <div class="news-grid">
 {related_cards(slug)}
             </div>
@@ -198,16 +295,17 @@ def render_article(article: dict) -> str:
 
 def render_index() -> str:
     articles = DATA["articles"]
-    cards = []
+    tags = []
     for a in articles:
-        cards.append(
-            f"""            <article class="news-card">
-                <div class="news-card-meta"><span class="news-card-tag">{a["tag"]}</span><span>{a["date_display"]}</span></div>
-                <h2><a href="{a["slug"]}.html">{a["title"]}</a></h2>
-                <p>{a["excerpt"]}</p>
-                <a class="news-card-link" href="{a["slug"]}.html">Đọc tiếp →</a>
-            </article>"""
+        if a["tag"] not in tags:
+            tags.append(a["tag"])
+    filter_btns = ['                <button type="button" class="news-filter-btn is-active" data-filter="all">Tất cả</button>']
+    for tag in tags:
+        filter_btns.append(
+            f'                <button type="button" class="news-filter-btn" data-filter="{esc(tag)}">{esc(tag)}</button>'
         )
+    cards = [card_html(articles[0], featured=True)]
+    cards.extend(card_html(a) for a in articles[1:])
     item_list = [
         {
             "@type": "ListItem",
@@ -224,47 +322,46 @@ def render_index() -> str:
         "url": f"{BASE}/tin-tuc/",
         "mainEntity": {"@type": "ItemList", "itemListElement": item_list},
     }
-    return f"""<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tin tức & kiến thức kiểm nghiệm thực phẩm, bao bì, dinh dưỡng, ISO 17025 từ phòng thử nghiệm TechLAB Global (VALAS 217).">
-    <title>Tin tức kiểm nghiệm | TechLAB Global</title>
-    <link rel="canonical" href="{BASE}/tin-tuc/">
-    <link rel="stylesheet" href="../css/style.css?v=20260720d">
-    <link rel="stylesheet" href="../css/conversion.css?v=20260720d">
-    <link rel="stylesheet" href="../css/news.css?v=20260720d">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="../js/tracking-bootstrap.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YE334L4TV"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18270406607"></script>
-    <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
-    new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    }})(window,document,'script','dataLayer','GTM-MRHPPTJ7');</script>
-    <script src="../js/meta-pixel.js" defer></script>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-</head>
-<body class="news-list-page">
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    head = COMMON_HEAD.format(
+        meta=esc(
+            "Tin tức & kiến thức kiểm nghiệm thực phẩm, bao bì, dinh dưỡng, ISO 17025 từ phòng thử nghiệm TechLAB Global (VALAS 217)."
+        ),
+        title="Tin tức kiểm nghiệm",
+        canonical=f"{BASE}/tin-tuc/",
+        css_v=CSS_V,
+        og_type="website",
+        body_class="news-list-page",
+    )
+    return f"""{head}
 {HEADER}
     <section class="news-hero">
         <div class="container">
+            <p class="news-eyebrow">Kiến thức phòng lab</p>
             <h1>Tin tức &amp; kiến thức kiểm nghiệm</h1>
-            <p class="news-hero-lead">Cập nhật quy chuẩn, chỉ tiêu và hướng dẫn công bố từ phòng thử nghiệm ISO/IEC 17025 (VALAS 217) — TechLAB Global.</p>
+            <p class="news-hero-lead">Quy chuẩn, chỉ tiêu và hướng dẫn công bố từ phòng thử nghiệm ISO/IEC 17025 (VALAS 217) — viết cho doanh nghiệp cần quyết định nhanh.</p>
+            <div class="news-hero-stats">
+                <span><strong>{len(articles)}</strong> bài viết</span>
+                <span><strong>{len(tags)}</strong> chủ đề</span>
+                <span><strong>VALAS 217</strong> · ISO/IEC 17025</span>
+            </div>
         </div>
     </section>
     <section class="news-list-section">
         <div class="container">
-            <div class="news-grid">
+            <div class="news-toolbar">
+                <p class="news-toolbar-label">Lọc theo chủ đề</p>
+                <div class="news-filters" role="toolbar" aria-label="Lọc bài viết">
+{chr(10).join(filter_btns)}
+                </div>
+            </div>
+            <div class="news-grid" id="news-grid">
 {chr(10).join(cards)}
+                <p class="news-empty" id="news-empty">Không có bài trong chủ đề này.</p>
             </div>
         </div>
     </section>
 {FOOTER}
+{FILTER_JS}
     <script type="application/ld+json">
     {json.dumps(ld, ensure_ascii=False, indent=2)}
     </script>
@@ -273,14 +370,56 @@ def render_index() -> str:
 """
 
 
+def write_sitemap() -> None:
+    today = date.today().isoformat()
+    urls: list[tuple[str, str, str, str]] = [
+        (f"{BASE}/", today, "weekly", "1.0"),
+        (f"{BASE}/ho-so-nang-luc.html", today, "monthly", "0.85"),
+        (f"{BASE}/tin-tuc/", today, "weekly", "0.9"),
+        (f"{BASE}/privacy-policy.html", today, "yearly", "0.3"),
+        (f"{BASE}/thank-you.html", today, "yearly", "0.2"),
+    ]
+    for page in sorted((ROOT / "pages").glob("*.html")):
+        urls.append((f"{BASE}/pages/{page.name}", today, "monthly", "0.8"))
+    for article in DATA["articles"]:
+        urls.append(
+            (
+                f"{BASE}/tin-tuc/{article['slug']}.html",
+                article.get("date", today),
+                "monthly",
+                "0.7",
+            )
+        )
+
+    parts = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+    for loc, lastmod, freq, pri in urls:
+        parts.append("  <url>")
+        parts.append(f"    <loc>{escape(loc)}</loc>")
+        parts.append(f"    <lastmod>{lastmod}</lastmod>")
+        parts.append(f"    <changefreq>{freq}</changefreq>")
+        parts.append(f"    <priority>{pri}</priority>")
+        parts.append("  </url>")
+    parts.append("</urlset>")
+    parts.append("")
+    (ROOT / "sitemap.xml").write_text("\n".join(parts), encoding="utf-8")
+    print(f"sitemap.xml → {len(urls)} URLs")
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+    # remove old generated html except plan md
+    for old in OUT.glob("*.html"):
+        old.unlink()
     (OUT / "index.html").write_text(render_index(), encoding="utf-8")
     for article in DATA["articles"]:
         path = OUT / f"{article['slug']}.html"
         path.write_text(render_article(article), encoding="utf-8")
         print("wrote", path.relative_to(ROOT))
     print("index → tin-tuc/index.html")
+    write_sitemap()
 
 
 if __name__ == "__main__":

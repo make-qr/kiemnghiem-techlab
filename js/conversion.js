@@ -1,6 +1,5 @@
 (function () {
     var SEND_TO = {
-        form: 'AW-18270406607/STV0CPOuncUcEM-PgYhE',
         thankYou: 'AW-18270406607/76T2CPvgm8UcEM-PgYhE',
         call: 'AW-18270406607/55kGCILim8UcEM-PgYhE',
         zalo: 'AW-18270406607/CkOzCO-wncUcEM-PgYhE'

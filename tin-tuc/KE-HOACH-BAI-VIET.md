@@ -92,6 +92,8 @@
 
 **Đã hoàn thành:** 30/30 bài trên `/tin-tuc/` (cập nhật 20/07/2026).
 
+**Đợt 2 (map Ads KW + 10 bài mới):** xem [`KE-HOACH-BAI-VIET-DOT-2.md`](KE-HOACH-BAI-VIET-DOT-2.md) — tổng **40** bài (cập nhật 24/07/2026).
+
 ---
 
 ## 4. Lịch xuất bản đề xuất

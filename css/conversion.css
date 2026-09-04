@@ -49,14 +49,47 @@
     color: var(--white);
 }
 
+.sticky-cta-form {
+    background-color: var(--primary-color, #0b3d5c);
+    color: var(--white);
+}
+
+.sticky-cta-form:hover {
+    background-color: #082f47;
+    color: var(--white);
+}
+
 @media (max-width: 768px) {
     .sticky-cta-bar {
         display: flex;
-        padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
+        padding: 8px 8px calc(8px + env(safe-area-inset-bottom, 0px));
+        gap: 8px;
+    }
+
+    .sticky-cta-bar a {
+        font-size: 0.85rem;
+        min-height: 46px;
+        padding: 0 8px;
+        gap: 6px;
     }
 
     body.has-sticky-cta {
         padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px));
+    }
+
+    /* Form báo giá sát hero trên mobile — tăng tỷ lệ điền */
+    .quote-form-section {
+        padding: 28px 0 36px;
+        scroll-margin-top: 12px;
+    }
+
+    .quote-form-box {
+        padding: 22px 16px;
+        border-radius: 8px;
+    }
+
+    .quote-form-box h2 {
+        font-size: 1.28rem;
     }
 
     /* Sticky bar đã có Gọi + Zalo — ẩn nút chat nổi tránh che nhau */

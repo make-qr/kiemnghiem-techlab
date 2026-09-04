@@ -2,7 +2,9 @@
     var SEND_TO = {
         thankYou: 'AW-18270406607/76T2CPvgm8UcEM-PgYhE',
         call: 'AW-18270406607/55kGCILim8UcEM-PgYhE',
-        zalo: 'AW-18270406607/CkOzCO-wncUcEM-PgYhE'
+        zalo: 'AW-18270406607/CkOzCO-wncUcEM-PgYhE',
+        // Primary lead — thiếu key này khiến gtag không gửi conversion form
+        form: 'AW-18270406607/STV0CPOuncUcEM-PgYhE'
     };
 
     var SERVICE_MAP = {

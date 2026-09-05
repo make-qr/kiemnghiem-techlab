@@ -1,6 +1,29 @@
 {
   "articles": [
     {
+      "slug": "checklist-gui-mau-kiem-nghiem",
+      "title": "Checklist gửi mẫu kiểm nghiệm: tránh trả lại mẫu lần đầu",
+      "meta": "Checklist gửi mẫu kiểm nghiệm thực phẩm/nước/mỹ phẩm: nhãn mẫu, khối lượng, bảo quản và mục đích kiểm — lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "Gửi mẫu thiếu thông tin hoặc bảo quản sai dễ bị lab trả lại. Checklist giúp doanh nghiệp gửi đúng ngay lần đầu.",
+      "lead": "Trước khi gửi mẫu đến phòng thử nghiệm, doanh nghiệp nên chốt mục đích kiểm, chỉ tiêu, nhãn mẫu và điều kiện bảo quản. Checklist dưới đây giúp giảm rủi ro mẫu bị trả lại hoặc phiếu kết quả chậm hơn lịch sản xuất.",
+      "tag": "Gửi mẫu",
+      "date": "2026-09-05",
+      "date_display": "05/09/2026",
+      "body": "\n            <h2>Vì sao mẫu bị trả lại hoặc phải gửi lại?</h2>\n            <p>Phòng lab chỉ phân tích được khi mẫu <strong>đại diện</strong>, còn hạn dùng thử nghiệm, và có đủ thông tin truy xuất (tên SP, lô, ngày SX, điều kiện bảo quản). Thiếu một trong các yếu tố này, lab buộc phải liên hệ lại — kéo dài thời gian nhận phiếu.</p>\n\n            <h2>Checklist trước khi gửi</h2>\n            <ol>\n                <li><strong>Mục đích rõ:</strong> công bố sản phẩm, QC lô sản xuất, đối soát đối tác, hay hồ sơ chứng nhận (VietGAP/HACCP…).</li>\n                <li><strong>Chốt chỉ tiêu</strong> theo TCCS / QCVN / yêu cầu chuỗi — tránh gửi “kiểm hết” không cần thiết.</li>\n                <li><strong>Khối lượng mẫu tối thiểu</strong> theo hướng dẫn lab cho từng chỉ tiêu (vi sinh thường cần mẫu riêng, không dùng chung với hóa lý nếu quy trình khác).</li>\n                <li><strong>Nhãn mẫu:</strong> tên sản phẩm, mã lô, ngày sản xuất/HSD, người gửi, SĐT.</li>\n                <li><strong>Bảo quản đúng:</strong> lạnh/đông/nhiệt độ phòng theo loại mẫu; ghi rõ nếu mẫu cần giữ lạnh trong vận chuyển.</li>\n                <li><strong>Đặt lịch nhận mẫu</strong> tại Hà Nội, Cần Thơ hoặc HCM trước ngày gửi.</li>\n            </ol>\n\n            <h2>Thông tin nên gửi kèm phiếu yêu cầu</h2>\n            <ul>\n                <li>Loại sản phẩm và dạng mẫu (thành phẩm, bán thành phẩm, nguyên liệu, nước…)</li>\n                <li>Danh sách chỉ tiêu hoặc nhóm (vi sinh / hóa lý / dinh dưỡng)</li>\n                <li>Thời hạn cần kết quả (gắn lịch công bố hoặc giao hàng)</li>\n                <li>Yêu cầu xuất hóa đơn / tên trên phiếu kết quả</li>\n            </ul>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899551228\">0899.551.228</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). Thời gian KLN/VS thường 5–7 ngày làm việc; có nhóm dinh dưỡng 7–12 ngày; báo giá trong ngày. Xem <a href=\"../pages/kiem-nghiem-thuc-pham.html\">kiểm nghiệm thực phẩm</a> và <a href=\"chon-phong-lab-iso-17025-nlct.html\">cách chọn lab ISO 17025</a>.</p>\n        ",
+      "cta_links": [
+        {
+          "href": "../index.html#bao-gia",
+          "label": "Gửi yêu cầu báo giá",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899551228",
+          "label": "Gọi 0899.551.228",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
       "slug": "checklist-gui-mau-banh-trung-thu-2026",
       "title": "Checklist gửi mẫu bánh trung thu 2026: thời hạn & chỉ tiêu trước cao điểm",
       "meta": "Checklist gửi mẫu kiểm nghiệm bánh trung thu 2026: chỉ tiêu vi sinh – hóa lý, thời hạn trước cao điểm và lab ISO 17025 VALAS 217 — TechLAB Global.",

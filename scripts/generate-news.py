@@ -4,15 +4,25 @@ from __future__ import annotations
 
 import json
 import html
+import sys
 from datetime import date
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from news_images import (  # noqa: E402
+    ensure_article_images,
+    figure_html,
+    inject_inline_after_first_section,
+    verify_unique,
+)
+
 DATA = json.loads((ROOT / "scripts" / "news-articles.json").read_text(encoding="utf-8"))
 OUT = ROOT / "tin-tuc"
 BASE = "https://kiemnghiem.techlabglobal.com.vn"
-CSS_V = "20260905a"
+CSS_V = "20260905b"
+IMG_V = "20260905b"
 
 COMMON_HEAD = """<!DOCTYPE html>
 <html lang="vi">
@@ -40,6 +50,7 @@ COMMON_HEAD = """<!DOCTYPE html>
     <meta property="og:description" content="{meta}">
     <meta property="og:url" content="{canonical}">
     <meta property="og:type" content="{og_type}">
+    <meta property="og:image" content="{og_image}">
 </head>
 <body class="{body_class}">
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRHPPTJ7"
@@ -154,12 +165,14 @@ def card_html(article: dict, featured: bool = False) -> str:
     excerpt = esc(article["excerpt"])
     date_d = esc(article["date_display"])
     tag_e = esc(tag)
+    thumb = f'../images/tin-tuc/{slug}-hero.jpg?v={IMG_V}'
     if featured:
         return f"""            <article class="news-card news-card--featured" data-tag="{tag_e}">
-                <div class="news-card-visual">
+                <a class="news-card-visual" href="{slug}.html">
+                    <img class="news-card-thumb" src="{thumb}" alt="{title}" width="640" height="360" loading="eager">
                     <span class="news-featured-label">Bài nổi bật</span>
-                    <h2><a href="{slug}.html">{title}</a></h2>
-                </div>
+                    <h2>{title}</h2>
+                </a>
                 <div class="news-card-inner">
                     <div class="news-card-meta"><span class="news-card-tag">{tag_e}</span></div>
                     <p>{excerpt}</p>
@@ -170,7 +183,9 @@ def card_html(article: dict, featured: bool = False) -> str:
                 </div>
             </article>"""
     return f"""            <article class="news-card" data-tag="{tag_e}">
-                <div class="news-card-accent" aria-hidden="true"></div>
+                <a class="news-card-media" href="{slug}.html">
+                    <img class="news-card-thumb" src="{thumb}" alt="{title}" width="640" height="360" loading="lazy">
+                </a>
                 <div class="news-card-inner">
                     <div class="news-card-meta"><span class="news-card-tag">{tag_e}</span></div>
                     <h2><a href="{slug}.html">{title}</a></h2>
@@ -211,7 +226,9 @@ def related_cards(current_slug: str, limit: int = 3) -> str:
 
 def render_article(article: dict) -> str:
     slug = article["slug"]
+    ensure_article_images(slug)
     canonical = f"{BASE}/tin-tuc/{slug}.html"
+    og_image = f"{BASE}/images/tin-tuc/{slug}-hero.jpg"
     cta_links = article.get("cta_links") or [
         {"href": "../index.html#bao-gia", "label": "Gửi yêu cầu báo giá", "class": "btn btn-hero-primary"},
         {"href": "tel:0899551228", "label": "Gọi 0899.551.228", "class": "btn btn-hero-secondary"},
@@ -219,11 +236,15 @@ def render_article(article: dict) -> str:
     cta_html = "".join(
         f'<a href="{c["href"]}" class="{c.get("class", "btn")}">{c["label"]}</a>' for c in cta_links
     )
+    featured = figure_html(slug, "hero", article["title"], IMG_V, loading="eager")
+    inline = figure_html(slug, "inline", article["title"], IMG_V, loading="lazy")
+    body = inject_inline_after_first_section(article["body"], inline)
     ld = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": article["title"],
         "description": article["meta"],
+        "image": [og_image],
         "datePublished": article["date"],
         "dateModified": article.get("date_modified", article["date"]),
         "author": {"@type": "Organization", "name": "TechLAB Global"},
@@ -240,6 +261,7 @@ def render_article(article: dict) -> str:
         canonical=canonical,
         css_v=CSS_V,
         og_type="article",
+        og_image=og_image,
         body_class="news-article",
     )
     return f"""{head}
@@ -266,8 +288,9 @@ def render_article(article: dict) -> str:
     <div class="news-layout">
         <article class="news-article-body">
             <div class="container">
+{featured}
                 <p class="news-lead">{article["lead"]}</p>
-{article["body"]}
+{body}
                 <div class="news-cta-box">
                     <p><strong>Cần báo giá kiểm nghiệm?</strong> TechLAB Global — phòng lab ISO/IEC 17025 (VALAS 217), nhận mẫu HN · CT · HCM.</p>
                     <div class="news-cta-actions">{cta_html}</div>
@@ -330,6 +353,7 @@ def render_index() -> str:
         canonical=f"{BASE}/tin-tuc/",
         css_v=CSS_V,
         og_type="website",
+        og_image=f"{BASE}/images/tin-tuc/{articles[0]['slug']}-hero.jpg" if articles else f"{BASE}/images/logo.png",
         body_class="news-list-page",
     )
     return f"""{head}
@@ -410,7 +434,13 @@ def write_sitemap() -> None:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    # remove old generated html except plan md
+    image_paths: list[Path] = []
+    for article in DATA["articles"]:
+        hero, inline = ensure_article_images(article["slug"])
+        image_paths.extend([hero, inline])
+    verify_unique(image_paths)
+    print(f"images unique_ok count={len(image_paths)}")
+
     for old in OUT.glob("*.html"):
         old.unlink()
     (OUT / "index.html").write_text(render_index(), encoding="utf-8")

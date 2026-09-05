@@ -17,10 +17,17 @@ body.news-article {
 body.news-list-page header,
 body.news-article header,
 body.news-list-page .hub-strip,
-body.news-article .hub-strip,
+body.news-article .hub-strip {
+    background: var(--white);
+}
+
+/* Footer giữ nền tối sitewide — chữ secondary (#e6f2ff) chỉ đọc được trên primary-dark.
+   Trước đây ép footer trắng → hòa nền #f3f7fb + link gần như vô hình. */
 body.news-list-page footer,
 body.news-article footer {
-    background: var(--white);
+    background-color: var(--primary-dark);
+    color: var(--white);
+    border-top: none;
 }
 
 /* —— Hero —— */

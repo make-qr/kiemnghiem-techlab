@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "scripts" / "news-articles.json").read_text(encoding="utf-8"))
 OUT = ROOT / "tin-tuc"
 BASE = "https://kiemnghiem.techlabglobal.com.vn"
-CSS_V = "20260720e"
+CSS_V = "20260905a"
 
 COMMON_HEAD = """<!DOCTYPE html>
 <html lang="vi">

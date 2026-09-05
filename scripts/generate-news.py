@@ -21,8 +21,8 @@ from news_images import (  # noqa: E402
 DATA = json.loads((ROOT / "scripts" / "news-articles.json").read_text(encoding="utf-8"))
 OUT = ROOT / "tin-tuc"
 BASE = "https://kiemnghiem.techlabglobal.com.vn"
-CSS_V = "20260905b"
-IMG_V = "20260905b"
+CSS_V = "20260905c"
+IMG_V = "20260905c"
 
 COMMON_HEAD = """<!DOCTYPE html>
 <html lang="vi">

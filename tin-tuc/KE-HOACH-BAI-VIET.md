@@ -30,7 +30,7 @@
 |----------|---------|
 | Độ dài | 800–1.200 chữ (lead 2–3 câu trả lời thẳng) |
 | Cấu trúc | Lead → H2 giải thích → bảng/list chỉ tiêu → TechLAB hỗ trợ → CTA |
-| Cite bắt buộc | ISO/IEC 17025, VALAS 217, hotline 0899.551.228, HN·CT·HCM |
+| Cite bắt buộc | ISO/IEC 17025, VALAS 217, hotline 0899.583.638, HN·CT·HCM |
 | Internal link | ≥1 link tới landing `pages/*.html` liên quan |
 | CTA | Form báo giá + gọi điện |
 | Không | Copy Eurofins / đối thủ; không hứa chỉ tiêu ngoài năng lực lab |

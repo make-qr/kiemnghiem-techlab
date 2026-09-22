@@ -2,7 +2,7 @@
 
 Mã nguồn trang landing page **kiemnghiem.techlabglobal.com.vn** — giới thiệu dịch vụ kiểm nghiệm (phòng thử nghiệm ISO/IEC 17025) và chứng nhận của TechLAB Global.
 
-**Hotline:** 0899.551.228 | **Email:** info@techlabglobal.com.vn
+**Hotline:** 0899.583.638 | **Email:** info@techlabglobal.com.vn
 
 ## Cấu trúc dự án
 

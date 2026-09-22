@@ -42,9 +42,9 @@ function setupMobileHeader() {
         actions.className = 'header-actions';
 
         var callBtn = document.createElement('a');
-        callBtn.href = 'tel:0899551228';
+        callBtn.href = 'tel:0899583638';
         callBtn.className = 'header-call-btn';
-        callBtn.setAttribute('aria-label', 'Gọi 0899.551.228');
+        callBtn.setAttribute('aria-label', 'Gọi 0899.583.638');
         callBtn.innerHTML = '<i class="fas fa-phone"></i>';
 
         var toggle = document.createElement('button');

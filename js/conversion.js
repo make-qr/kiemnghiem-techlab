@@ -12,6 +12,12 @@
         'banh-keo': 'banh-trung-thu',
         'nuoc-uong': 'nuoc-uong',
         'nuoc': 'nuoc-uong',
+        'nuoc-sach': 'nuoc-sach',
+        'nuoc-chai': 'nuoc-chai',
+        'nuoc-da': 'nuoc-da',
+        'nuoc-mat': 'nuoc-mat',
+        'nuoc-duoi-dat': 'nuoc-duoi-dat',
+        'nuoc-thai': 'nuoc-thai',
         'thuc-pham': 'thuc-pham',
         'my-pham': 'my-pham',
         'duoc-pham': 'duoc-pham',
@@ -65,8 +71,7 @@
         return clientIpPromise;
     }
 
-    function prefillServiceSelects() {
-        var service = getQueryParam('dich-vu') || getQueryParam('service');
+    function applyServicePrefill(service) {
         if (!service || !SERVICE_MAP[service]) return;
 
         var slug = SERVICE_MAP[service];
@@ -76,6 +81,11 @@
                 select.value = option.value;
             }
         });
+    }
+
+    function prefillServiceSelects() {
+        applyServicePrefill(getQueryParam('dich-vu') || getQueryParam('service'));
+        applyServicePrefill((window.location.hash || '').replace(/^#/, ''));
     }
 
     function isOtherSelected(select) {
@@ -315,6 +325,7 @@
     document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.add('has-sticky-cta');
         prefillServiceSelects();
+        window.addEventListener('hashchange', prefillServiceSelects);
 
         window.addEventListener('load', initThankYouConversions);
 

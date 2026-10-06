@@ -455,6 +455,42 @@
     color: var(--primary-dark);
 }
 
+.qcvn-jump {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px 0 28px;
+}
+
+.qcvn-jump a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: var(--white);
+    color: var(--primary-color);
+    border: 1px solid rgba(15, 117, 188, 0.28);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.qcvn-jump a:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.qcvn-block {
+    scroll-margin-top: 108px;
+}
+
+.qcvn-block-cta {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 .pain-point-item p {
     font-size: 0.92rem;
     color: var(--text-light);

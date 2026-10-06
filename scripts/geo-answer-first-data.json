@@ -1,4 +1,28 @@
 {
+  "kiem-nghiem-nuoc": {
+    "service_name": "Kiểm nghiệm nước theo QCVN",
+    "meta_description": "Kiểm nghiệm nước sạch, đóng chai, đá, nước mặt, nước dưới đất, nước thải sinh hoạt theo QCVN. Lab ISO/IEC 17025 (VALAS 217), Hòa Lạc. Báo giá trong ngày — 0899.583.638.",
+    "lead": "TechLAB Global kiểm nghiệm nước theo đúng từng QCVN: nước sạch sinh hoạt, đóng chai / đóng bình, đá dùng liền, nước mặt, nước dưới đất và nước thải sinh hoạt. Phòng thử nghiệm được VACI công nhận ISO/IEC 17025:2017 (mã VALAS 217), lab Km 11 QL21, Yên Xuân, Hà Nội (Hòa Lạc).",
+    "facts": [
+      "Sáu nhóm: QCVN 01-1:2024/BYT, QCVN 6-1:2010/BYT, QCVN 10:2011/BYT, QCVN 08:2023/BTNMT, QCVN 09:2023/BTNMT, QCVN 14:2008/BTNMT.",
+      "Phiếu dùng hồ sơ công bố, nội kiểm QC, đối soát thanh tra. Tư vấn gói đúng nhu cầu, không kiểm thừa.",
+      "Báo giá trong ngày; KLN/VS thường 5–7 ngày làm việc. Hotline Hà Nội 0899.583.638."
+    ],
+    "faq": [
+      {
+        "q": "Nước sạch, đóng chai và nước thải có cùng một gói không?",
+        "a": "Không. Mỗi loại áp một QCVN: 01-1 (nước sạch), 6-1 (đóng chai), 10 (đá dùng liền), 08 (nước mặt), 09 (nước dưới đất), 14 (nước thải sinh hoạt). TechLAB tư vấn đúng nhóm tại lab ISO/IEC 17025 (VALAS 217)."
+      },
+      {
+        "q": "Bao lâu có kết quả kiểm nghiệm nước?",
+        "a": "Chỉ tiêu KLN/VS thường 5–7 ngày làm việc. Báo giá phản hồi trong ngày — gọi 0899.583.638 hoặc chi nhánh HCM 0907.61.69.69."
+      },
+      {
+        "q": "Nhận mẫu nước ở đâu?",
+        "a": "Lab Km 11 QL21, Yên Xuân, Hà Nội (Hòa Lạc), nhận mẫu bán kính khoảng 100 km. Chi nhánh HCM và Cần Thơ hỗ trợ gửi mẫu. Báo cáo từ phòng lab ISO/IEC 17025 (VALAS 217)."
+      }
+    ]
+  },
   "kiem-nghiem-nuoc-giai-khat": {
     "service_name": "Kiểm nghiệm nước sạch & nước uống",
     "meta_description": "Kiểm nghiệm nước sạch, nước tinh khiết, nước uống đóng chai theo QCVN tại lab ISO/IEC 17025 (VALAS 217). Báo giá trong ngày — 0899.583.638.",

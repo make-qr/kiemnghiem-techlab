@@ -21,8 +21,8 @@ from news_images import (  # noqa: E402
 DATA = json.loads((ROOT / "scripts" / "news-articles.json").read_text(encoding="utf-8"))
 OUT = ROOT / "tin-tuc"
 BASE = "https://kiemnghiem.techlabglobal.com.vn"
-CSS_V = "20260905c"
-IMG_V = "20260905c"
+CSS_V = "20261019b"
+IMG_V = "20261019b"
 
 COMMON_HEAD = """<!DOCTYPE html>
 <html lang="vi">
@@ -73,7 +73,7 @@ HEADER = """    <header>
             </nav>
             <div class="header-actions">
                 <a href="../index.html#bao-gia" class="header-quote-btn">Báo giá ngay</a>
-                <a href="tel:0899551228" class="header-call-btn" aria-label="Gọi 0899.551.228"><i class="fas fa-phone"></i></a>
+                <a href="tel:0899583638" class="header-call-btn" aria-label="Gọi 0899.583.638"><i class="fas fa-phone"></i></a>
                 <button type="button" class="nav-toggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
             </div>
         </div>
@@ -111,7 +111,7 @@ FOOTER = """    <footer>
                 </div>
                 <div class="footer-contact">
                     <h4>Thông tin liên hệ</h4>
-                    <p><i class="fas fa-phone"></i> <a href="tel:0899551228">0899.551.228</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:0899583638">0899.583.638</a></p>
                     <p><i class="fas fa-phone"></i> HCM: <a href="tel:0907616969">0907.61.69.69</a></p>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:info@techlabglobal.com.vn">info@techlabglobal.com.vn</a></p>
                 </div>
@@ -122,7 +122,7 @@ FOOTER = """    <footer>
         </div>
     </footer>
     <div class="sticky-cta-bar" id="sticky-cta">
-        <a href="tel:0899551228" class="sticky-cta-call"><i class="fas fa-phone"></i> Gọi 0899.551.228</a>
+        <a href="tel:0899583638" class="sticky-cta-call"><i class="fas fa-phone"></i> Gọi 0899.583.638</a>
         <a href="https://zalo.me/2097486021894945291" class="sticky-cta-zalo" target="_blank" rel="noopener"><i class="fas fa-comment"></i> Chat Zalo</a>
     </div>
     <script src="../js/main.js"></script>
@@ -231,7 +231,7 @@ def render_article(article: dict) -> str:
     og_image = f"{BASE}/images/tin-tuc/{slug}-hero.jpg"
     cta_links = article.get("cta_links") or [
         {"href": "../index.html#bao-gia", "label": "Gửi yêu cầu báo giá", "class": "btn btn-hero-primary"},
-        {"href": "tel:0899551228", "label": "Gọi 0899.551.228", "class": "btn btn-hero-secondary"},
+        {"href": "tel:0899583638", "label": "Gọi 0899.583.638", "class": "btn btn-hero-secondary"},
     ]
     cta_html = "".join(
         f'<a href="{c["href"]}" class="{c.get("class", "btn")}">{c["label"]}</a>' for c in cta_links

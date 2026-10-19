@@ -1,6 +1,98 @@
 {
   "articles": [
     {
+      "slug": "nuoc-sinh-hoat-hay-nuoc-dong-chai",
+      "title": "Nước sinh hoạt hay nước đóng chai: chọn đúng QCVN trước khi gửi mẫu",
+      "meta": "Phân biệt kiểm nghiệm nước sinh hoạt QCVN 01-1:2024/BYT và nước đóng chai QCVN 6-1:2010/BYT — lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "Gửi nhầm QCVN khiến phiếu kết quả không dùng được cho hồ sơ. Bài này giúp chốt nước sinh hoạt hay nước đóng chai trước khi gửi mẫu.",
+      "lead": "Nhiều doanh nghiệp gửi mẫu “kiểm nước” nhưng chưa chốt sản phẩm thuộc nước sinh hoạt hay nước đóng chai. Hai nhóm này áp dụng QCVN khác nhau, chỉ tiêu và cách lấy mẫu cũng khác. Chốt đúng loại trước khi gửi giúp phiếu kết quả dùng được cho hồ sơ, không phải lấy mẫu lại.",
+      "tag": "Nước sinh hoạt",
+      "date": "2026-10-19",
+      "date_display": "19/10/2026",
+      "body": "\n            <h2>Hai nhóm nước hay bị gửi nhầm</h2>\n            <p><strong>Nước sinh hoạt</strong> là nước dùng cho sinh hoạt tại hộ gia đình, tòa nhà, nhà máy, trường học — thường lấy tại vòi / bể / điểm cấp. Quy chuẩn hiện hành doanh nghiệp hay dùng: <strong>QCVN 01-1:2024/BYT</strong>.</p>\n            <p><strong>Nước đóng chai / đóng bình</strong> là sản phẩm đóng gói để bán (PET, bình 20L, can). Nhóm này thường kiểm theo <strong>QCVN 6-1:2010/BYT</strong>, không dùng chung bộ chỉ tiêu với nước sinh hoạt.</p>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Loại mẫu</th><th>QCVN thường dùng</th><th>Khi nào gửi</th></tr></thead>\n                <tbody>\n                    <tr><td>Nước vòi, bể, điểm cấp tại cơ sở</td><td>QCVN 01-1:2024/BYT</td><td>Kiểm định kỳ nước sinh hoạt, hồ sơ VSATTP cơ sở</td></tr>\n                    <tr><td>Nước đóng chai / đóng bình thành phẩm</td><td>QCVN 6-1:2010/BYT</td><td>Công bố sản phẩm, QC lô, đối soát đối tác</td></tr>\n                    <tr><td>Đá dùng liền</td><td>QCVN 10:2011/BYT</td><td>Cơ sở đá viên, F&amp;B, khách sạn</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Cách chọn gói trước khi gọi lab</h2>\n            <ol>\n                <li><strong>Mẫu lấy ở đâu?</strong> Từ vòi / bể → nước sinh hoạt. Từ chai/bình thành phẩm trên dây chuyền → nước đóng chai.</li>\n                <li><strong>Hồ sơ dùng phiếu kết quả để làm gì?</strong> Kiểm định kỳ cơ sở khác với công bố sản phẩm đóng gói.</li>\n                <li><strong>Có bán ra thị trường không?</strong> Có nhãn, dung tích, lô SX thì gần như chắc là QCVN 6-1, không phải 01-1.</li>\n            </ol>\n            <p>Nếu cơ sở vừa dùng nước sinh hoạt vừa sản xuất nước đóng chai, nên tách <strong>hai mẫu / hai phiếu</strong> — đừng gộp một lần “kiểm nước” chung.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày làm việc; báo giá trong ngày. Xem hub <a href=\"../pages/kiem-nghiem-nuoc.html\">kiểm nghiệm nước (6 QCVN)</a> hoặc bài <a href=\"kiem-nghiem-nuoc-sinh-hoat-qcvn-01-1.html\">nước sinh hoạt QCVN 01-1</a>.</p>\n        ",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-nuoc.html#bao-gia",
+          "label": "Báo giá kiểm nước",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kiem-nghiem-nuoc-sinh-hoat-qcvn-01-1",
+      "title": "Kiểm nghiệm nước sinh hoạt theo QCVN 01-1: lấy mẫu và chỉ tiêu cần chốt",
+      "meta": "Kiểm nghiệm nước sinh hoạt QCVN 01-1:2024/BYT: điểm lấy mẫu, chỉ tiêu vi sinh – hóa lý và lab ISO 17025 VALAS 217 — TechLAB Global.",
+      "excerpt": "Nước sinh hoạt kiểm theo QCVN 01-1, khác nước đóng chai. Chốt điểm lấy mẫu và nhóm chỉ tiêu trước khi gửi.",
+      "lead": "Nước sinh hoạt phục vụ hộ gia đình, tòa nhà, nhà máy và cơ sở kinh doanh cần được kiểm soát theo QCVN 01-1:2024/BYT. Doanh nghiệp nên chốt điểm lấy mẫu (vòi, bể, điểm cấp) và nhóm chỉ tiêu trước khi gửi lab, để phiếu kết quả khớp hồ sơ vệ sinh an toàn thực phẩm hoặc kiểm định kỳ.",
+      "tag": "Nước sinh hoạt",
+      "date": "2026-10-15",
+      "date_display": "15/10/2026",
+      "body": "\n            <h2>Nước sinh hoạt khác nước đóng chai chỗ nào?</h2>\n            <p>Nước sinh hoạt là nước tại điểm sử dụng: vòi bếp, vòi nhà vệ sinh, bể chứa, điểm cấp cho dây chuyền. Đây <strong>không phải</strong> sản phẩm đóng chai để bán. Nếu doanh nghiệp đang công bố nước đóng chai/đóng bình, dùng <a href=\"kiem-nghiem-nuoc-uong-qcvn.html\">QCVN 6-1</a> — không gửi nhầm sang QCVN 01-1.</p>\n            <p>Tháng 10, nhiều cơ sở F&amp;B, nhà máy thực phẩm và tòa nhà chạy lại lịch kiểm định kỳ sau mùa cao điểm. Gửi sớm giúp phiếu kết quả kịp hạn đối soát.</p>\n\n            <h2>Điểm lấy mẫu nên ghi rõ</h2>\n            <ul>\n                <li><strong>Vòi sử dụng cuối:</strong> nước thực tế người dùng / nhân viên tiếp xúc.</li>\n                <li><strong>Bể chứa / bồn inox:</strong> khi nghi ngờ tồn lưu, vệ sinh bể, hoặc hồ sơ yêu cầu.</li>\n                <li><strong>Điểm cấp vào sản xuất:</strong> nhà máy thực phẩm, TPCN, bếp công nghiệp.</li>\n            </ul>\n            <p>Mỗi điểm là một mẫu. Ghi nhãn: địa điểm, ngày giờ lấy, người lấy, điều kiện bảo quản. Mẫu vi sinh cần chai vô trùng và chuyển lab trong thời hạn lab hướng dẫn — không để qua đêm ở nhiệt độ phòng.</p>\n\n            <h2>Nhóm chỉ tiêu thường chốt</h2>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Nhóm</th><th>Ví dụ chỉ tiêu hay gửi</th></tr></thead>\n                <tbody>\n                    <tr><td>Vi sinh</td><td>Coliform, E. coli và chỉ tiêu VS theo QCVN / yêu cầu hồ sơ</td></tr>\n                    <tr><td>Hóa lý</td><td>pH, độ đục, clo dư, chỉ tiêu cảm quan; kim loại nặng khi yêu cầu</td></tr>\n                    <tr><td>Theo mục đích</td><td>Bổ sung chỉ tiêu nếu cơ quan / đối tác nêu cụ thể trên công văn</td></tr>\n                </tbody>\n            </table>\n            </div>\n            <p>Không cần “kiểm hết catalog” nếu hồ sơ chỉ yêu cầu bộ chỉ tiêu định kỳ. Gửi danh mục hoặc file yêu cầu kèm phiếu — lab chốt gói trong ngày.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày làm việc; báo giá trong ngày. Chi tiết: <a href=\"../pages/kiem-nghiem-nuoc.html#nuoc-sinh-hoat\">kiểm nghiệm nước sinh hoạt</a>.</p>\n        ",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-nuoc.html#bao-gia",
+          "label": "Báo giá nước sinh hoạt",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "tpcn-va-spbvsk-khac-nhau-khi-kiem-nghiem",
+      "title": "TPCN và sản phẩm bảo vệ sức khỏe: khác nhau khi kiểm nghiệm và công bố",
+      "meta": "Phân biệt thực phẩm chức năng (TPCN) và sản phẩm bảo vệ sức khỏe (SPBVSK) khi chọn chỉ tiêu kiểm nghiệm, gửi mẫu và hồ sơ công bố — lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "TPCN và SPBVSK không cùng một cách ghi hồ sơ. Chốt đúng loại sản phẩm trước khi chọn chỉ tiêu kiểm nghiệm.",
+      "lead": "Doanh nghiệp hay gọi chung “thực phẩm chức năng”, trong khi hồ sơ công bố và cách chọn chỉ tiêu kiểm nghiệm phụ thuộc sản phẩm thuộc TPCN hay sản phẩm bảo vệ sức khỏe (SPBVSK). Chốt đúng nhóm trước khi gửi mẫu giúp phiếu kết quả khớp nhãn, dạng bào chế và mục đích công bố.",
+      "tag": "TPCN / SPBVSK",
+      "date": "2026-10-10",
+      "date_display": "10/10/2026",
+      "body": "\n            <h2>Vì sao không gộp một gói “kiểm TPCN”?</h2>\n            <p><strong>Thực phẩm chức năng (TPCN)</strong> và <strong>sản phẩm bảo vệ sức khỏe (SPBVSK)</strong> đều liên quan dinh dưỡng / hỗ trợ sức khỏe, nhưng nhãn, dạng bào chế và bộ chỉ tiêu đối soát thường khác. Lab không “đoán hộ” từ chai viên: doanh nghiệp cần ghi rõ loại sản phẩm trên phiếu yêu cầu.</p>\n            <p>Bài <a href=\"kiem-nghiem-tpcn-truoc-cong-bo.html\">kiểm nghiệm TPCN trước công bố</a> nêu nhóm chỉ tiêu chung. Bài này tập trung chỗ hay nhầm khi song song làm TPCN và SPBVSK.</p>\n\n            <h2>Thông tin lab cần để chốt chỉ tiêu</h2>\n            <ul>\n                <li>Loại sản phẩm: TPCN hay SPBVSK (theo hồ sơ / tư vấn công bố).</li>\n                <li>Dạng bào chế: viên nang, viên nén, bột, nước uống, siro…</li>\n                <li>Thành phần công bố trên nhãn (hoạt chất, vitamin, khoáng, thảo dược…).</li>\n                <li>Mục đích: công bố lần đầu, QC lô, đối soát đối tác phân phối.</li>\n            </ul>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Nhóm chỉ tiêu</th><th>Khi nào thường gửi</th></tr></thead>\n                <tbody>\n                    <tr><td>Vi sinh theo dạng sản phẩm</td><td>Công bố và QC định kỳ</td></tr>\n                    <tr><td>Hóa lý / định lượng thành phần công bố</td><td>Khi nhãn nêu hàm lượng cụ thể</td></tr>\n                    <tr><td>Kim loại nặng và an toàn khác</td><td>Theo hồ sơ hoặc yêu cầu chuỗi</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Chuẩn bị mẫu viên – bột – nước</h2>\n            <ol>\n                <li>Gửi mẫu <strong>cùng công thức / cùng lô</strong> với hồ sơ đang làm.</li>\n                <li>Khối lượng đủ cho vi sinh và hóa lý (hai phần nếu quy trình bảo quản khác nhau).</li>\n                <li>Kèm ảnh nhãn hoặc file thành phần — tránh lab chọn chỉ tiêu theo tên thương mại.</li>\n            </ol>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày; có kiểm nhóm dinh dưỡng: 7–12 ngày làm việc; báo giá trong ngày. Trang dịch vụ: <a href=\"../pages/kiem-nghiem-duoc-pham.html\">TPCN, SPBVSK và dược phẩm</a>.</p>\n        ",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-duoc-pham.html#bao-gia",
+          "label": "Báo giá kiểm TPCN / SPBVSK",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "checklist-kiem-nghiem-thuc-pham-thang-10",
+      "title": "Checklist kiểm nghiệm thực phẩm tháng 10: QC lô sau cao điểm",
+      "meta": "Checklist kiểm nghiệm thực phẩm tháng 10: QC lô sau mùa cao điểm, chỉ tiêu vi sinh – hóa lý và lịch gửi mẫu lab ISO 17025 VALAS 217 — TechLAB Global.",
+      "excerpt": "Sau cao điểm tháng 9, tháng 10 là lúc chốt QC lô, đối soát đối tác và lịch kiểm định kỳ. Checklist giúp gửi mẫu thực phẩm đúng lần đầu.",
+      "lead": "Tháng 10, xưởng thực phẩm thường chạy lại lịch QC sau cao điểm trung thu / lễ. Đây là lúc đối soát lô tồn, nguyên liệu nhập mới và hồ sơ siêu thị / đối tác. Checklist dưới đây giúp chốt mục đích, chỉ tiêu và cách gửi mẫu — tránh phiếu kết quả trễ lịch giao hàng cuối năm.",
+      "tag": "Thực phẩm",
+      "date": "2026-10-06",
+      "date_display": "06/10/2026",
+      "body": "\n            <h2>Tháng 10 nên kiểm những gì?</h2>\n            <p>Không phải mọi SKU đều cần “kiểm lại toàn bộ catalog”. Ưu tiên: lô đang giao, nguyên liệu mới đổi nhà cung cấp, sản phẩm từng bị đối tác hỏi chỉ tiêu, và nhóm hàng còn hạn dùng để bán quý 4.</p>\n            <ol>\n                <li><strong>Thành phẩm đang xuất:</strong> vi sinh theo TCCS / hợp đồng; hóa lý nếu nhãn hoặc chuỗi yêu cầu.</li>\n                <li><strong>Nguyên liệu rủi ro:</strong> kim loại nặng, độc tố vi nấm, dư lượng (khi hợp đồng hoặc ngành hàng có rủi ro).</li>\n                <li><strong>Nước dùng trong sản xuất:</strong> nếu hồ sơ VSATTP yêu cầu kiểm nước sinh hoạt định kỳ — xem <a href=\"kiem-nghiem-nuoc-sinh-hoat-qcvn-01-1.html\">QCVN 01-1</a>.</li>\n            </ol>\n\n            <h2>Checklist gửi mẫu lần đầu tháng 10</h2>\n            <ul>\n                <li>Mục đích: QC lô, công bố bổ sung, hay đối soát đối tác.</li>\n                <li>Danh sách SKU / mã lô và hạn cần phiếu kết quả.</li>\n                <li>Nhãn mẫu: tên SP, lô, ngày SX, bảo quản (lạnh / đông / nhiệt độ phòng).</li>\n                <li>Khối lượng đủ cho từng nhóm chỉ tiêu; mẫu vi sinh tách riêng nếu lab yêu cầu.</li>\n                <li>Đặt lịch nhận mẫu Hà Nội, Cần Thơ hoặc HCM trước ngày chuyển.</li>\n            </ul>\n\n            <h2>Nhóm chỉ tiêu hay gặp</h2>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Nhóm</th><th>Ví dụ</th></tr></thead>\n                <tbody>\n                    <tr><td>Vi sinh</td><td>Tổng VK hiếu khí, Coliform, E. coli, Salmonella, nấm men – nấm mốc</td></tr>\n                    <tr><td>Hóa lý</td><td>Độ ẩm, chỉ tiêu TCCS; kim loại nặng khi yêu cầu</td></tr>\n                    <tr><td>Hồ sơ khác</td><td>Dinh dưỡng ghi nhãn, phụ gia — chỉ gửi khi nhãn / đối tác cần</td></tr>\n                </tbody>\n            </table>\n            </div>\n            <p>Checklist gửi mẫu chung: <a href=\"checklist-gui-mau-kiem-nghiem.html\">tránh trả lại mẫu lần đầu</a>.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày; có kiểm nhóm dinh dưỡng: 7–12 ngày làm việc; báo giá trong ngày. Trang dịch vụ: <a href=\"../pages/kiem-nghiem-thuc-pham.html\">kiểm nghiệm thực phẩm</a>.</p>\n        ",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-pham.html#bao-gia",
+          "label": "Báo giá kiểm thực phẩm",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
       "slug": "checklist-gui-mau-kiem-nghiem",
       "title": "Checklist gửi mẫu kiểm nghiệm: tránh trả lại mẫu lần đầu",
       "meta": "Checklist gửi mẫu kiểm nghiệm thực phẩm/nước/mỹ phẩm: nhãn mẫu, khối lượng, bảo quản và mục đích kiểm — lab ISO 17025 VALAS 217 TechLAB Global.",

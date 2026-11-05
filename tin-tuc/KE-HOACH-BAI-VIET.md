@@ -1,8 +1,28 @@
 # Kế hoạch viết tin tức — kiemnghiem.techlabglobal.com.vn
 
-**Cập nhật:** 20/07/2026  
+**Cập nhật:** 05/11/2026  
 **Mục tiêu:** Đủ cụm kiến thức kiểm nghiệm để SEO + GEO (Gemini), dẫn về form báo giá / landing dịch vụ.  
-**Cách đăng:** sửa `scripts/news-articles.json` → chạy `python3 scripts/generate-news.py` → commit/push.
+**Cách đăng:** sửa `scripts/news-articles.json` → chạy `python3 scripts/generate-news.py` → commit/push.  
+**Nhịp:** 10 bài / tháng.
+
+---
+
+## Tháng 10/2026 — 10/10 ✅
+
+| Ngày | Slug | Tiêu đề |
+|------|------|---------|
+| 31/10 | `kiem-nghiem-nuoc-giai-khat-qcvn` | Kiểm nghiệm nước giải khát: khác nước đóng chai chỗ nào? |
+| 27/10 | `goi-chi-tieu-thuc-an-chan-nuoi` | Gói chỉ tiêu kiểm nghiệm thức ăn chăn nuôi |
+| 24/10 | `kiem-nghiem-nuoc-da-qcvn-10` | Kiểm nghiệm nước đá dùng liền theo QCVN 10 |
+| 22/10 | `kiem-nghiem-nuoc-mat-qcvn-08` | Kiểm nghiệm nước mặt theo QCVN 08 |
+| 19/10 | `nuoc-sinh-hoat-hay-nuoc-dong-chai` | Nước sinh hoạt hay nước đóng chai — chọn đúng QCVN |
+| 15/10 | `kiem-nghiem-nuoc-sinh-hoat-qcvn-01-1` | Kiểm nghiệm nước sinh hoạt theo QCVN 01-1 |
+| 13/10 | `chung-nhan-organic-ho-so-kiem-nghiem` | Chứng nhận hữu cơ (Organic): hồ sơ và phiếu kiểm nghiệm |
+| 10/10 | `tpcn-va-spbvsk-khac-nhau-khi-kiem-nghiem` | TPCN và SPBVSK khác nhau khi kiểm nghiệm / công bố |
+| 08/10 | `chung-nhan-halal-ho-so-kiem-nghiem` | Chứng nhận Halal: hồ sơ và phiếu kiểm nghiệm |
+| 06/10 | `checklist-kiem-nghiem-thuc-pham-thang-10` | Checklist kiểm nghiệm thực phẩm tháng 10 |
+
+**URL mục lục:** https://kiemnghiem.techlabglobal.com.vn/tin-tuc/
 
 ---
 

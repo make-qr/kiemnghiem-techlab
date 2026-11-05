@@ -1,6 +1,98 @@
 {
   "articles": [
     {
+      "slug": "kiem-nghiem-nuoc-giai-khat-qcvn",
+      "title": "Kiểm nghiệm nước giải khát: khác nước đóng chai chỗ nào?",
+      "meta": "Kiểm nghiệm nước giải khát theo QCVN 6-2:2010/BYT — khác nước đóng chai QCVN 6-1. Lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "Nước ngọt, trà uống liền, nước tăng lực không dùng chung bộ chỉ tiêu với nước đóng chai. Chốt QCVN 6-2 trước khi gửi mẫu.",
+      "lead": "Nhiều cơ sở gửi mẫu “kiểm nước uống” cho cả chai tinh khiết và chai nước ngọt. Hai nhóm này không cùng QCVN. Nước giải khát (có hương, đường, gas, trà, tăng lực…) thường kiểm theo QCVN 6-2:2010/BYT, trong khi nước đóng chai/đóng bình không hương vị thuộc QCVN 6-1. Chốt đúng nhóm giúp phiếu kết quả dùng được cho công bố và QC lô.",
+      "tag": "Nước giải khát",
+      "date": "2026-10-31",
+      "date_display": "31/10/2026",
+      "body": "\n            <h2>Nước giải khát khác nước đóng chai chỗ nào?</h2>\n            <p><strong>Nước đóng chai / đóng bình</strong> là nước uống không hương vị (tinh khiết, khoáng đóng chai) — xem bài <a href=\"kiem-nghiem-nuoc-uong-qcvn.html\">nước uống đóng chai theo QCVN 6-1</a>.</p>\n            <p><strong>Nước giải khát</strong> là đồ uống có pha chế: nước ngọt có gas, trà uống liền, nước tăng lực, nectar, siro pha sẵn. Nhóm này thường áp <strong>QCVN 6-2:2010/BYT</strong>, không lấy bộ chỉ tiêu của nước khoáng/nước tinh khiết để công bố.</p>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Sản phẩm</th><th>QCVN thường dùng</th><th>Ghi chú gửi mẫu</th></tr></thead>\n                <tbody>\n                    <tr><td>Nước tinh khiết, nước khoáng đóng chai</td><td>QCVN 6-1:2010/BYT</td><td>Không hương, không đường</td></tr>\n                    <tr><td>Nước ngọt, trà chai, tăng lực, nectar</td><td>QCVN 6-2:2010/BYT</td><td>Ghi rõ hương vị / gas / thành phần</td></tr>\n                    <tr><td>Nước sinh hoạt tại vòi</td><td>QCVN 01-1:2024/BYT</td><td>Không phải sản phẩm đóng gói để bán</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Lab cần gì để chốt gói chỉ tiêu</h2>\n            <ol>\n                <li>Tên sản phẩm trên nhãn và dạng: có gas, không gas, trà, tăng lực…</li>\n                <li>Mục đích: công bố lần đầu, QC lô, đối soát siêu thị / đối tác.</li>\n                <li>Thành phần công bố (đường, caffeine, vitamin…) nếu nhãn nêu hàm lượng.</li>\n                <li>Số mẫu / lô — mỗi công thức là một mẫu, không gộp vị khác nhau.</li>\n            </ol>\n            <p>Vi sinh và hóa lý thường tách phần mẫu. Không gửi một chai duy nhất nếu lab yêu cầu đủ khối lượng cho cả hai nhóm chỉ tiêu.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày làm việc; báo giá trong ngày. Trang dịch vụ: <a href=\"../pages/kiem-nghiem-nuoc-giai-khat.html\">kiểm nghiệm nước giải khát</a>. Hub 6 QCVN nước khác: <a href=\"../pages/kiem-nghiem-nuoc.html\">kiem-nghiem-nuoc.html</a>.</p>\n",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-nuoc-giai-khat.html#bao-gia",
+          "label": "Báo giá nước giải khát",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "goi-chi-tieu-thuc-an-chan-nuoi",
+      "title": "Gói chỉ tiêu kiểm nghiệm thức ăn chăn nuôi: protein, aflatoxin, vi sinh",
+      "meta": "Gói chỉ tiêu kiểm nghiệm thức ăn chăn nuôi: protein, aflatoxin, vi sinh, độ ẩm — lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "Thức ăn chăn nuôi không chỉ kiểm aflatoxin. Chốt gói protein, ẩm, vi sinh theo mục đích QC lô hay đối soát nhà cung cấp.",
+      "lead": "Doanh nghiệp thức ăn chăn nuôi (TACN) hay gửi mẫu “kiểm độc tố” rồi thiếu protein, độ ẩm hoặc vi sinh khi đối soát hợp đồng. Gói chỉ tiêu phụ thuộc sản phẩm (thành phẩm, premix, nguyên liệu) và mục đích: QC lô, nhập khẩu hay giải trình với đối tác. Chốt danh mục trước khi gửi giúp phiếu kết quả đủ dùng, không phải lấy mẫu lại.",
+      "tag": "Thức ăn chăn nuôi",
+      "date": "2026-10-27",
+      "date_display": "27/10/2026",
+      "body": "\n            <h2>Vì sao không gửi mỗi aflatoxin?</h2>\n            <p>Bài <a href=\"doc-to-vi-nam-aflatoxin.html\">aflatoxin trong ngũ cốc và TACN</a> nêu rủi ro độc tố vi nấm. Đó chỉ là một phần. Hợp đồng thu mua và QC nhà máy thường đòi thêm dinh dưỡng (protein, ẩm) và an toàn vi sinh — thiếu một nhóm là phiếu chưa khớp điều khoản.</p>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Nhóm chỉ tiêu</th><th>Khi nào thường gửi</th></tr></thead>\n                <tbody>\n                    <tr><td>Độc tố vi nấm (aflatoxin…)</td><td>Nguyên liệu ngũ cốc, cám, thành phẩm mùa ẩm</td></tr>\n                    <tr><td>Protein, ẩm, chỉ tiêu dinh dưỡng</td><td>QC lô, đối soát nhà cung cấp, ghi nhãn</td></tr>\n                    <tr><td>Vi sinh</td><td>Thành phẩm, premix, điều kiện bảo quản</td></tr>\n                    <tr><td>Kim loại nặng / chỉ tiêu khác</td><td>Khi hợp đồng hoặc hồ sơ nêu cụ thể</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Chuẩn bị mẫu TACN</h2>\n            <ol>\n                <li>Ghi rõ: thành phẩm, premix hay nguyên liệu; loài vật nuôi nếu trên nhãn.</li>\n                <li>Lấy mẫu đại diện lô (không chỉ lớp mặt bao). Niêm phong, ghi mã lô, ngày SX.</li>\n                <li>Khối lượng đủ cho hóa lý và vi sinh — hai phần nếu bảo quản khác nhau.</li>\n                <li>Kèm file chỉ tiêu trong hợp đồng / TCCS để lab không đoán hộ.</li>\n            </ol>\n            <p>Bao mở sẵn, ẩm cao hoặc không ghi lô dễ bị trả lại. Xem thêm <a href=\"checklist-gui-mau-kiem-nghiem.html\">checklist gửi mẫu</a>.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày; có kiểm nhóm dinh dưỡng: 7–12 ngày làm việc; báo giá trong ngày. Trang dịch vụ: <a href=\"../pages/kiem-nghiem-thuc-an-chan-nuoi.html\">kiểm nghiệm thức ăn chăn nuôi</a>.</p>\n",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-thuc-an-chan-nuoi.html#bao-gia",
+          "label": "Báo giá kiểm TACN",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kiem-nghiem-nuoc-da-qcvn-10",
+      "title": "Kiểm nghiệm nước đá dùng liền theo QCVN 10: cơ sở đá và F&B cần gì?",
+      "meta": "Kiểm nghiệm nước đá dùng liền QCVN 10:2011/BYT cho cơ sở đá viên, quán, bếp công nghiệp — lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "Đá viên, đá cây phục vụ ăn uống kiểm theo QCVN 10, không lấy bộ chỉ tiêu nước đóng chai. Chốt cách lấy mẫu trước khi gửi.",
+      "lead": "Cơ sở sản xuất đá viên / đá cây và bếp F&amp;B hay gửi nhầm đá sang gói nước đóng chai hoặc nước sinh hoạt. Đá dùng liền (ăn uống, pha chế) thường kiểm theo QCVN 10:2011/BYT. Nguồn nước làm đá và đá thành phẩm là hai việc khác nhau — phiếu kết quả phải khớp đúng loại mẫu.",
+      "tag": "Nước đá",
+      "date": "2026-10-24",
+      "date_display": "24/10/2026",
+      "body": "\n            <h2>Đá dùng liền khác nước đóng chai</h2>\n            <p>Đá viên, đá cây đưa ra bàn ăn hoặc pha chế là sản phẩm tiếp xúc trực tiếp thực phẩm. Quy chuẩn hay dùng: <strong>QCVN 10:2011/BYT</strong>. Không dùng phiếu QCVN 6-1 (nước đóng chai) hay QCVN 01-1 (nước vòi) để thay cho hồ sơ đá thành phẩm.</p>\n            <p>Nếu nhà máy vừa kiểm <em>nước đầu vào</em> vừa kiểm <em>đá ra lò</em>, nên tách hai mẫu / hai phiếu. Hub đủ 6 nhóm: <a href=\"../pages/kiem-nghiem-nuoc.html#nuoc-da\">kiểm nghiệm nước theo QCVN</a>.</p>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Loại mẫu</th><th>QCVN</th><th>Ai thường gửi</th></tr></thead>\n                <tbody>\n                    <tr><td>Đá viên, đá cây thành phẩm</td><td>QCVN 10:2011/BYT</td><td>Cơ sở đá, quán, khách sạn, bếp công nghiệp</td></tr>\n                    <tr><td>Nước cấp làm đá</td><td>QCVN 01-1 hoặc theo hồ sơ</td><td>Khi cần chứng minh nguồn nước</td></tr>\n                    <tr><td>Nước đóng chai bán kèm</td><td>QCVN 6-1:2010/BYT</td><td>Sản phẩm đóng gói riêng</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Lấy mẫu đá đúng cách</h2>\n            <ul>\n                <li>Lấy đá thành phẩm ở điểm xuất (cây đá, thùng trữ), không lấy lớp đã tan lâu.</li>\n                <li>Dụng cụ sạch; túi/hộp vô trùng nếu có chỉ tiêu vi sinh.</li>\n                <li>Ghi: loại đá, ngày giờ lấy, điều kiện bảo quản, người lấy.</li>\n                <li>Chuyển lab đúng hạn hướng dẫn — đá tan thành nước vẫn ghi rõ đây là mẫu đá.</li>\n            </ul>\n            <p>Tháng 10–11 nhiều quán và bếp chạy lại lịch VSATTP sau cao điểm. Gửi sớm để phiếu kịp hạn thanh tra / đối tác.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày làm việc; báo giá trong ngày. Chi tiết: <a href=\"../pages/kiem-nghiem-nuoc.html#nuoc-da\">nước đá dùng liền QCVN 10</a>.</p>\n",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-nuoc.html#bao-gia",
+          "label": "Báo giá kiểm nước đá",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "kiem-nghiem-nuoc-mat-qcvn-08",
+      "title": "Kiểm nghiệm nước mặt theo QCVN 08: khi nào nhà máy cần gửi?",
+      "meta": "Kiểm nghiệm nước mặt QCVN 08:2023/BTNMT — sông, hồ, kênh cho quan trắc hoặc đầu vào xử lý. Lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "Nước sông, hồ, kênh không dùng phiếu nước sinh hoạt. Chốt cột A/B QCVN 08 và mục đích quan trắc / đầu vào xử lý trước khi gửi.",
+      "lead": "Nhà máy lấy nước sông, hồ hoặc kênh làm đầu vào xử lý, hoặc phải quan trắc nước mặt theo giấy phép, cần phiếu theo QCVN 08:2023/BTNMT — không gửi nhầm sang QCVN 01-1 (nước sinh hoạt tại vòi) hay QCVN 14 (nước thải). Chốt cột A/B và vị trí lấy mẫu trước khi gọi lab.",
+      "tag": "Nước mặt",
+      "date": "2026-10-22",
+      "date_display": "22/10/2026",
+      "body": "\n            <h2>Nước mặt khác nước sinh hoạt và nước thải</h2>\n            <p><strong>Nước mặt</strong> là nước sông, hồ, kênh, đầm — nguồn trước khi xử lý hoặc điểm quan trắc môi trường. Quy chuẩn hiện hành doanh nghiệp hay dùng: <strong>QCVN 08:2023/BTNMT</strong>.</p>\n            <p>Nước sau xử lý cấp sinh hoạt thuộc <a href=\"kiem-nghiem-nuoc-sinh-hoat-qcvn-01-1.html\">QCVN 01-1</a>. Nước thải xả ra nguồn thuộc QCVN 14 (sinh hoạt) hoặc quy chuẩn thải khác. Gửi nhầm gói khiến phiếu không dùng cho thanh tra / giấy phép.</p>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Mẫu</th><th>QCVN</th><th>Mục đích hay gặp</th></tr></thead>\n                <tbody>\n                    <tr><td>Sông, hồ, kênh (nguồn)</td><td>QCVN 08:2023/BTNMT</td><td>Quan trắc, đầu vào nhà máy nước / xử lý</td></tr>\n                    <tr><td>Giếng khoan, nước ngầm</td><td>QCVN 09:2023/BTNMT</td><td>Nước dưới đất</td></tr>\n                    <tr><td>Nước thải sinh hoạt</td><td>QCVN 14:2008/BTNMT</td><td>Xả thải, hồ sơ môi trường</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Cần nói rõ khi gửi form</h2>\n            <ol>\n                <li>Vị trí lấy: tên sông/hồ, lý trình, tọa độ nếu có.</li>\n                <li>Cột A hay B (hoặc file yêu cầu trên giấy phép / hợp đồng quan trắc).</li>\n                <li>Chỉ tiêu bổ sung nếu cơ quan nêu ngoài bộ cơ bản.</li>\n                <li>Ngày giờ lấy, người lấy, bảo quản lạnh cho vi sinh.</li>\n            </ol>\n            <p>Không “kiểm hết catalog” nếu hồ sơ chỉ yêu cầu bộ định kỳ. Gửi công văn / giấy phép kèm form — lab chốt gói trong ngày. Hub: <a href=\"../pages/kiem-nghiem-nuoc.html#nuoc-mat\">sáu nhóm nước theo QCVN</a>.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày làm việc; báo giá trong ngày. Trang quan trắc: <a href=\"../pages/quan-trac-moi-truong.html\">quan trắc môi trường</a>.</p>\n",
+      "cta_links": [
+        {
+          "href": "../pages/kiem-nghiem-nuoc.html#bao-gia",
+          "label": "Báo giá kiểm nước mặt",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
       "slug": "nuoc-sinh-hoat-hay-nuoc-dong-chai",
       "title": "Nước sinh hoạt hay nước đóng chai: chọn đúng QCVN trước khi gửi mẫu",
       "meta": "Phân biệt kiểm nghiệm nước sinh hoạt QCVN 01-1:2024/BYT và nước đóng chai QCVN 6-1:2010/BYT — lab ISO 17025 VALAS 217 TechLAB Global.",
@@ -47,6 +139,29 @@
       ]
     },
     {
+      "slug": "chung-nhan-organic-ho-so-kiem-nghiem",
+      "title": "Chứng nhận hữu cơ (Organic): hồ sơ và vai trò phiếu kiểm nghiệm",
+      "meta": "Chứng nhận hữu cơ Organic: hồ sơ, khác VietGAP chỗ nào, phiếu kiểm nghiệm hỗ trợ thế nào — TechLAB Global VALAS 217.",
+      "excerpt": "Hữu cơ không phải “VietGAP cộng thêm”. Chốt tổ chức chứng nhận, nhật ký vùng trồng và chỉ tiêu kiểm nghiệm cần đối soát.",
+      "lead": "Doanh nghiệp nông sản hay hỏi chứng nhận hữu cơ (Organic) có giống VietGAP không. Hai hệ khác mục tiêu, nhật ký và cách dùng phiếu kiểm nghiệm. Organic gắn với cấm/hạn chế đầu vào hóa học và truy xuất vùng trồng; lab độc lập hỗ trợ số liệu dư lượng / chỉ tiêu an toàn khi hồ sơ hoặc khách hàng yêu cầu — không thay cho tổ chức chứng nhận.",
+      "tag": "Chứng nhận",
+      "date": "2026-10-13",
+      "date_display": "13/10/2026",
+      "body": "\n            <h2>Organic khác VietGAP chỗ nào?</h2>\n            <p>Bài <a href=\"vietgap-organic-halal-overview.html\">VietGAP, Organic, Halal</a> nêu ba hướng thị trường. <strong>VietGAP</strong> là thực hành sản xuất tốt, phổ biến kênh nội địa. <strong>Organic / hữu cơ</strong> siết đầu vào (phân, thuốc, giống) và chuyển đổi vùng trồng theo tiêu chuẩn hữu cơ đã chọn (Nội địa hoặc tiêu chuẩn nhập khẩu tùy thị trường).</p>\n            <p>Không dùng phiếu VietGAP để “đổi tên” thành hữu cơ. Tổ chức chứng nhận đánh giá hệ thống tại vùng trồng / nhà máy — phiếu lab là bằng chứng bổ sung, không phải giấy chứng nhận Organic.</p>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Hạng mục</th><th>Doanh nghiệp cần chốt</th></tr></thead>\n                <tbody>\n                    <tr><td>Thị trường</td><td>Nội địa hay xuất khẩu (EU, Mỹ, Nhật… khác bộ tiêu chuẩn)</td></tr>\n                    <tr><td>Phạm vi</td><td>Vùng trồng, sơ chế, đóng gói — ghi rõ trên hồ sơ</td></tr>\n                    <tr><td>Kiểm nghiệm</td><td>Dư lượng BVTV, chỉ tiêu an toàn khi CB / khách hàng yêu cầu</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Phiếu kiểm nghiệm dùng khi nào?</h2>\n            <ul>\n                <li>Đối soát dư lượng trên nông sản / đất / nước khi chương trình yêu cầu.</li>\n                <li>QC lô trước giao hàng siêu thị hoặc xuất khẩu.</li>\n                <li>Giải trình khi khách hàng hỏi số liệu độc lập (lab ISO 17025).</li>\n            </ul>\n            <p>Gửi mẫu kèm tên tiêu chuẩn / danh mục chất cần rà. Lab không cấp logo hữu cơ. Quy trình VietGAP (tham chiếu): <a href=\"chung-nhan-vietgap-quy-trinh.html\">chứng nhận VietGAP</a>.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày làm việc; báo giá trong ngày. Trang dịch vụ: <a href=\"../pages/chung-nhan-organic.html\">chứng nhận Organic</a> và <a href=\"../pages/kiem-nghiem-thuc-pham.html\">kiểm nghiệm thực phẩm</a>.</p>\n",
+      "cta_links": [
+        {
+          "href": "../pages/chung-nhan-organic.html#bao-gia",
+          "label": "Tư vấn hồ sơ Organic",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
       "slug": "tpcn-va-spbvsk-khac-nhau-khi-kiem-nghiem",
       "title": "TPCN và sản phẩm bảo vệ sức khỏe: khác nhau khi kiểm nghiệm và công bố",
       "meta": "Phân biệt thực phẩm chức năng (TPCN) và sản phẩm bảo vệ sức khỏe (SPBVSK) khi chọn chỉ tiêu kiểm nghiệm, gửi mẫu và hồ sơ công bố — lab ISO 17025 VALAS 217 TechLAB Global.",
@@ -60,6 +175,29 @@
         {
           "href": "../pages/kiem-nghiem-duoc-pham.html#bao-gia",
           "label": "Báo giá kiểm TPCN / SPBVSK",
+          "class": "btn btn-hero-primary"
+        },
+        {
+          "href": "tel:0899583638",
+          "label": "Gọi 0899.583.638",
+          "class": "btn btn-hero-secondary"
+        }
+      ]
+    },
+    {
+      "slug": "chung-nhan-halal-ho-so-kiem-nghiem",
+      "title": "Chứng nhận Halal: hồ sơ và vai trò phiếu kiểm nghiệm",
+      "meta": "Chứng nhận Halal cho thực phẩm: hồ sơ, nguyên liệu, phiếu kiểm nghiệm hỗ trợ QC — lab ISO 17025 VALAS 217 TechLAB Global.",
+      "excerpt": "Halal là hệ riêng, không gộp với Organic. Chốt tổ chức chứng nhận, nguyên liệu và chỉ tiêu lab khi khách hàng yêu cầu số liệu độc lập.",
+      "lead": "Nhà máy thực phẩm muốn bán kênh Hồi giáo hoặc xuất khẩu sang thị trường yêu cầu Halal cần chứng nhận của tổ chức Halal phù hợp — không lấy phiếu kiểm nghiệm vi sinh/hóa lý thông thường để thay. Lab ISO 17025 hỗ trợ số liệu an toàn thực phẩm và đối soát nguyên liệu khi hồ sơ hoặc khách hàng yêu cầu, song song với đánh giá hệ thống Halal.",
+      "tag": "Chứng nhận",
+      "date": "2026-10-08",
+      "date_display": "08/10/2026",
+      "body": "\n            <h2>Halal không gộp với Organic hay VietGAP</h2>\n            <p>Halal kiểm soát nguồn gốc nguyên liệu, quy trình giết mổ / chế biến và tránh nhiễm chéo. Organic siết canh tác hữu cơ. VietGAP siết thực hành sản xuất tốt. Ba hướng có thể song song nhưng hồ sơ tách. Xem <a href=\"vietgap-organic-halal-overview.html\">overview ba chứng nhận</a>.</p>\n            <p>Phiếu kiểm nghiệm của lab thử nghiệm <strong>không phải</strong> giấy chứng nhận Halal. Tổ chức Halal đánh giá nhà máy; lab cung cấp số liệu độc lập khi được yêu cầu.</p>\n            <div class=\"news-table-wrap\">\n            <table>\n                <thead><tr><th>Việc</th><th>Ai làm</th></tr></thead>\n                <tbody>\n                    <tr><td>Chứng nhận Halal, logo Halal</td><td>Tổ chức chứng nhận Halal</td></tr>\n                    <tr><td>Vi sinh, hóa lý, dư lượng, dinh dưỡng</td><td>Lab ISO 17025 (ví dụ QC lô, công bố)</td></tr>\n                    <tr><td>Nhật ký nguyên liệu, vệ sinh, truy xuất</td><td>Doanh nghiệp vận hành hàng ngày</td></tr>\n                </tbody>\n            </table>\n            </div>\n\n            <h2>Khi nào cần gửi mẫu lab?</h2>\n            <ol>\n                <li>Công bố / QC sản phẩm thực phẩm (vi sinh, hóa lý theo TCCS/QCVN).</li>\n                <li>Đối soát nguyên liệu nhập khi hợp đồng hoặc khách hàng nêu chỉ tiêu.</li>\n                <li>Hồ sơ xuất khẩu yêu cầu phiếu lab kèm bộ chứng nhận Halal.</li>\n            </ol>\n            <p>Ghi rõ loại sản phẩm (thịt, gia vị, dầu, đồ uống…) và danh mục chỉ tiêu. Thịt / thủy sản hay gắn <a href=\"du-luong-khang-sinh-thuy-san.html\">dư lượng kháng sinh</a> hoặc vi sinh — không gửi “kiểm Halal” như một chỉ tiêu hóa học.</p>\n\n            <h2>TechLAB hỗ trợ thế nào?</h2>\n            <p>Phòng thử nghiệm TechLAB Global được VACI công nhận theo <strong>ISO/IEC 17025:2017 (VALAS 217)</strong>. Nhận mẫu Hà Nội, Cần Thơ, Hồ Chí Minh — hotline <a href=\"tel:0899583638\">0899.583.638</a> (HCM: <a href=\"tel:0907616969\">0907.61.69.69</a>). KLN/VS: 5–7 ngày; có kiểm nhóm dinh dưỡng: 7–12 ngày làm việc; báo giá trong ngày. Trang dịch vụ: <a href=\"../pages/chung-nhan-halal.html\">chứng nhận Halal</a> và <a href=\"../pages/kiem-nghiem-thuc-pham.html\">kiểm nghiệm thực phẩm</a>.</p>\n",
+      "cta_links": [
+        {
+          "href": "../pages/chung-nhan-halal.html#bao-gia",
+          "label": "Tư vấn hồ sơ Halal",
           "class": "btn btn-hero-primary"
         },
         {

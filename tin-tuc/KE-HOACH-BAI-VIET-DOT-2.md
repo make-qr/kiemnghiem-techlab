@@ -1,6 +1,6 @@
 # Kế hoạch tin tức đợt 2 — map Ads KW → `/tin-tuc/`
 
-**Cập nhật:** 24/07/2026  
+**Cập nhật:** 05/11/2026 — tháng 10 đủ 10 bài (bổ sung nước giải khát, TACN, nước đá, nước mặt, Organic, Halal).  
 **Site:** https://kiemnghiem.techlabglobal.com.vn/tin-tuc/  
 **Nguồn KW:** `du-an/nas/nas-apps/04-ads-automation/kiemnghiem_services.json`  
 **Đợt 1:** 30/30 bài — xem [`KE-HOACH-BAI-VIET.md`](KE-HOACH-BAI-VIET.md)  

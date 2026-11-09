@@ -4,125 +4,140 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Một Mái — Homestay gần phố cổ Hội An</title>
+<title>Một Mái — Homestay OCOP Hội An</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { --ink:#161616; --paper:#f7f4ef; --amber:#e4b15a; }
+  :root { --ink:#1a1a1a; --paper:#f7f4ef; --amber:#c9842a; --line:#e6dfd4; }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Be Vietnam Pro", sans-serif; }
+  body { margin: 0; font-family: "Be Vietnam Pro", sans-serif; color: var(--ink); background: #fff; line-height: 1.55; }
   a { color: inherit; text-decoration: none; }
-  .nav {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 18px 28px; position: absolute; inset: 0 0 auto 0; z-index: 2; color: white;
-    font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
-  }
-  .stage {
-    position: relative; min-height: 92vh; color: white;
-    background: #0c0c0c url("anh/vn-hoian.jpg") center 62% / cover no-repeat;
-    display: flex; align-items: flex-end;
-  }
-  .stage::before {
-    content: ""; position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.15) 50%);
-  }
-  .stage-copy { position: relative; padding: 0 28px 48px; max-width: 920px; }
-  .stage p { margin: 0 0 8px; letter-spacing: .18em; text-transform: uppercase; font-size: 12px; color: var(--amber); }
-  h1 {
-    margin: 0; font-family: "Instrument Serif", serif; font-weight: 400; font-style: italic;
-    font-size: clamp(56px, 8vw, 108px); line-height: .9; letter-spacing: -.03em;
-  }
-  main { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; padding: 72px 28px; max-width: 1100px; }
-  h2 { margin: 0 0 16px; font-family: "Instrument Serif", serif; font-weight: 400; font-size: 42px; letter-spacing: -.02em; }
-  main p { margin: 0 0 14px; line-height: 1.7; color: #333; }
-  .list { border-top: 1px solid #ddd6cc; }
-  .row { display: grid; grid-template-columns: 1fr auto; gap: 6px 20px; padding: 18px 0; border-bottom: 1px solid #ddd6cc; }
-  .row strong { font-weight: 500; }
-  .row span { color: #555; font-size: 14px; grid-column: 1; }
-  .row b { font-family: "Instrument Serif", serif; font-size: 28px; font-weight: 400; }
-  .go { display: inline-block; margin-top: 22px; background: var(--ink); color: white; padding: 12px 16px; }
-  .more { padding: 10px 28px 48px; max-width: 1100px; }
-  .more h2 { font-size: 36px; }
-  .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
-  .trio h3 { margin: 0 0 10px; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; }
-  .trio ul { margin: 0; padding: 0; list-style: none; }
-  .trio li { padding: 10px 0; border-top: 1px solid #ddd6cc; line-height: 1.5; }
-  .trio b { font-weight: 500; }
-  .said { margin: 36px 0 0; max-width: 28em; font-family: "Instrument Serif", serif; font-size: 34px; line-height: 1.2; font-style: italic; }
-  .said span { display: block; margin-top: 10px; font-family: "Be Vietnam Pro", sans-serif; font-style: normal; font-size: 13px; color: #666; }
-  footer { padding: 0 28px 40px; color: #777; font-size: 13px; }
-  @media (max-width: 800px) {
-    main, .trio { grid-template-columns: 1fr; gap: 28px; }
-    main { padding: 40px 18px; }
-    .more { padding: 10px 18px 40px; }
-    .nav, .stage-copy, footer { padding-left: 18px; padding-right: 18px; }
-    .nav a:not(:first-child) { display: none; }
+  header { position: sticky; top: 0; z-index: 5; background: #111; color: #fff; display: flex; align-items: center; gap: 18px; padding: 14px 5vw; }
+  .logo { font-weight: 700; letter-spacing: .08em; }
+  nav { margin-left: auto; display: flex; gap: 16px; font-size: 14px; }
+  .btn { background: var(--amber); color: #111; border: 0; padding: 10px 14px; font: inherit; font-weight: 700; cursor: pointer; }
+  .menu { display: none; background: transparent; color: #fff; border: 1px solid #444; }
+  .hero { min-height: 70vh; background: #000 url("anh/vn-hoian.jpg") center 62% / cover; display: flex; align-items: flex-end; }
+  .hero-in { width: min(1000px, calc(100% - 8vw)); margin: 0 auto 40px; color: #fff; }
+  h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1.02; margin: 8px 0; letter-spacing: -.03em; }
+  .wrap { width: min(1080px, calc(100% - 8vw)); margin: 0 auto; }
+  section { padding: 56px 0; }
+  h2 { margin: 0 0 12px; font-size: 30px; }
+  .intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items: start; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card { border: 1px solid var(--line); background: var(--paper); }
+  .pic { height: 160px; background: url("anh/vn-hoian.jpg") center / cover; }
+  .card .pad, .box { padding: 14px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p, .box li { color: #333; }
+  .row { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+  .row b { font-size: 18px; }
+  .three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .box { border-top: 3px solid var(--ink); background: var(--paper); }
+  ul { margin: 0; padding-left: 18px; }
+  form { display: grid; gap: 8px; }
+  input, select { border: 1px solid #ccc; padding: 10px; font: inherit; }
+  footer { background: #111; color: #ddd; padding: 28px 0; }
+  .foot { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 16px; }
+  footer a { color: #fff; }
+  .note { font-size: 13px; }
+  @media (max-width: 860px) {
+    nav { display: none; }
+    nav.open { display: flex; flex-direction: column; position: absolute; top: 52px; left: 0; right: 0; background: #111; padding: 12px 5vw; }
+    .menu { display: inline-flex; margin-left: auto; }
+    .intro, .cards, .three, .foot { grid-template-columns: 1fr; }
   }
 </style>
 </head>
 <body>
-  <header class="stage">
-    <div class="nav">
-      <a href="#dau">Một Mái</a>
-      <a href="#o">Nhà</a>
+  <header>
+    <a class="logo" href="#dau">MỘT MÁI</a>
+    <button class="menu btn" type="button">Menu</button>
+    <nav id="nav">
+      <a href="#nha">Nhà</a>
       <a href="#phong">Phòng</a>
       <a href="#truoc">Trước khi đến</a>
-      <span>OCOP 4 sao</span>
-    </div>
-    <div class="stage-copy" id="dau">
-      <p>Hội An · cách sông Hoài tám phút xe đạp</p>
-      <h1>Ngủ gần phố, không ngủ giữa phố.</h1>
-    </div>
+      <a href="#dat">Đặt phòng</a>
+    </nav>
+    <a class="btn" href="#dat">0901 234 567</a>
   </header>
-  <main id="o">
-    <div>
-      <h2>Nhà một tầng, bốn phòng, sân trong.</h2>
-      <p>Đêm phố đèn đông. Nhà này nằm trong hẻm yên hơn, vẫn đạp xe ra phố cổ trước khi hàng quán đóng. Sáng có bánh mì và cà phê trong sân. Không nhận tiệc, không nhận nhóm trên tám người.</p>
-      <p>Chủ nhà mở cửa từ 2016. Sản phẩm OCOP của phường, bốn sao. Khách đặt vì muốn ở gần mà vẫn ngủ được.</p>
-      <a class="go" href="tel:0901234567">Nhắn hoặc gọi 0901 234 567</a>
+  <section class="hero" id="dau">
+    <div class="hero-in">
+      <p style="letter-spacing:.16em;font-size:12px;color:#e4b15a">HỘI AN · OCOP 4 SAO · CÁCH SÔNG HOÀI 8 PHÚT XE ĐẠP</p>
+      <h1>Ngủ gần phố, không ngủ giữa phố.</h1>
+      <p>Nhà một tầng, bốn phòng, sân trong. Hẻm yên hơn phố đèn, vẫn đạp xe ra chùa Cầu trước khi hàng quán đóng.</p>
     </div>
-    <div class="list" id="phong">
-      <article class="row"><strong>Phòng giếng trời</strong><b>980.000đ</b><span>2 khách · cửa sổ ra sân</span></article>
-      <article class="row"><strong>Phòng gác mái</strong><b>1.250.000đ</b><span>2 khách · trần thấp, hợp cặp đôi</span></article>
-      <article class="row"><strong>Phòng gia đình</strong><b>1.750.000đ</b><span>3 khách · thêm một giường đơn</span></article>
-      <article class="row"><strong>Xe đạp</strong><b>miễn phí</b><span>Hai chiếc. Ra phố cổ không cần gọi xe</span></article>
-    </div>
-  </main>
-  <section class="more" id="truoc">
-    <h2>Trước khi giữ phòng.</h2>
-    <div class="trio">
-      <div>
-        <h3>Đường</h3>
-        <ul>
-          <li><b>1,2 km</b> tới chùa Cầu, khoảng 8 phút xe đạp hoặc 15 phút đi bộ.</li>
-          <li>Hẻm rộng một xe máy. Ô tô dừng đầu hẻm, đi bộ 40 m, nhà ra xách đồ.</li>
-          <li>Từ Đà Nẵng khoảng 30 km. Nhà không đón sân bay.</li>
-          <li>Hai xe đạp trong sân, miễn phí. Gửi xe máy trong hẻm.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Trong phòng và sân</h3>
-        <ul>
-          <li>Điều hòa, nước nóng, két nhỏ, không bếp trong phòng.</li>
-          <li>Sáng: bánh mì, cà phê, trái cây tại sân. Đã gồm trong giá.</li>
-          <li>Máy giặt dùng chung, 30.000đ một lượt, có nước xả.</li>
-          <li>Wifi ổn. Không tivi. Trần phòng gác mái thấp, người trên 1m75 nên hỏi trước.</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Giá thêm và quy định</h3>
-        <ul>
-          <li>Thứ sáu, thứ bảy cộng 200.000đ một phòng.</li>
-          <li>Lễ cộng 350.000đ. Cọc 40% vì phố cổ hết phòng nhanh.</li>
-          <li>Hủy trước 5 ngày trả cọc. Trong 5 ngày giữ một nửa.</li>
-          <li>Không nhận nhóm trên 8 người, không sinh nhật có loa. Yên sau 22:00. Không thú cưng.</li>
-        </ul>
-      </div>
-    </div>
-    <p class="said">“Hẻm tối, nhưng ra phố vẫn kịp trước khi đèn thả.”<span>Lời khách mẫu. Làm thật sẽ thay bằng đánh giá của nhà.</span></p>
   </section>
-  <footer><a href="index.html">← Bộ 5 mẫu</a> · Mẫu giao diện phố cổ. Ảnh đêm Hội An chỉ để dựng bố cục, làm thật sẽ thay bằng ảnh nhà.</footer>
+  <section id="nha">
+    <div class="wrap intro">
+      <div>
+        <h2>Nhà mở từ 2016, sản phẩm OCOP của phường.</h2>
+        <p>Khách đặt vì muốn ở gần phố cổ mà vẫn ngủ được. Không nhận tiệc, không nhận nhóm trên tám người. Sáng có bánh mì, cà phê và trái cây trong sân, đã gồm trong giá.</p>
+        <p>Hẻm rộng một xe máy. Ô tô dừng đầu hẻm, đi bộ 40 m, nhà ra xách đồ. Từ Đà Nẵng khoảng 30 km, nhà không đón sân bay.</p>
+      </div>
+      <div class="box">
+        <h3>Trong sân</h3>
+        <ul>
+          <li>Hai xe đạp miễn phí</li>
+          <li>Gửi xe máy trong hẻm</li>
+          <li>Máy giặt dùng chung, 30.000đ một lượt</li>
+          <li>Wifi ổn, không tivi</li>
+          <li>Yên sau 22:00</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="phong" style="background:#f7f4ef">
+    <div class="wrap">
+      <h2>Phòng đang nhận</h2>
+      <div class="cards">
+        <article class="card"><div class="pic" style="background-position:15% center"></div><div class="pad"><h3>Phòng giếng trời</h3><p>2 khách · cửa sổ ra sân · điều hòa, nước nóng, két nhỏ. Không bếp.</p><div class="row"><b>980.000đ</b><a class="btn" href="#dat">Đặt</a></div></div></article>
+        <article class="card"><div class="pic" style="background-position:center"></div><div class="pad"><h3>Phòng gác mái</h3><p>2 khách · trần thấp. Người trên 1m75 nên hỏi trước khi giữ phòng.</p><div class="row"><b>1.250.000đ</b><a class="btn" href="#dat">Đặt</a></div></div></article>
+        <article class="card"><div class="pic" style="background-position:75% center"></div><div class="pad"><h3>Phòng gia đình</h3><p>3 khách · thêm một giường đơn · cùng sân và bữa sáng.</p><div class="row"><b>1.750.000đ</b><a class="btn" href="#dat">Đặt</a></div></div></article>
+      </div>
+    </div>
+  </section>
+  <section id="truoc">
+    <div class="wrap three">
+      <article class="box"><h3>Đường</h3><ul><li>1,2 km tới chùa Cầu</li><li>8 phút xe đạp, 15 phút đi bộ</li><li>Hai xe đạp trong sân</li></ul></article>
+      <article class="box"><h3>Giá thêm</h3><ul><li>Thứ sáu, thứ bảy +200.000đ</li><li>Lễ +350.000đ</li><li>Cọc 40% vì cuối tuần hết phòng nhanh</li></ul></article>
+      <article class="box"><h3>Quy định</h3><ul><li>Hủy trước 5 ngày trả cọc, trong 5 ngày giữ một nửa</li><li>Không sinh nhật có loa, không thú cưng</li><li>Nhận 14:00, trả 12:00. CCCD khi vào phòng</li></ul></article>
+    </div>
+  </section>
+  <section id="dat">
+    <div class="wrap intro">
+      <div>
+        <h2>Giữ phòng</h2>
+        <p>“Hẻm tối, nhưng ra phố vẫn kịp trước khi đèn thả.” Lời này là chữ mẫu.</p>
+        <form id="form">
+          <input placeholder="Tên" required>
+          <input placeholder="Số điện thoại" required>
+          <input placeholder="Ngày đến — ngày đi">
+          <select><option>Phòng giếng trời</option><option>Phòng gác mái</option><option>Phòng gia đình</option></select>
+          <button class="btn" type="submit">Gửi</button>
+          <p class="note" id="note"></p>
+        </form>
+      </div>
+      <div>
+        <h2>Liên hệ</h2>
+        <p>Một Mái · Minh An, Hội An, Quảng Nam.</p>
+        <p>Zalo và điện thoại: 0901 234 567</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Minh+An+Hội+An" target="_blank" rel="noopener">Mở bản đồ Hội An</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap foot">
+      <div><strong>Một Mái</strong><p>Homestay OCOP 4 sao, cách phố cổ một đoạn hẻm.</p></div>
+      <div><p>0901 234 567</p><p>Nhận 14:00 · trả 12:00</p></div>
+      <div><p><a href="index.html">← Bộ 5 mẫu</a></p><p>Ảnh đêm Hội An để dựng bố cục.</p></div>
+    </div>
+  </footer>
+  <script>
+    document.querySelector(".menu").onclick = function () { document.getElementById("nav").classList.toggle("open"); };
+    document.getElementById("form").onsubmit = function (e) { e.preventDefault(); document.getElementById("note").textContent = "Mẫu: form sẽ nối Zalo chủ nhà khi làm thật."; };
+  </script>
 </body>
 </html>

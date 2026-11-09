@@ -65,10 +65,29 @@
   .room strong { font-size: 22px; font-weight: 560; }
   .room em { font-style: normal; color: #5c675f; }
   .room b { font-family: Fraunces, serif; font-size: 26px; font-weight: 520; }
-  .days { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .days { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
   .days article { padding-top: 18px; border-top: 2px solid var(--leaf); }
   .days h3 { margin: 0 0 8px; font-size: 18px; }
   .days p { margin: 0; color: #3e4b43; line-height: 1.55; }
+  .facts { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); padding: 0 28px; }
+  .facts div { padding: 22px 20px; border-right: 1px solid var(--line); }
+  .facts div:last-child { border-right: 0; }
+  .facts b { display: block; font-family: Fraunces, serif; font-size: 28px; font-weight: 520; letter-spacing: -.03em; }
+  .facts span { color: #526158; font-size: 14px; line-height: 1.45; }
+  .room small { grid-column: 2 / -1; color: #5c675f; font-size: 14px; line-height: 1.45; }
+  .split, .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+  h3 { margin: 0 0 12px; font-size: 18px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .chips li { border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; font-size: 14px; background: #fffdf8; }
+  .place { margin: 0; padding: 0; list-style: none; }
+  .place li { display: grid; grid-template-columns: 72px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); line-height: 1.45; }
+  .place b { font-weight: 560; }
+  .quote { margin: 0; }
+  .quote p { margin: 0 0 8px; font-family: Fraunces, serif; font-size: 26px; line-height: 1.25; letter-spacing: -.02em; }
+  .quote span { color: #6a6156; font-size: 13px; }
+  .rules { display: grid; grid-template-columns: 180px 1fr; gap: 12px 18px; margin: 0; }
+  .rules dt { color: #6a6156; }
+  .rules dd { margin: 0; line-height: 1.5; }
   .book {
     background: var(--leaf); color: #f6f1e6;
     display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center;
@@ -87,7 +106,9 @@
     padding: 22px 28px 70px; font-size: 13px; color: #6d6458; border-top: 1px solid var(--line);
   }
   @media (max-width: 860px) {
-    .hero, .book, .days, .room, form { grid-template-columns: 1fr; }
+    .hero, .book, .days, .room, form, .facts, .split, .quotes, .rules { grid-template-columns: 1fr; }
+    .facts div { border-right: 0; border-top: 1px solid var(--line); }
+    .room small, .place li { grid-column: auto; grid-template-columns: 1fr; }
     .hero-copy { padding: 32px 20px 28px; }
     .top, nav.main, section { padding-left: 20px; padding-right: 20px; }
     .top span { display: none; }
@@ -108,7 +129,9 @@
     <a class="logo" href="#dau">Nhà Lá Sen</a>
     <ul>
       <li><a href="#phong">Phòng</a></li>
-      <li><a href="#ngay">Một ngày ở vườn</a></li>
+      <li><a href="#ngay">Một ngày</a></li>
+      <li><a href="#tien">Tiện nghi</a></li>
+      <li><a href="#quy">Quy định</a></li>
       <li><a href="#dat">Đặt phòng</a></li>
     </ul>
     <a class="btn" href="#dat">Giữ phòng</a>
@@ -127,22 +150,99 @@
       <div class="stamp"><b>OCOP<br>4 sao</b></div>
     </div>
   </header>
+  <section class="facts" aria-label="Thông tin nhanh">
+    <div><b>3</b><span>chỗ ngủ, tối đa 8 khách nếu thuê cả nhà</span></div>
+    <div><b>18 km</b><span>từ cầu Cần Thơ, ô tô 4 chỗ vào được sân</span></div>
+    <div><b>Gồm sáng</b><span>cà phê, mì hoặc xôi, trái cây theo mùa</span></div>
+    <div><b>4 sao</b><span>OCOP du lịch nông thôn, hộ gia đình Mỹ Khánh</span></div>
+  </section>
   <section id="phong">
     <div class="wrap">
       <div class="sec-h">
         <h2>Ba chỗ ngủ.</h2>
         <p>Giá đêm thường, đã gồm ăn sáng. Cuối tuần cộng 150.000đ.</p>
       </div>
-      <a class="room" href="#dat"><span>01</span><strong>Phòng lá</strong><em>2 khách · giường đôi · cửa sổ ra vườn</em><b>650.000đ</b></a>
-      <a class="room" href="#dat"><span>02</span><strong>Phòng rạch</strong><em>2 khách · ban công nhìn mương</em><b>820.000đ</b></a>
-      <a class="room" href="#dat"><span>03</span><strong>Nhà nhỏ nguyên căn</strong><em>4 khách · bếp riêng · sân trước</em><b>1.450.000đ</b></a>
+      <a class="room" href="#dat"><span>01</span><strong>Phòng lá</strong><em>2 khách · 16 m² · giường 1m6</em><b>650.000đ</b><small>Điều hòa, nước nóng, bàn nhìn vườn. Nhà vệ sinh trong phòng. Không ban công.</small></a>
+      <a class="room" href="#dat"><span>02</span><strong>Phòng rạch</strong><em>2 khách · 18 m² · giường 1m8</em><b>820.000đ</b><small>Điều hòa, nước nóng, ban công hẹp nhìn mương. Thêm một nệm nếu có trẻ ngủ cùng.</small></a>
+      <a class="room" href="#dat"><span>03</span><strong>Nhà nhỏ nguyên căn</strong><em>4 khách · 42 m² · một giường đôi và một giường đơn</em><b>1.450.000đ</b><small>Quạt và điều hòa, bếp từ, nồi cơm, chén đũa. Sân trước để được một ô tô.</small></a>
     </div>
   </section>
   <section id="ngay">
     <div class="wrap days">
       <article><h3>Sáng</h3><p>Cà phê sân, xuồng ba lá len rạch. Chủ nhà chèo, khách ngồi. Mất khoảng một giờ.</p></article>
       <article><h3>Trưa</h3><p>Cơm gia đình: cá, rau vườn, trái cây theo mùa. Báo trước nếu ăn chay.</p></article>
-      <article><h3>Chiều</h3><p>Ra chợ nổi hoặc ngồi nhà. Chỗ đậu xe trong sân, wifi dùng được, không có hồ bơi.</p></article>
+      <article><h3>Chiều</h3><p>Ra chợ nổi Cái Răng nếu đi sớm, hoặc ngồi nhà. Mất khoảng 40 phút xe máy.</p></article>
+      <article><h3>Tối</h3><p>Cơm nhà nếu đặt trước 15:00, 150.000đ một suất. Sau 21:00 giữ yên, không karaoke.</p></article>
+    </div>
+  </section>
+  <section id="tien">
+    <div class="wrap split">
+      <div>
+        <h2>Trong nhà có gì.</h2>
+        <ul class="chips">
+          <li>Wifi sân và phòng</li>
+          <li>Nước nóng</li>
+          <li>Điều hòa hai phòng</li>
+          <li>Bếp từ ở nhà nhỏ</li>
+          <li>Chỗ đậu 2 xe máy, 1 ô tô</li>
+          <li>Xuồng ba lá</li>
+          <li>Bữa sáng</li>
+          <li>Nước suối 2 chai</li>
+          <li>Không hồ bơi</li>
+          <li>Không tiệc</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Đường vào</h3>
+        <ul class="place">
+          <li><b>18 km</b><span>Cầu Cần Thơ → Mỹ Khánh, khoảng 30 phút ô tô</span></li>
+          <li><b>25 km</b><span>Bến Ninh Kiều. Nhà gửi định vị Zalo khi còn 5 km</span></li>
+          <li><b>Vào sân</b><span>Ô tô 4–7 chỗ được. Xe 16 chỗ đậu ngoài đường cái, đi bộ 80 m</span></li>
+          <li><b>Đón</b><span>Có đón ở ngã tư xã nếu báo trước, 100.000đ một lượt trong xã</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap split">
+      <div>
+        <h3>Giá đêm đã gồm</h3>
+        <ul class="place">
+          <li><b>Ngủ</b><span>Khăn, xà phòng, nước nóng, điện nước</span></li>
+          <li><b>Sáng</b><span>Một suất mỗi khách lớn. Trẻ dưới 6 tuổi ăn cùng</span></li>
+          <li><b>Xuồng</b><span>Một lượt chèo rạch cho mỗi phòng, khoảng một giờ</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tính thêm</h3>
+        <ul class="place">
+          <li><b>150.000đ</b><span>Mỗi đêm thứ sáu và thứ bảy</span></li>
+          <li><b>200.000đ</b><span>Mỗi đêm dịp lễ. Báo khi giữ phòng</span></li>
+          <li><b>150.000đ</b><span>Một suất cơm trưa hoặc tối. Chay được nếu nói trước</span></li>
+          <li><b>80.000đ</b><span>Trẻ từ 6 đến 11 tuổi ngủ thêm, không kê giường riêng</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="sec-h"><h2>Khách đã ở.</h2><p>Lời dưới đây là chữ mẫu. Làm thật sẽ thay bằng đánh giá của khách.</p></div>
+      <div class="quotes">
+        <blockquote class="quote"><p>“Sáng ra vườn hái ổi, trưa ăn cá kho. Nhà không sang nhưng ngủ được.”</p><span>Chị Mai · ở 2 đêm · tháng 4</span></blockquote>
+        <blockquote class="quote"><p>“Xuồng nhỏ, chủ nhà chèo chậm. Con nít ngồi vừa, người lớn hơi thấp mái.”</p><span>Anh Hùng · gia đình 4 người</span></blockquote>
+      </div>
+    </div>
+  </section>
+  <section id="quy">
+    <div class="wrap">
+      <div class="sec-h"><h2>Trước khi chuyển cọc.</h2></div>
+      <dl class="rules">
+        <dt>Cọc</dt><dd>30% giá trị đêm đã chốt. Chuyển khoản sau khi chủ nhà xác nhận còn phòng.</dd>
+        <dt>Hủy</dt><dd>Trước 3 ngày: trả hết cọc. Trong 3 ngày: giữ cọc. Đến trễ không báo: tính một đêm.</dd>
+        <dt>Giờ</dt><dd>Nhận từ 14:00, trả trước 12:00. Đến sau 21:00 phải nhắn trước vì cổng khóa.</dd>
+        <dt>Giấy tờ</dt><dd>Một người lớn xuất trình CCCD khi nhận phòng.</dd>
+        <dt>Ở</dt><dd>Không thú cưng, không hút trong phòng, không mang thức ăn hải sản nấu trong nhà nhỏ.</dd>
+      </dl>
     </div>
   </section>
   <section class="book" id="dat">
@@ -156,6 +256,8 @@
       <input name="sdt" placeholder="Số điện thoại" required>
       <input name="den" type="text" placeholder="Ngày đến">
       <input name="di" type="text" placeholder="Ngày đi">
+      <input name="khach" placeholder="Số khách">
+      <input name="phong" placeholder="Loại phòng">
       <button class="btn" type="submit">Gửi cho chủ nhà</button>
       <p class="note" id="note"></p>
     </form>

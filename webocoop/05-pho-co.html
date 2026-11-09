@@ -43,9 +43,20 @@
   .row span { color: #555; font-size: 14px; grid-column: 1; }
   .row b { font-family: "Instrument Serif", serif; font-size: 28px; font-weight: 400; }
   .go { display: inline-block; margin-top: 22px; background: var(--ink); color: white; padding: 12px 16px; }
+  .more { padding: 10px 28px 48px; max-width: 1100px; }
+  .more h2 { font-size: 36px; }
+  .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+  .trio h3 { margin: 0 0 10px; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; }
+  .trio ul { margin: 0; padding: 0; list-style: none; }
+  .trio li { padding: 10px 0; border-top: 1px solid #ddd6cc; line-height: 1.5; }
+  .trio b { font-weight: 500; }
+  .said { margin: 36px 0 0; max-width: 28em; font-family: "Instrument Serif", serif; font-size: 34px; line-height: 1.2; font-style: italic; }
+  .said span { display: block; margin-top: 10px; font-family: "Be Vietnam Pro", sans-serif; font-style: normal; font-size: 13px; color: #666; }
   footer { padding: 0 28px 40px; color: #777; font-size: 13px; }
   @media (max-width: 800px) {
-    main { grid-template-columns: 1fr; gap: 28px; padding: 40px 18px; }
+    main, .trio { grid-template-columns: 1fr; gap: 28px; }
+    main { padding: 40px 18px; }
+    .more { padding: 10px 18px 40px; }
     .nav, .stage-copy, footer { padding-left: 18px; padding-right: 18px; }
     .nav a:not(:first-child) { display: none; }
   }
@@ -57,6 +68,7 @@
       <a href="#dau">Một Mái</a>
       <a href="#o">Nhà</a>
       <a href="#phong">Phòng</a>
+      <a href="#truoc">Trước khi đến</a>
       <span>OCOP 4 sao</span>
     </div>
     <div class="stage-copy" id="dau">
@@ -78,6 +90,39 @@
       <article class="row"><strong>Xe đạp</strong><b>miễn phí</b><span>Hai chiếc. Ra phố cổ không cần gọi xe</span></article>
     </div>
   </main>
+  <section class="more" id="truoc">
+    <h2>Trước khi giữ phòng.</h2>
+    <div class="trio">
+      <div>
+        <h3>Đường</h3>
+        <ul>
+          <li><b>1,2 km</b> tới chùa Cầu, khoảng 8 phút xe đạp hoặc 15 phút đi bộ.</li>
+          <li>Hẻm rộng một xe máy. Ô tô dừng đầu hẻm, đi bộ 40 m, nhà ra xách đồ.</li>
+          <li>Từ Đà Nẵng khoảng 30 km. Nhà không đón sân bay.</li>
+          <li>Hai xe đạp trong sân, miễn phí. Gửi xe máy trong hẻm.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Trong phòng và sân</h3>
+        <ul>
+          <li>Điều hòa, nước nóng, két nhỏ, không bếp trong phòng.</li>
+          <li>Sáng: bánh mì, cà phê, trái cây tại sân. Đã gồm trong giá.</li>
+          <li>Máy giặt dùng chung, 30.000đ một lượt, có nước xả.</li>
+          <li>Wifi ổn. Không tivi. Trần phòng gác mái thấp, người trên 1m75 nên hỏi trước.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Giá thêm và quy định</h3>
+        <ul>
+          <li>Thứ sáu, thứ bảy cộng 200.000đ một phòng.</li>
+          <li>Lễ cộng 350.000đ. Cọc 40% vì phố cổ hết phòng nhanh.</li>
+          <li>Hủy trước 5 ngày trả cọc. Trong 5 ngày giữ một nửa.</li>
+          <li>Không nhận nhóm trên 8 người, không sinh nhật có loa. Yên sau 22:00. Không thú cưng.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="said">“Hẻm tối, nhưng ra phố vẫn kịp trước khi đèn thả.”<span>Lời khách mẫu. Làm thật sẽ thay bằng đánh giá của nhà.</span></p>
+  </section>
   <footer><a href="index.html">← Bộ 5 mẫu</a> · Mẫu giao diện phố cổ. Ảnh đêm Hội An chỉ để dựng bố cục, làm thật sẽ thay bằng ảnh nhà.</footer>
 </body>
 </html>

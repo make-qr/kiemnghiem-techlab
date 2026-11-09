@@ -41,10 +41,18 @@
   .card em { font-style: normal; color: #3d5559; line-height: 1.5; }
   .card b { font-size: 18px; }
   .band { margin-top: 28px; display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 22px; background: var(--sea); color: white; }
+  .block { margin-top: 64px; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; margin-top: 22px; }
+  .cols h3 { margin: 0 0 8px; font-size: 16px; letter-spacing: .08em; text-transform: uppercase; color: #3d5c61; }
+  .cols p, .cols li { margin: 0; line-height: 1.6; color: #244046; }
+  .cols ul { margin: 0; padding-left: 18px; }
+  .line { display: grid; grid-template-columns: 90px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid #e1e8e7; }
+  .quote { margin: 22px 0 0; font-family: Newsreader, serif; font-size: 32px; line-height: 1.25; }
+  .quote span { display: block; margin-top: 8px; font-family: "Be Vietnam Pro", sans-serif; font-size: 13px; color: #4e6b70; }
   footer { padding: 18px 32px 48px; color: #5d7376; font-size: 13px; }
   @media (max-width: 800px) {
-    .intro, .grid, .band, .hero-bottom { grid-template-columns: 1fr; display: grid; }
-    .bar span:nth-child(2) { display: none; }
+    .intro, .grid, .band, .hero-bottom, .cols, .line { grid-template-columns: 1fr; display: grid; }
+    .bar a { display: none; }
     main, .bar, .hero-bottom, footer { padding-left: 18px; padding-right: 18px; }
   }
 </style>
@@ -53,8 +61,10 @@
   <header class="hero">
     <div class="bar">
       <span class="word">Nhà Trên Vịnh</span>
-      <span>OCOP 4 sao · Quảng Ninh</span>
       <a href="#phong">Phòng</a>
+      <a href="#gom">Giá gồm</a>
+      <a href="#ben">Ra bến</a>
+      <span>OCOP 4 sao · Quảng Ninh</span>
     </div>
     <div class="hero-bottom">
       <div>
@@ -74,7 +84,7 @@
         <div>
           <span>Phòng</span>
           <strong>Cửa sổ vườn</strong>
-          <em>2 khách. Không thấy vịnh. Hợp người chỉ cần ngủ sạch và gần bến.</em>
+          <em>2 khách · 18 m² · giường 1m6. Nhà vệ sinh riêng, không thấy vịnh. Hợp người chỉ cần ngủ sạch và gần bến.</em>
         </div>
         <b>1.150.000đ / đêm</b>
       </article>
@@ -82,7 +92,7 @@
         <div>
           <span>Được chọn nhiều</span>
           <strong>Ban công vịnh</strong>
-          <em>2 khách. Nhìn một khúc vịnh, bàn nhỏ ngoài ban công.</em>
+          <em>2 khách · 22 m² · giường 1m8. Ban công nhìn một khúc vịnh, bàn nhỏ, hai ghế. Điều hòa và nước nóng.</em>
         </div>
         <b>1.850.000đ / đêm</b>
       </article>
@@ -90,11 +100,52 @@
         <div>
           <span>Gia đình</span>
           <strong>Phòng thông nhau</strong>
-          <em>4 khách. Hai giường. Bếp nhỏ chỉ hâm, không nấu hải sản trong phòng.</em>
+          <em>4 khách · 32 m² · giường đôi và hai giường đơn. Bếp nhỏ chỉ hâm, không nấu hải sản trong phòng.</em>
         </div>
         <b>2.600.000đ / đêm</b>
       </article>
     </div>
+    <section class="block" id="gom">
+      <h2>Một đêm gồm những gì.</h2>
+      <div class="cols">
+        <div>
+          <h3>Đã gồm</h3>
+          <ul>
+            <li>Ăn sáng: phở hoặc bánh cuốn, cà phê, trái cây</li>
+            <li>Nước suối, khăn, điện nước</li>
+            <li>Đưa ra bến 7:00 nếu phòng có từ 2 khách và báo từ tối hôm trước</li>
+            <li>Chỗ đậu một ô tô 4 chỗ dưới dốc</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tính riêng</h3>
+          <ul>
+            <li>Thuyền vịnh thuê tại bến, nhà không bán tour trọn gói</li>
+            <li>Hải sản tối 350.000–550.000đ một người, chốt thực đơn trước 11:00</li>
+            <li>Cuối tuần cộng 250.000đ một phòng</li>
+            <li>Lễ cộng 400.000đ. Trẻ 6–11 tuổi phụ thu 150.000đ nếu kê thêm giường</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nhà không nhận</h3>
+          <ul>
+            <li>Tiệc, loa, nhóm trên 8 người</li>
+            <li>Hút thuốc trong phòng</li>
+            <li>Thú cưng</li>
+            <li>Khách đến sau 22:00 nếu không nhắn, vì cổng dưới dốc khóa</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="ben">
+      <h2>Ra bến và ở lại.</h2>
+      <div class="line"><b>10 phút</b><span>Đi bộ xuống bến thuyền buổi sáng. Chiều lên dốc hơi dốc, có thể gọi xe máy trong xóm.</span></div>
+      <div class="line"><b>7:00</b><span>Xe nhà xuất phát. Muộn hơn khách tự đi, nhà không giữ chuyến.</span></div>
+      <div class="line"><b>14:00</b><span>Nhận phòng. Trả trước 11:30. Cọc 40% vì cuối tuần vịnh hết phòng nhanh.</span></div>
+      <div class="line"><b>Hủy</b><span>Trước 5 ngày trả hết cọc. Trong 5 ngày giữ một nửa. Không đến và không báo thì không hoàn.</span></div>
+      <div class="line"><b>Giấy tờ</b><span>CCCD của một người lớn. Hóa đơn chuyển khoản mang theo nếu vào cửa khẩu tham quan.</span></div>
+      <p class="quote">“Ban công chỉ thấy một khúc, không phải cả vịnh. Sáng ít tàu hơn chiều.”<span>Lời khách mẫu · thay bằng đánh giá thật khi làm web</span></p>
+    </section>
     <div class="band">
       <div>
         <strong>Còn phòng cuối tuần này.</strong>

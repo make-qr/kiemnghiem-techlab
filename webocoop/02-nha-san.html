@@ -30,11 +30,19 @@
   .room strong { font-family: "Cormorant Garamond", serif; font-size: 36px; font-weight: 500; }
   .room em { grid-column: 1; font-style: normal; color: #5e5146; }
   .room b { font-family: "Cormorant Garamond", serif; font-size: 32px; font-weight: 500; }
+  .room small { grid-column: 1 / -1; color: #5e5146; line-height: 1.5; }
+  ol.day { list-style: none; margin: 0; padding: 0; }
+  ol.day li { display: grid; grid-template-columns: 72px 1fr; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); line-height: 1.5; }
+  ol.day b { font-family: "Cormorant Garamond", serif; font-size: 28px; font-weight: 500; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 28px 0 10px; }
+  .two h2 { font-size: 42px; }
+  .two ul { margin: 0; padding-left: 18px; line-height: 1.7; }
+  .noteblock { padding: 8px 0 20px; color: #5e5146; line-height: 1.6; }
   .end { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding-top: 36px; }
   .btn { background: var(--ink); color: var(--paper); padding: 14px 18px; border-radius: 2px; }
   footer { margin-top: 28px; font-size: 13px; color: #74685c; }
   @media (max-width: 800px) {
-    .hero, .story, .end { grid-template-columns: 1fr; display: grid; }
+    .hero, .story, .end, .two, ol.day li { grid-template-columns: 1fr; display: grid; }
     h1 { font-size: 64px; }
     header.bar span:last-child { display: none; }
   }
@@ -69,18 +77,51 @@
       <article class="room">
         <strong>Phòng sàn nhỏ</strong>
         <b>450.000đ</b>
-        <em>2 khách · nệm trên sàn gỗ · nhà vệ sinh chung cuối hồi</em>
+        <em>2 khách · nệm 1m6 trên sàn gỗ · nhà vệ sinh chung cuối hồi</em>
+        <small>Có màn, chăn, quạt. Không điều hòa. Tối nghe rõ tiếng bản nếu có đám.</small>
       </article>
       <article class="room">
         <strong>Phòng cửa sổ đồi</strong>
         <b>620.000đ</b>
-        <em>2 khách · giường · nhà vệ sinh riêng</em>
+        <em>2 khách · giường gỗ · nhà vệ sinh riêng sau phòng</em>
+        <small>Nước nóng bình. Cửa sổ nhìn đồi, không nhìn ra đường bản.</small>
       </article>
       <article class="room">
         <strong>Cả gian cho gia đình</strong>
         <b>1.200.000đ</b>
         <em>Tối đa 5 khách · một gian riêng · ăn tối cùng chủ nhà</em>
+        <small>Hai nệm và một giường. Trẻ dưới 5 tuổi ngủ cùng, không tính phụ thu.</small>
       </article>
+    </section>
+    <section class="two" id="ngay">
+      <div>
+        <h2>Một ngày trong bản.</h2>
+        <ol class="day">
+          <li><b>6:30</b><span>Trà nóng ở hiên. Sương còn, bản chưa ồn.</span></li>
+          <li><b>7:30</b><span>Xôi hoặc mì, rau luộc. Ăn sáng nằm trong giá phòng.</span></li>
+          <li><b>8:30</b><span>Đi bộ quanh bản khoảng một giờ. Người nhà dẫn nếu rảnh.</span></li>
+          <li><b>11:30</b><span>Cơm trưa nếu đặt. Rau, trứng, thịt nhỏ. 90.000đ một suất.</span></li>
+          <li><b>16:00</b><span>Chợ phiên chỉ chủ nhật. Các ngày khác ngồi nhà hoặc ra suối.</span></li>
+          <li><b>18:30</b><span>Cơm tối bên bếp củi. 120.000đ, báo trước 15:00. Có thịt nướng và cơm lam khi đặt từ trưa.</span></li>
+        </ol>
+      </div>
+      <div>
+        <h2>Trong nhà và đường vào.</h2>
+        <ul>
+          <li>Wifi có, mưa to thì chập. Nên tải bản đồ trước.</li>
+          <li>Nước nóng cuối hồi, không phải phòng nào cũng có vòi riêng.</li>
+          <li>Không điều hòa, không tủ lạnh trong phòng. Nước uống để bình chung.</li>
+          <li>Chỗ để 4 xe máy dưới sàn. Ô tô 4 chỗ vào sát nhà được, xe 16 chỗ dừng ở ngã ba, đi bộ 200 m.</li>
+          <li>Đón tại ngã ba bản nếu báo giờ, miễn phí trong bản.</li>
+          <li>Thổ cẩm nhà chị em để xem. Không đưa ra quán và không ép mua.</li>
+        </ul>
+        <p class="noteblock">Cọc 30%. Hủy trước 48 giờ thì trả cọc. Mùa lúa chín và cuối tuần nên nhắn trước hai ngày. Một người lớn đưa CCCD. Không mang loa, không ở quá số khách đã báo.</p>
+      </div>
+    </section>
+    <section>
+      <h2>Khách viết về nhà.</h2>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:32px;line-height:1.25;margin:0 0 8px">“Ngủ sàn hơi lạnh đêm, nhưng sáng mở cửa là đồi. Cơm lam đặt trưa thì tối có.”</p>
+      <p class="noteblock">Chữ mẫu của một gia đình ở hai đêm. Khi làm web thật, thay bằng lời khách của nhà.</p>
     </section>
     <div class="end">
       <p>Cuối tuần và mùa lúa nên nhắn trước hai ngày. Cọc 30%, hủy trước 48 giờ thì giữ lại chỗ cho khách khác và trả cọc.</p>

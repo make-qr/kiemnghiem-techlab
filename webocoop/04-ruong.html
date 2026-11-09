@@ -46,6 +46,14 @@
   th, td { text-align: left; padding: 14px 8px; border-bottom: 1px solid var(--line); font-weight: 500; }
   th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #6a6256; font-weight: 500; }
   .cta { margin: 10px 28px 0; display: flex; justify-content: space-between; gap: 16px; align-items: center; background: var(--green); color: white; padding: 22px 24px; }
+  .panel { margin: 28px; background: white; border: 1px solid var(--line); padding: 22px 24px; }
+  .panel h2 { margin: 0 0 8px; font-size: 22px; }
+  .panel p { margin: 0 0 12px; line-height: 1.6; color: #24312c; }
+  .cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; }
+  .cols3 h3 { margin: 0 0 8px; font-size: 15px; }
+  .cols3 ul { margin: 0; padding-left: 18px; line-height: 1.6; }
+  .speak { margin: 12px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }
+  .speak b { display: block; margin-bottom: 4px; }
   .btn { background: white; color: var(--green); padding: 12px 16px; font-weight: 600; }
   footer { padding: 16px 28px 40px; color: #66716c; font-size: 13px; }
   @media (max-width: 860px) {
@@ -53,7 +61,9 @@
     .cert .hint { grid-column: auto; }
     dl { grid-template-columns: 1fr; }
     nav { display: none; }
-    table, .cta, .stats, .cert { width: auto; margin-left: 16px; margin-right: 16px; }
+    table, .cta, .stats, .cert, .panel { width: auto; margin-left: 16px; margin-right: 16px; }
+    .cols3 { grid-template-columns: 1fr; }
+    table { display: block; overflow-x: auto; }
     .cta { flex-direction: column; align-items: flex-start; }
     header.top, .copy, .flag, footer { padding-left: 16px; padding-right: 16px; }
   }
@@ -70,6 +80,7 @@
     <nav>
       <a href="#ho-so">Hồ sơ</a>
       <a href="#phong">Phòng và giá</a>
+      <a href="#o">Ở và ăn</a>
       <a href="#lien-he">Liên hệ</a>
     </nav>
   </header>
@@ -106,9 +117,47 @@
     <tbody>
       <tr><td>Phòng đôi view ruộng</td><td>2</td><td>Nhà vệ sinh riêng</td><td>700.000đ</td></tr>
       <tr><td>Phòng gia đình</td><td>4</td><td>Hai giường, tầng trệt</td><td>1.100.000đ</td></tr>
-      <tr><td>Nệm tập thể</td><td>6</td><td>Nhóm bạn, nhà vệ sinh chung</td><td>1.500.000đ</td></tr>
+      <tr><td>Nệm tập thể</td><td>6</td><td>Nhóm bạn, nhà vệ sinh chung, không điều hòa</td><td>1.500.000đ</td></tr>
+      <tr><td>Cuối tuần</td><td>—</td><td>Cộng mỗi phòng, thứ sáu và thứ bảy</td><td>+150.000đ</td></tr>
+      <tr><td>Lễ</td><td>—</td><td>Báo lúc giữ phòng, không cộng chồng với cuối tuần</td><td>+250.000đ</td></tr>
+      <tr><td>Ăn tối</td><td>1 suất</td><td>Cơm, rau, thịt nhỏ. Chay nếu nói trước 15:00</td><td>120.000đ</td></tr>
     </tbody>
   </table>
+  <section class="panel" id="o">
+    <h2>Ở lại bản thì làm gì.</h2>
+    <div class="cols3">
+      <div>
+        <h3>Trong giá phòng</h3>
+        <ul>
+          <li>Ngủ, điện nước, wifi khu nhà chính</li>
+          <li>Ăn sáng: xôi hoặc mèn mén, rau, trà</li>
+          <li>Nước suối hai chai một phòng</li>
+          <li>Gửi xe máy dưới nhà, ô tô 7 chỗ vào sân nếu đường khô</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Xung quanh</h3>
+        <ul>
+          <li>Ruộng bậc thang ngay trước nhà, đi bộ 5 phút ra đường ngắm</li>
+          <li>Chợ phiên cuối tuần, cách 3 km</li>
+          <li>Thuê xe máy trong bản 150.000đ một ngày, mũ bảo hiểm hai cái</li>
+          <li>Mùa lúa chín khoảng tháng 9–10, nên đặt trước 10 ngày</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Cộng đồng nhận khách</h3>
+        <ul>
+          <li>Ba hộ luân phiên nấu ăn và dọn phòng</li>
+          <li>Mật ong và thổ cẩm để tại nhà, khách mua nếu muốn</li>
+          <li>Không tổ chức tiệc, không đốt rác sau nhà</li>
+          <li>Trẻ trong bản đi học sớm, sau 21:00 giữ yên</li>
+        </ul>
+      </div>
+    </div>
+    <p class="speak"><b>Đường vào.</b> Từ Nghĩa Lộ theo đường đi Mù Cang Chải khoảng 2 giờ. Dốc Khau Phạ có đoạn hẹp, xe 16 chỗ nên dừng ở thị trấn rồi lên xe nhỏ. Nhà gửi định vị khi khách còn 10 km.</p>
+    <p class="speak"><b>Cọc và hủy.</b> Cọc 30% sau khi còn phòng. Hủy trước 4 ngày thì trả cọc. Trong 4 ngày giữ cọc vì mùa lúa phòng không bán lại kịp. Một người lớn đưa CCCD. Không thú cưng trên nệm tập thể.</p>
+    <p class="speak"><b>Khách mẫu.</b> “Đêm lạnh hơn ảnh trên mạng. Nhà cho thêm chăn. Sáng sương xuống ruộng đúng như đã đọc.” — thay bằng lời khách thật khi làm web.</p>
+  </section>
   <div class="cta" id="lien-he">
     <div>
       <strong>Đặt phòng và hỏi hồ sơ OCOP</strong>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homestay Chế Cu Nha — OCOP 4 sao</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --green:#14382e; --gold:#a67c3d; --paper:#f7f6f2; --ink:#1a2420; --line:#dddcd4; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Be Vietnam Pro", sans-serif; }
+  a { color: inherit; text-decoration: none; }
+  .flag {
+    background: var(--green); color: #f3efe2;
+    display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    padding: 10px 28px; font-size: 13px;
+  }
+  .flag b { letter-spacing: .08em; }
+  header.top { display: flex; justify-content: space-between; align-items: center; padding: 20px 28px; }
+  .logo { font-weight: 650; font-size: 20px; }
+  nav { display: flex; gap: 18px; font-size: 14px; }
+  .layout { display: grid; grid-template-columns: 1.05fr .95fr; min-height: 70vh; }
+  .copy { padding: 28px 36px 48px; }
+  .stars { color: var(--gold); letter-spacing: .2em; margin: 0 0 10px; }
+  h1 { margin: 0 0 12px; font-size: clamp(36px, 4vw, 52px); line-height: 1.08; letter-spacing: -.03em; }
+  .copy p { line-height: 1.65; color: #24312c; max-width: 48ch; }
+  .photo { background: url("anh/vn-sapa.jpg") center 45% / cover no-repeat; min-height: 420px; }
+  .cert {
+    margin: 8px 28px 0; background: white; border: 1px solid var(--line);
+    display: grid; grid-template-columns: 220px 1fr; gap: 10px 28px; padding: 22px 24px;
+  }
+  .cert h2 { margin: 0; font-size: 18px; }
+  .cert .hint { grid-column: 1; color: #5d6a64; font-size: 13px; line-height: 1.5; }
+  dl { margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; }
+  dt { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #6a6256; }
+  dd { margin: 3px 0 0; font-weight: 600; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); margin: 28px; border: 1px solid var(--line); }
+  .stats div { background: var(--paper); padding: 18px 16px; }
+  .stats b { display: block; font-size: 28px; letter-spacing: -.03em; }
+  .stats span { color: #52615b; font-size: 13px; }
+  table { width: calc(100% - 56px); margin: 0 28px 20px; border-collapse: collapse; }
+  th, td { text-align: left; padding: 14px 8px; border-bottom: 1px solid var(--line); font-weight: 500; }
+  th { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #6a6256; font-weight: 500; }
+  .cta { margin: 10px 28px 0; display: flex; justify-content: space-between; gap: 16px; align-items: center; background: var(--green); color: white; padding: 22px 24px; }
+  .btn { background: white; color: var(--green); padding: 12px 16px; font-weight: 600; }
+  footer { padding: 16px 28px 40px; color: #66716c; font-size: 13px; }
+  @media (max-width: 860px) {
+    .layout, .cert, .stats { grid-template-columns: 1fr; }
+    .cert .hint { grid-column: auto; }
+    dl { grid-template-columns: 1fr; }
+    nav { display: none; }
+    table, .cta, .stats, .cert { width: auto; margin-left: 16px; margin-right: 16px; }
+    .cta { flex-direction: column; align-items: flex-start; }
+    header.top, .copy, .flag, footer { padding-left: 16px; padding-right: 16px; }
+  }
+</style>
+</head>
+<body>
+  <div class="flag">
+    <b>SẢN PHẨM OCOP</b>
+    <span>Nhóm dịch vụ du lịch nông thôn</span>
+    <span>Mù Cang Chải, Yên Bái</span>
+  </div>
+  <header class="top">
+    <a class="logo" href="#dau">Homestay Chế Cu Nha</a>
+    <nav>
+      <a href="#ho-so">Hồ sơ</a>
+      <a href="#phong">Phòng và giá</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+  </header>
+  <section class="layout" id="dau">
+    <div class="copy">
+      <p class="stars">★★★★</p>
+      <h1>Ngủ trên triền ruộng, chủ nhà là người bản địa.</h1>
+      <p>Hộ gia đình trong xã giữ nhà cho khách ở. Sáng mở cửa là thấy ruộng bậc thang. Cuối tuần có chợ phiên. Giá, giờ nhận phòng và hồ sơ OCOP nằm ngay bên dưới.</p>
+    </div>
+    <div class="photo" role="img" aria-label="Đường vào vùng ruộng bậc thang Mù Cang Chải"></div>
+  </section>
+  <section class="cert" id="ho-so">
+    <div>
+      <h2>Hồ sơ đưa lên trang</h2>
+      <p class="hint">Ô bên cạnh là chỗ gắn quyết định công nhận. Số và tên dưới đây là số liệu mẫu, thay bằng hồ sơ thật trước khi chào công khai.</p>
+    </div>
+    <dl>
+      <div><dt>Sản phẩm</dt><dd>Homestay Chế Cu Nha</dd></div>
+      <div><dt>Xếp hạng</dt><dd>OCOP 4 sao</dd></div>
+      <div><dt>Chủ thể</dt><dd>Hộ kinh doanh — tên sẽ thay</dd></div>
+      <div><dt>Địa bàn</dt><dd>Mù Cang Chải, Yên Bái</dd></div>
+      <div><dt>Năm công nhận</dt><dd>Điền theo quyết định</dd></div>
+      <div><dt>Số quyết định</dt><dd>Điền số thật, không để số giả</dd></div>
+    </dl>
+  </section>
+  <section class="stats">
+    <div><b>8</b><span>phòng trong hai nhà</span></div>
+    <div><b>14:00</b><span>giờ nhận phòng</span></div>
+    <div><b>12:00</b><span>giờ trả phòng</span></div>
+    <div><b>2 ngày</b><span>nên báo trước mùa lúa</span></div>
+  </section>
+  <table id="phong">
+    <thead><tr><th>Phòng</th><th>Khách</th><th>Ghi chú</th><th>Giá đêm</th></tr></thead>
+    <tbody>
+      <tr><td>Phòng đôi view ruộng</td><td>2</td><td>Nhà vệ sinh riêng</td><td>700.000đ</td></tr>
+      <tr><td>Phòng gia đình</td><td>4</td><td>Hai giường, tầng trệt</td><td>1.100.000đ</td></tr>
+      <tr><td>Nệm tập thể</td><td>6</td><td>Nhóm bạn, nhà vệ sinh chung</td><td>1.500.000đ</td></tr>
+    </tbody>
+  </table>
+  <div class="cta" id="lien-he">
+    <div>
+      <strong>Đặt phòng và hỏi hồ sơ OCOP</strong>
+      <p style="margin:6px 0 0;color:#d7e4de">Gọi hoặc nhắn Zalo. Có thể gửi ảnh quyết định công nhận khi khách cần.</p>
+    </div>
+    <a class="btn" href="tel:0901234567">0901 234 567</a>
+  </div>
+  <footer><a href="index.html">← Bộ 5 mẫu</a> · Mẫu giao diện ruộng và hồ sơ. Ảnh có biển thị trấn Mù Cang Chải, dùng làm minh họa bố cục.</footer>
+</body>
+</html>

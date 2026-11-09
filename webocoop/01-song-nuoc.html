@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nhà Lá Sen — Homestay OCOP sông nước</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1c2b24; --clay:#c45c2c; --paper:#f4efe4; --leaf:#234237; --line:#e2d8c8; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Be Vietnam Pro", sans-serif; }
+  a { color: inherit; }
+  .top {
+    display: flex; justify-content: space-between; gap: 16px; align-items: center;
+    padding: 14px 28px; font-size: 13px; border-bottom: 1px solid var(--line);
+  }
+  .top b { letter-spacing: .14em; font-size: 12px; }
+  nav.main {
+    display: flex; justify-content: flex-start; align-items: center; gap: 32px;
+    padding: 18px 28px;
+  }
+  nav.main .btn { margin-left: auto; }
+  .logo { font-family: Fraunces, serif; font-size: 28px; font-weight: 560; letter-spacing: -.03em; text-decoration: none; }
+  nav.main ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; font-size: 14px; }
+  nav.main a { text-decoration: none; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--clay); color: white; text-decoration: none;
+    padding: 12px 18px; border-radius: 999px; font-size: 14px; border: 0;
+  }
+  .hero { display: grid; grid-template-columns: 1fr 1.08fr; min-height: calc(100vh - 108px); }
+  .hero-copy { padding: 48px 48px 56px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .kicker { margin: 0 0 16px; color: var(--clay); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; }
+  h1 { margin: 0; font-family: Fraunces, serif; font-weight: 500; font-size: clamp(46px, 5.4vw, 78px); line-height: .96; letter-spacing: -.035em; }
+  .lede { max-width: 38ch; font-size: 17px; line-height: 1.6; color: #3d4a42; }
+  .hero-actions { display: flex; gap: 18px; align-items: center; margin-top: 8px; }
+  .ghost { font-size: 14px; }
+  .hero-photo {
+    background: url("anh/vn-mekong.jpg") 30% center / cover no-repeat;
+    min-height: 520px; position: relative;
+  }
+  .stamp {
+    position: absolute; left: 24px; bottom: 24px;
+    width: 108px; height: 108px; border-radius: 50%;
+    background: #f7f1e4; color: var(--leaf);
+    display: grid; place-items: center; text-align: center;
+    transform: rotate(-8deg);
+    border: 1px dashed #b4532a;
+    font-family: Fraunces, serif; line-height: 1.15;
+  }
+  .stamp b { font-size: 20px; font-weight: 560; }
+  section { padding: 72px 28px; }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  .sec-h { display: flex; justify-content: space-between; gap: 24px; align-items: end; margin-bottom: 28px; }
+  h2 { margin: 0; font-family: Fraunces, serif; font-weight: 520; font-size: clamp(32px, 4vw, 48px); letter-spacing: -.03em; }
+  .room {
+    display: grid; grid-template-columns: 64px 1.4fr 1fr auto; gap: 16px; align-items: center;
+    padding: 22px 0; border-top: 1px solid var(--line); text-decoration: none;
+  }
+  .room span { color: var(--clay); font-family: Fraunces, serif; font-size: 22px; }
+  .room strong { font-size: 22px; font-weight: 560; }
+  .room em { font-style: normal; color: #5c675f; }
+  .room b { font-family: Fraunces, serif; font-size: 26px; font-weight: 520; }
+  .days { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .days article { padding-top: 18px; border-top: 2px solid var(--leaf); }
+  .days h3 { margin: 0 0 8px; font-size: 18px; }
+  .days p { margin: 0; color: #3e4b43; line-height: 1.55; }
+  .book {
+    background: var(--leaf); color: #f6f1e6;
+    display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center;
+  }
+  .book p { line-height: 1.6; color: #d9e4db; }
+  form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  input {
+    background: transparent; color: white; border: 1px solid rgba(255,255,255,.35);
+    padding: 12px 14px; font: inherit; border-radius: 8px;
+  }
+  input::placeholder { color: rgba(255,255,255,.7); }
+  form .btn { grid-column: 1 / -1; background: #f4efe4; color: var(--leaf); }
+  .note { grid-column: 1 / -1; min-height: 1.2em; font-size: 13px; color: #f0d7b0; }
+  footer.site {
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    padding: 22px 28px 70px; font-size: 13px; color: #6d6458; border-top: 1px solid var(--line);
+  }
+  @media (max-width: 860px) {
+    .hero, .book, .days, .room, form { grid-template-columns: 1fr; }
+    .hero-copy { padding: 32px 20px 28px; }
+    .top, nav.main, section { padding-left: 20px; padding-right: 20px; }
+    .top span { display: none; }
+    nav.main ul { display: none; }
+    .room b { font-size: 22px; }
+    .book, form { min-width: 0; }
+    input { width: 100%; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+  <div class="top">
+    <b>OCOP 4 SAO</b>
+    <span>Mỹ Khánh, Phong Điền, Cần Thơ</span>
+    <span>Nhận phòng 14:00 · Trả phòng 12:00</span>
+  </div>
+  <nav class="main">
+    <a class="logo" href="#dau">Nhà Lá Sen</a>
+    <ul>
+      <li><a href="#phong">Phòng</a></li>
+      <li><a href="#ngay">Một ngày ở vườn</a></li>
+      <li><a href="#dat">Đặt phòng</a></li>
+    </ul>
+    <a class="btn" href="#dat">Giữ phòng</a>
+  </nav>
+  <header class="hero" id="dau">
+    <div class="hero-copy">
+      <p class="kicker">Homestay miệt vườn · ngủ dưới tán dừa nước</p>
+      <h1>Sáng dậy là nghe nước chảy sau nhà.</h1>
+      <p class="lede">Nhà vườn của gia đình, ba chỗ ngủ, bữa cơm cá và trái cây hái tại vườn. Khách ở lại vì yên, không vì tiện nghi khách sạn.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#phong">Xem phòng và giá</a>
+        <a class="ghost" href="#dat">Gọi 0901 234 567</a>
+      </div>
+    </div>
+    <div class="hero-photo" role="img" aria-label="Xuồng trên rạch dừa nước">
+      <div class="stamp"><b>OCOP<br>4 sao</b></div>
+    </div>
+  </header>
+  <section id="phong">
+    <div class="wrap">
+      <div class="sec-h">
+        <h2>Ba chỗ ngủ.</h2>
+        <p>Giá đêm thường, đã gồm ăn sáng. Cuối tuần cộng 150.000đ.</p>
+      </div>
+      <a class="room" href="#dat"><span>01</span><strong>Phòng lá</strong><em>2 khách · giường đôi · cửa sổ ra vườn</em><b>650.000đ</b></a>
+      <a class="room" href="#dat"><span>02</span><strong>Phòng rạch</strong><em>2 khách · ban công nhìn mương</em><b>820.000đ</b></a>
+      <a class="room" href="#dat"><span>03</span><strong>Nhà nhỏ nguyên căn</strong><em>4 khách · bếp riêng · sân trước</em><b>1.450.000đ</b></a>
+    </div>
+  </section>
+  <section id="ngay">
+    <div class="wrap days">
+      <article><h3>Sáng</h3><p>Cà phê sân, xuồng ba lá len rạch. Chủ nhà chèo, khách ngồi. Mất khoảng một giờ.</p></article>
+      <article><h3>Trưa</h3><p>Cơm gia đình: cá, rau vườn, trái cây theo mùa. Báo trước nếu ăn chay.</p></article>
+      <article><h3>Chiều</h3><p>Ra chợ nổi hoặc ngồi nhà. Chỗ đậu xe trong sân, wifi dùng được, không có hồ bơi.</p></article>
+    </div>
+  </section>
+  <section class="book" id="dat">
+    <div>
+      <p class="kicker" style="color:#f0c7a4">Đặt phòng</p>
+      <h2>Để lại ngày, chủ nhà gọi lại trong ngày.</h2>
+      <p>Chưa trừ tiền trên web. Cọc chuyển khoản sau khi còn phòng. Hủy trước 3 ngày, trả lại cọc.</p>
+    </div>
+    <form id="form">
+      <input name="ten" placeholder="Tên khách" required>
+      <input name="sdt" placeholder="Số điện thoại" required>
+      <input name="den" type="text" placeholder="Ngày đến">
+      <input name="di" type="text" placeholder="Ngày đi">
+      <button class="btn" type="submit">Gửi cho chủ nhà</button>
+      <p class="note" id="note"></p>
+    </form>
+  </section>
+  <footer class="site">
+    <a href="index.html">← Bộ 5 mẫu</a>
+    <span>Nhà Lá Sen · mẫu giao diện sông nước</span>
+    <span>Ảnh minh họa bố cục. Làm thật sẽ thay bằng ảnh nhà của khách.</span>
+  </footer>
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("note").textContent = "Đây là mẫu. Khi làm thật, form gửi về Zalo hoặc điện thoại chủ nhà.";
+    });
+  </script>
+</body>
+</html>

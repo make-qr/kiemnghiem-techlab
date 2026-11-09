@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /private/
 Disallow: /pages_template/
+Disallow: /webocoop/
 Allow: /
 
 Sitemap: https://kiemnghiem.techlabglobal.com.vn/sitemap.xml

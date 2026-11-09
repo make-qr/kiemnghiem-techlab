@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5 mẫu giao diện homestay OCOP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Fraunces:opsz,wght@9..144,520;9..144,640&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: "Be Vietnam Pro", "Segoe UI", sans-serif;
+    background: #f6f1e8;
+    color: #241c14;
+  }
+  header {
+    padding: 48px 6vw 28px;
+    max-width: 920px;
+  }
+  header p {
+    margin: 0 0 10px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #8a5a32;
+  }
+  h1 {
+    margin: 0;
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 520;
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: .96;
+    letter-spacing: -.03em;
+  }
+  .lead {
+    margin: 18px 0 0;
+    max-width: 62ch;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4e4338;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  nav { display: flex; flex-direction: column; }
+  a.band {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
+    min-height: 240px;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    background: #1c1915 center/cover no-repeat;
+  }
+  a.band:nth-child(even) { direction: rtl; }
+  a.band:nth-child(even) > * { direction: ltr; }
+  a.band .copy {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 36px 40px;
+    background: linear-gradient(90deg, rgba(16,12,8,.78), rgba(16,12,8,.28) 80%, transparent);
+  }
+  a.band:nth-child(even) .copy {
+    background: linear-gradient(270deg, rgba(16,12,8,.78), rgba(16,12,8,.28) 80%, transparent);
+  }
+  a.band .shot {
+    min-height: 240px;
+    background: center/cover no-repeat;
+  }
+  a.band span {
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    opacity: .8;
+  }
+  a.band strong {
+    display: block;
+    margin-top: 8px;
+    font-family: Fraunces, Georgia, serif;
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 520;
+    letter-spacing: -.03em;
+    line-height: .95;
+  }
+  a.band em {
+    display: block;
+    margin-top: 12px;
+    max-width: 42ch;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(255,255,255,.86);
+  }
+  a.band:hover .shot { transform: scale(1.04); }
+  a.band .shot { transition: transform .6s ease; }
+  footer {
+    padding: 22px 6vw 36px;
+    color: #6d6256;
+    font-size: 13px;
+  }
+  @media (max-width: 800px) {
+    a.band, a.band:nth-child(even) { direction: ltr; grid-template-columns: 1fr; min-height: 0; }
+    a.band .shot { min-height: 180px; order: -1; }
+    a.band .copy, a.band:nth-child(even) .copy {
+      background: #1c1915;
+      padding: 22px 20px 26px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <p>Bộ mẫu chào khách</p>
+    <h1>Năm giao diện cho homestay OCOP.</h1>
+    <p class="lead">Mở từng mẫu full màn hình, cho khách xem đúng kiểu vùng của họ. Tên, giá và ảnh trong mẫu là để dựng bố cục. Khi làm thật sẽ thay bằng nhà, phòng và quyết định công nhận của khách.</p>
+  </header>
+  <nav>
+    <a class="band" href="01-song-nuoc.html">
+      <div class="copy">
+        <span>Mẫu 01</span>
+        <strong>Sông nước</strong>
+        <em>Ấm, chữ lớn, màu đất và lá. Hợp nhà vườn, miệt vườn Cần Thơ, Bến Tre, Tiền Giang, Vĩnh Long.</em>
+      </div>
+      <div class="shot" style="background-image:url('anh/vn-mekong.jpg')"></div>
+    </a>
+    <a class="band" href="02-nha-san.html">
+      <div class="copy">
+        <span>Mẫu 02</span>
+        <strong>Nhà sàn</strong>
+        <em>Giống một cuốn ảnh. Gỗ, khoảng trống, câu chuyện gia đình. Hợp Mai Châu, bản làng, nhà sàn Tây Bắc.</em>
+      </div>
+      <div class="shot" style="background-image:url('anh/vn-nhasan.jpg')"></div>
+    </a>
+    <a class="band" href="03-vinh.html">
+      <div class="copy">
+        <span>Mẫu 03</span>
+        <strong>Vịnh</strong>
+        <em>Ảnh đầy màn hình, giá rõ, cảm giác nghỉ dưỡng. Hợp Hạ Long, Cát Bà, vịnh, homestay view đẹp.</em>
+      </div>
+      <div class="shot" style="background-image:url('anh/vn-halong.jpg')"></div>
+    </a>
+    <a class="band" href="04-ruong.html">
+      <div class="copy">
+        <span>Mẫu 04</span>
+        <strong>Ruộng và hồ sơ</strong>
+        <em>Đưa sao OCOP, chủ thể, địa bàn lên ngay trang đầu. Hợp hợp tác xã, hộ vừa được công nhận, khách cần thấy giấy tờ.</em>
+      </div>
+      <div class="shot" style="background-image:url('anh/vn-sapa.jpg')"></div>
+    </a>
+    <a class="band" href="05-pho-co.html">
+      <div class="copy">
+        <span>Mẫu 05</span>
+        <strong>Phố cổ</strong>
+        <em>Tối, ít chữ, kiểu tạp chí. Hợp Hội An, phố đêm, homestay muốn trông riêng và đắt hơn mặt bằng.</em>
+      </div>
+      <div class="shot" style="background-image:url('anh/vn-hoian.jpg')"></div>
+    </a>
+  </nav>
+  <footer>Chào khách: mở đúng một mẫu, nói “bố cục này, ảnh và tên sẽ là của mình”. Đừng để khách hiểu nhầm đây là nhà có thật.</footer>
+</body>
+</html>
